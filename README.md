@@ -1,4 +1,4 @@
-# pic32-rs
+# pic32-pac
 Peripheral Access Crates for PIC32 MCUs
 
 The files in this repository were generated using the tools [`edc2svd`] and [`svd2rust`].
