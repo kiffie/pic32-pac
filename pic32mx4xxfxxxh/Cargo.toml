@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Peripheral access API for PIC32MX4xx (100 pin) microcontrollers"
 keywords = ["no-std", "mips", "pic32"]
 license = "MIT"
-authors = ["Kiffie van Haash <kiffie.vanhaash@gmail.com>"]
+authors = ["Kiffie van Haash"]
 edition = "2018"
 
 [dependencies]
