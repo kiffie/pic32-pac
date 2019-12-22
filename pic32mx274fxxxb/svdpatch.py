@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 svdpatch.py
 
@@ -507,9 +509,18 @@ class Peripheral:
             if name.startswith(prefix):
                 nametag.text = name[len(prefix):]
                 dnametag = rtag.find('displayName')
-                dname = dnametag.text
-                if dname.startswith(prefix):
-                    dnametag.text = dname[len(prefix):]
+                if dnametag:
+                    dname = dnametag.text
+                    if dname.startswith(prefix):
+                        dnametag.text = dname[len(prefix):]
+            fieldstag = rtag.find('fields')
+            if fieldstag:
+                for fieldtag in fieldstag.iter('field'):
+                    nametag = fieldtag.find('name')
+                    name = nametag.text
+                    if name.startswith(prefix):
+                        nametag.text = name[len(prefix):]
+
 
     def collect_in_array(self, rspec, rmod):
         """Collect same registers in peripheral into register array."""

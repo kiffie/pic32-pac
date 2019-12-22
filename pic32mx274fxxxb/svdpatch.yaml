@@ -1,0 +1,14 @@
+
+_svd: "PIC32MX274F256B.svd"
+
+_derive:
+    UART2: UART1
+
+"UART1":
+    _strip:
+        U1
+
+"SPI1":
+    _strip:
+        SPI1
+
