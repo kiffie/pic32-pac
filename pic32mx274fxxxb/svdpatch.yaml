@@ -6,9 +6,9 @@ _derive:
 
 "UART1":
     _strip:
-        U1
+        [U1]
 
 "SPI1":
     _strip:
-        SPI1
+        [SPI1]
 
