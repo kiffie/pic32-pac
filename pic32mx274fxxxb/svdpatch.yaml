@@ -3,12 +3,29 @@ _svd: "PIC32MX274F256B.svd"
 
 _derive:
     UART2: UART1
+    I2C2: I2C1
+    SPI2: SPI1
 
 "UART1":
     _strip:
-        [U1]
+        - U1
 
+"I2C1":
+    "BRG*":
+        _modify:
+            I2CBRG:
+                name: BRG
+    "TRN*":
+        _modify:
+            I2CTRN:
+                name: TRN
+    RCV:
+        _modify:
+            I2CRCV:
+                name: RCV
+    _strip:
+         - I2C1
 "SPI1":
     _strip:
-        [SPI1]
+        - SPI1
 
