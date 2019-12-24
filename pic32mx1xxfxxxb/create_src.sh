@@ -1,7 +1,7 @@
 #!/bin/sh -x
 
-EDC=PIC32MX274F256B.PIC
-SVD=PIC32MX274F256B.svd
+EDC=PIC32MX170F256B.PIC
+SVD=PIC32MX170F256B.svd
 
 edc2svd $EDC $SVD
 python3 ../svdpatch.py svdpatch.yaml
