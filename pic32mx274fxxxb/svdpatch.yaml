@@ -25,6 +25,12 @@ _derive:
                 name: RCV
     _strip:
          - I2C1
+
+"PORT*":
+    _sub:
+        # remove port letters from register names
+        - ["([A-D])(SET|CLR|INV)?$", '\2']
+
 "SPI1":
     _strip:
         - SPI1

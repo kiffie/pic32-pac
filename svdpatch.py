@@ -14,6 +14,7 @@ import argparse
 import xml.etree.ElementTree as ET
 from fnmatch import fnmatch
 from collections import OrderedDict
+import re
 
 DEVICE_CHILDREN = [
     "vendor", "vendorID", "name", "series", "version", "description",
@@ -390,6 +391,11 @@ class Device:
             # Handle strips
             for prefix in peripheral.get("_strip", []):
                 p.strip_prefix(prefix)
+            # Handle register name substitutions
+            for sublist in peripheral.get("_sub", []):
+                if len(sublist) != 2:
+                    raise SvdPatchError("invalid _sub list: {}".format(sublist))
+                p.sub(sublist[0], sublist[1])
             # Handle additions
             for rname in peripheral.get("_add", {}):
                 radd = peripheral["_add"][rname]
@@ -521,6 +527,14 @@ class Peripheral:
                     if name.startswith(prefix):
                         nametag.text = name[len(prefix):]
 
+    def sub(self, regexp, repl):
+        """Edit register names as spcified in regexp and repl"""
+        for rtag in self.ptag.iter('register'):
+            nametag = rtag.find('name')
+            name = nametag.text
+            newname = re.sub(regexp, repl, name)
+            if name != newname:
+                nametag.text = newname
 
     def collect_in_array(self, rspec, rmod):
         """Collect same registers in peripheral into register array."""
@@ -792,7 +806,6 @@ class Register:
                 for ev in ftag.iter('enumeratedValues'):
                     ev_usage = ev.find('usage').text
                     if ev_usage == enum_usage or ev_usage == "read-write":
-                        print(pname, fspec, field)
                         raise SvdPatchError(
                             "{}: field {} already has enumeratedValues for {}"
                             .format(pname, name, ev_usage))
