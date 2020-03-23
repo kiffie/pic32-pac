@@ -1,0 +1,12 @@
+[package]
+name = "pic32mx2xxfxxxb"
+version = "0.1.0"
+description = "Peripheral access API for PIC32MX2xx (28 pin) microcontrollers"
+keywords = ["no-std", "mips", "pic32"]
+license = "MIT"
+authors = ["Kiffie van Haash"]
+edition = "2018"
+
+[dependencies]
+bare-metal = "0.2.0"
+vcell = "0.1.0"
