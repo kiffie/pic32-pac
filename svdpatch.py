@@ -3,6 +3,8 @@
 """
 svdpatch.py
 
+Original version taken from https://github.com/stm32-rs/stm32-rs (see also
+https://github.com/stm32-rs/svdtools)
 Copyright 2017-2019 Adam Greig.
 Licensed under the MIT and Apache 2.0 licenses. See LICENSE files for details.
 """
