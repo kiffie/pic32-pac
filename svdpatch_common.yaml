@@ -6,6 +6,13 @@ _derive:
     UART2: UART1
     I2C2: I2C1
     SPI2: SPI1
+    DMAC1: DMAC0
+    DMAC2: DMAC0
+    DMAC3: DMAC0
+
+"DMAC0":
+    _strip:
+        - DCH0
 
 "UART1":
     _strip:

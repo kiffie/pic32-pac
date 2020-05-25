@@ -887,7 +887,7 @@ impl Deref for DMAC0 {
 }
 #[doc = "DMAC0 peripheral"]
 pub mod dmac0;
-#[doc = "DMAC1 peripheral"]
+#[doc = "DMAC0 peripheral"]
 pub struct DMAC1 {
     _marker: PhantomData<*const ()>,
 }
@@ -895,20 +895,18 @@ unsafe impl Send for DMAC1 {}
 impl DMAC1 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const dmac1::RegisterBlock {
+    pub const fn ptr() -> *const dmac0::RegisterBlock {
         0xbf88_3120 as *const _
     }
 }
 impl Deref for DMAC1 {
-    type Target = dmac1::RegisterBlock;
+    type Target = dmac0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*DMAC1::ptr() }
     }
 }
-#[doc = "DMAC1 peripheral"]
-pub mod dmac1;
-#[doc = "DMAC2 peripheral"]
+#[doc = "DMAC0 peripheral"]
 pub struct DMAC2 {
     _marker: PhantomData<*const ()>,
 }
@@ -916,20 +914,18 @@ unsafe impl Send for DMAC2 {}
 impl DMAC2 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const dmac2::RegisterBlock {
+    pub const fn ptr() -> *const dmac0::RegisterBlock {
         0xbf88_31e0 as *const _
     }
 }
 impl Deref for DMAC2 {
-    type Target = dmac2::RegisterBlock;
+    type Target = dmac0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*DMAC2::ptr() }
     }
 }
-#[doc = "DMAC2 peripheral"]
-pub mod dmac2;
-#[doc = "DMAC3 peripheral"]
+#[doc = "DMAC0 peripheral"]
 pub struct DMAC3 {
     _marker: PhantomData<*const ()>,
 }
@@ -937,19 +933,17 @@ unsafe impl Send for DMAC3 {}
 impl DMAC3 {
     #[doc = r"Returns a pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const dmac3::RegisterBlock {
+    pub const fn ptr() -> *const dmac0::RegisterBlock {
         0xbf88_32a0 as *const _
     }
 }
 impl Deref for DMAC3 {
-    type Target = dmac3::RegisterBlock;
+    type Target = dmac0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*DMAC3::ptr() }
     }
 }
-#[doc = "DMAC3 peripheral"]
-pub mod dmac3;
 #[doc = "PCACHE peripheral"]
 pub struct PCACHE {
     _marker: PhantomData<*const ()>,

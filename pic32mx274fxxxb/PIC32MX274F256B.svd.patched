@@ -19250,7 +19250,7 @@
       <baseAddress>0xbf883060</baseAddress>
       <registers>
         <register>
-          <name>DCH0CON</name>
+          <name>CON</name>
           <description>DCH0CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -19291,7 +19291,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CONCLR</name>
+          <name>CONCLR</name>
           <description>DCH0CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -19332,7 +19332,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CONSET</name>
+          <name>CONSET</name>
           <description>DCH0CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -19373,7 +19373,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CONINV</name>
+          <name>CONINV</name>
           <description>DCH0CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -19414,7 +19414,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0ECON</name>
+          <name>ECON</name>
           <description>DCH0ECON register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
@@ -19451,7 +19451,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0ECONCLR</name>
+          <name>ECONCLR</name>
           <description>DCH0ECONCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
@@ -19488,7 +19488,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0ECONSET</name>
+          <name>ECONSET</name>
           <description>DCH0ECONSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
@@ -19525,7 +19525,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0ECONINV</name>
+          <name>ECONINV</name>
           <description>DCH0ECONINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
@@ -19562,7 +19562,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0INT</name>
+          <name>INT</name>
           <description>DCH0INT register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
@@ -19635,7 +19635,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0INTCLR</name>
+          <name>INTCLR</name>
           <description>DCH0INTCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
@@ -19708,7 +19708,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0INTSET</name>
+          <name>INTSET</name>
           <description>DCH0INTSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
@@ -19781,7 +19781,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0INTINV</name>
+          <name>INTINV</name>
           <description>DCH0INTINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
@@ -19854,111 +19854,111 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SSA</name>
+          <name>SSA</name>
           <description>DCH0SSA register</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0SSA</name>
+              <name>SSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0SSACLR</name>
+          <name>SSACLR</name>
           <description>DCH0SSACLR register</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0SSA</name>
+              <name>SSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0SSASET</name>
+          <name>SSASET</name>
           <description>DCH0SSASET register</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0SSA</name>
+              <name>SSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0SSAINV</name>
+          <name>SSAINV</name>
           <description>DCH0SSAINV register</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0SSA</name>
+              <name>SSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0DSA</name>
+          <name>DSA</name>
           <description>DCH0DSA register</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0DSA</name>
+              <name>DSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0DSACLR</name>
+          <name>DSACLR</name>
           <description>DCH0DSACLR register</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0DSA</name>
+              <name>DSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0DSASET</name>
+          <name>DSASET</name>
           <description>DCH0DSASET register</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0DSA</name>
+              <name>DSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0DSAINV</name>
+          <name>DSAINV</name>
           <description>DCH0DSAINV register</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>DCH0DSA</name>
+              <name>DSA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>DCH0SSIZ</name>
+          <name>SSIZ</name>
           <description>DCH0SSIZ register</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
@@ -19971,7 +19971,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SSIZCLR</name>
+          <name>SSIZCLR</name>
           <description>DCH0SSIZCLR register</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
@@ -19984,7 +19984,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SSIZSET</name>
+          <name>SSIZSET</name>
           <description>DCH0SSIZSET register</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
@@ -19997,7 +19997,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SSIZINV</name>
+          <name>SSIZINV</name>
           <description>DCH0SSIZINV register</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
@@ -20010,7 +20010,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DSIZ</name>
+          <name>DSIZ</name>
           <description>DCH0DSIZ register</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
@@ -20023,7 +20023,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DSIZCLR</name>
+          <name>DSIZCLR</name>
           <description>DCH0DSIZCLR register</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
@@ -20036,7 +20036,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DSIZSET</name>
+          <name>DSIZSET</name>
           <description>DCH0DSIZSET register</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
@@ -20049,7 +20049,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DSIZINV</name>
+          <name>DSIZINV</name>
           <description>DCH0DSIZINV register</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
@@ -20062,7 +20062,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SPTR</name>
+          <name>SPTR</name>
           <description>DCH0SPTR register</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
@@ -20075,7 +20075,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SPTRCLR</name>
+          <name>SPTRCLR</name>
           <description>DCH0SPTRCLR register</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
@@ -20088,7 +20088,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SPTRSET</name>
+          <name>SPTRSET</name>
           <description>DCH0SPTRSET register</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
@@ -20101,7 +20101,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0SPTRINV</name>
+          <name>SPTRINV</name>
           <description>DCH0SPTRINV register</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
@@ -20114,7 +20114,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DPTR</name>
+          <name>DPTR</name>
           <description>DCH0DPTR register</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
@@ -20127,7 +20127,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DPTRCLR</name>
+          <name>DPTRCLR</name>
           <description>DCH0DPTRCLR register</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
@@ -20140,7 +20140,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DPTRSET</name>
+          <name>DPTRSET</name>
           <description>DCH0DPTRSET register</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
@@ -20153,7 +20153,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DPTRINV</name>
+          <name>DPTRINV</name>
           <description>DCH0DPTRINV register</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
@@ -20166,7 +20166,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CSIZ</name>
+          <name>CSIZ</name>
           <description>DCH0CSIZ register</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
@@ -20179,7 +20179,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CSIZCLR</name>
+          <name>CSIZCLR</name>
           <description>DCH0CSIZCLR register</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
@@ -20192,7 +20192,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CSIZSET</name>
+          <name>CSIZSET</name>
           <description>DCH0CSIZSET register</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
@@ -20205,7 +20205,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CSIZINV</name>
+          <name>CSIZINV</name>
           <description>DCH0CSIZINV register</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
@@ -20218,7 +20218,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CPTR</name>
+          <name>CPTR</name>
           <description>DCH0CPTR register</description>
           <addressOffset>0xa0</addressOffset>
           <size>32</size>
@@ -20231,7 +20231,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CPTRCLR</name>
+          <name>CPTRCLR</name>
           <description>DCH0CPTRCLR register</description>
           <addressOffset>0xa4</addressOffset>
           <size>32</size>
@@ -20244,7 +20244,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CPTRSET</name>
+          <name>CPTRSET</name>
           <description>DCH0CPTRSET register</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
@@ -20257,7 +20257,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0CPTRINV</name>
+          <name>CPTRINV</name>
           <description>DCH0CPTRINV register</description>
           <addressOffset>0xac</addressOffset>
           <size>32</size>
@@ -20270,7 +20270,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DAT</name>
+          <name>DAT</name>
           <description>DCH0DAT register</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
@@ -20283,7 +20283,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DATCLR</name>
+          <name>DATCLR</name>
           <description>DCH0DATCLR register</description>
           <addressOffset>0xb4</addressOffset>
           <size>32</size>
@@ -20296,7 +20296,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DATSET</name>
+          <name>DATSET</name>
           <description>DCH0DATSET register</description>
           <addressOffset>0xb8</addressOffset>
           <size>32</size>
@@ -20309,7 +20309,7 @@
           </fields>
         </register>
         <register>
-          <name>DCH0DATINV</name>
+          <name>DATINV</name>
           <description>DCH0DATINV register</description>
           <addressOffset>0xbc</addressOffset>
           <size>32</size>
@@ -20323,3242 +20323,17 @@
         </register>
       </registers>
     </peripheral>
-    <peripheral>
+    <peripheral derivedFrom="DMAC0">
       <name>DMAC1</name>
-      <description>DMAC1 peripheral</description>
       <baseAddress>0xbf883120</baseAddress>
-      <registers>
-        <register>
-          <name>DCH1CON</name>
-          <description>DCH1CON register</description>
-          <addressOffset>0x0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CONCLR</name>
-          <description>DCH1CONCLR register</description>
-          <addressOffset>0x4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CONSET</name>
-          <description>DCH1CONSET register</description>
-          <addressOffset>0x8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CONINV</name>
-          <description>DCH1CONINV register</description>
-          <addressOffset>0xc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1ECON</name>
-          <description>DCH1ECON register</description>
-          <addressOffset>0x10</addressOffset>
-          <size>32</size>
-          <resetValue>16776960</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1ECONCLR</name>
-          <description>DCH1ECONCLR register</description>
-          <addressOffset>0x14</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1ECONSET</name>
-          <description>DCH1ECONSET register</description>
-          <addressOffset>0x18</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1ECONINV</name>
-          <description>DCH1ECONINV register</description>
-          <addressOffset>0x1c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1INT</name>
-          <description>DCH1INT register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1INTCLR</name>
-          <description>DCH1INTCLR register</description>
-          <addressOffset>0x24</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1INTSET</name>
-          <description>DCH1INTSET register</description>
-          <addressOffset>0x28</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1INTINV</name>
-          <description>DCH1INTINV register</description>
-          <addressOffset>0x2c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSA</name>
-          <description>DCH1SSA register</description>
-          <addressOffset>0x30</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSACLR</name>
-          <description>DCH1SSACLR register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSASET</name>
-          <description>DCH1SSASET register</description>
-          <addressOffset>0x38</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSAINV</name>
-          <description>DCH1SSAINV register</description>
-          <addressOffset>0x3c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSA</name>
-          <description>DCH1DSA register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSACLR</name>
-          <description>DCH1DSACLR register</description>
-          <addressOffset>0x44</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSASET</name>
-          <description>DCH1DSASET register</description>
-          <addressOffset>0x48</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSAINV</name>
-          <description>DCH1DSAINV register</description>
-          <addressOffset>0x4c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH1DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSIZ</name>
-          <description>DCH1SSIZ register</description>
-          <addressOffset>0x50</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSIZCLR</name>
-          <description>DCH1SSIZCLR register</description>
-          <addressOffset>0x54</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSIZSET</name>
-          <description>DCH1SSIZSET register</description>
-          <addressOffset>0x58</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SSIZINV</name>
-          <description>DCH1SSIZINV register</description>
-          <addressOffset>0x5c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSIZ</name>
-          <description>DCH1DSIZ register</description>
-          <addressOffset>0x60</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSIZCLR</name>
-          <description>DCH1DSIZCLR register</description>
-          <addressOffset>0x64</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSIZSET</name>
-          <description>DCH1DSIZSET register</description>
-          <addressOffset>0x68</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DSIZINV</name>
-          <description>DCH1DSIZINV register</description>
-          <addressOffset>0x6c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SPTR</name>
-          <description>DCH1SPTR register</description>
-          <addressOffset>0x70</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SPTRCLR</name>
-          <description>DCH1SPTRCLR register</description>
-          <addressOffset>0x74</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SPTRSET</name>
-          <description>DCH1SPTRSET register</description>
-          <addressOffset>0x78</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1SPTRINV</name>
-          <description>DCH1SPTRINV register</description>
-          <addressOffset>0x7c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DPTR</name>
-          <description>DCH1DPTR register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DPTRCLR</name>
-          <description>DCH1DPTRCLR register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DPTRSET</name>
-          <description>DCH1DPTRSET register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DPTRINV</name>
-          <description>DCH1DPTRINV register</description>
-          <addressOffset>0x8c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CSIZ</name>
-          <description>DCH1CSIZ register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CSIZCLR</name>
-          <description>DCH1CSIZCLR register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CSIZSET</name>
-          <description>DCH1CSIZSET register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CSIZINV</name>
-          <description>DCH1CSIZINV register</description>
-          <addressOffset>0x9c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CPTR</name>
-          <description>DCH1CPTR register</description>
-          <addressOffset>0xa0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CPTRCLR</name>
-          <description>DCH1CPTRCLR register</description>
-          <addressOffset>0xa4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CPTRSET</name>
-          <description>DCH1CPTRSET register</description>
-          <addressOffset>0xa8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1CPTRINV</name>
-          <description>DCH1CPTRINV register</description>
-          <addressOffset>0xac</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DAT</name>
-          <description>DCH1DAT register</description>
-          <addressOffset>0xb0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DATCLR</name>
-          <description>DCH1DATCLR register</description>
-          <addressOffset>0xb4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DATSET</name>
-          <description>DCH1DATSET register</description>
-          <addressOffset>0xb8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH1DATINV</name>
-          <description>DCH1DATINV register</description>
-          <addressOffset>0xbc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-      </registers>
     </peripheral>
-    <peripheral>
+    <peripheral derivedFrom="DMAC0">
       <name>DMAC2</name>
-      <description>DMAC2 peripheral</description>
       <baseAddress>0xbf8831e0</baseAddress>
-      <registers>
-        <register>
-          <name>DCH2CON</name>
-          <description>DCH2CON register</description>
-          <addressOffset>0x0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CONCLR</name>
-          <description>DCH2CONCLR register</description>
-          <addressOffset>0x4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CONSET</name>
-          <description>DCH2CONSET register</description>
-          <addressOffset>0x8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CONINV</name>
-          <description>DCH2CONINV register</description>
-          <addressOffset>0xc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2ECON</name>
-          <description>DCH2ECON register</description>
-          <addressOffset>0x10</addressOffset>
-          <size>32</size>
-          <resetValue>16776960</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2ECONCLR</name>
-          <description>DCH2ECONCLR register</description>
-          <addressOffset>0x14</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2ECONSET</name>
-          <description>DCH2ECONSET register</description>
-          <addressOffset>0x18</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2ECONINV</name>
-          <description>DCH2ECONINV register</description>
-          <addressOffset>0x1c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2INT</name>
-          <description>DCH2INT register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2INTCLR</name>
-          <description>DCH2INTCLR register</description>
-          <addressOffset>0x24</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2INTSET</name>
-          <description>DCH2INTSET register</description>
-          <addressOffset>0x28</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2INTINV</name>
-          <description>DCH2INTINV register</description>
-          <addressOffset>0x2c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSA</name>
-          <description>DCH2SSA register</description>
-          <addressOffset>0x30</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSACLR</name>
-          <description>DCH2SSACLR register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSASET</name>
-          <description>DCH2SSASET register</description>
-          <addressOffset>0x38</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSAINV</name>
-          <description>DCH2SSAINV register</description>
-          <addressOffset>0x3c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSA</name>
-          <description>DCH2DSA register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSACLR</name>
-          <description>DCH2DSACLR register</description>
-          <addressOffset>0x44</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSASET</name>
-          <description>DCH2DSASET register</description>
-          <addressOffset>0x48</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSAINV</name>
-          <description>DCH2DSAINV register</description>
-          <addressOffset>0x4c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH2DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSIZ</name>
-          <description>DCH2SSIZ register</description>
-          <addressOffset>0x50</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSIZCLR</name>
-          <description>DCH2SSIZCLR register</description>
-          <addressOffset>0x54</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSIZSET</name>
-          <description>DCH2SSIZSET register</description>
-          <addressOffset>0x58</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SSIZINV</name>
-          <description>DCH2SSIZINV register</description>
-          <addressOffset>0x5c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSIZ</name>
-          <description>DCH2DSIZ register</description>
-          <addressOffset>0x60</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSIZCLR</name>
-          <description>DCH2DSIZCLR register</description>
-          <addressOffset>0x64</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSIZSET</name>
-          <description>DCH2DSIZSET register</description>
-          <addressOffset>0x68</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DSIZINV</name>
-          <description>DCH2DSIZINV register</description>
-          <addressOffset>0x6c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SPTR</name>
-          <description>DCH2SPTR register</description>
-          <addressOffset>0x70</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SPTRCLR</name>
-          <description>DCH2SPTRCLR register</description>
-          <addressOffset>0x74</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SPTRSET</name>
-          <description>DCH2SPTRSET register</description>
-          <addressOffset>0x78</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2SPTRINV</name>
-          <description>DCH2SPTRINV register</description>
-          <addressOffset>0x7c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DPTR</name>
-          <description>DCH2DPTR register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DPTRCLR</name>
-          <description>DCH2DPTRCLR register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DPTRSET</name>
-          <description>DCH2DPTRSET register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DPTRINV</name>
-          <description>DCH2DPTRINV register</description>
-          <addressOffset>0x8c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CSIZ</name>
-          <description>DCH2CSIZ register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CSIZCLR</name>
-          <description>DCH2CSIZCLR register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CSIZSET</name>
-          <description>DCH2CSIZSET register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CSIZINV</name>
-          <description>DCH2CSIZINV register</description>
-          <addressOffset>0x9c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CPTR</name>
-          <description>DCH2CPTR register</description>
-          <addressOffset>0xa0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CPTRCLR</name>
-          <description>DCH2CPTRCLR register</description>
-          <addressOffset>0xa4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CPTRSET</name>
-          <description>DCH2CPTRSET register</description>
-          <addressOffset>0xa8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2CPTRINV</name>
-          <description>DCH2CPTRINV register</description>
-          <addressOffset>0xac</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DAT</name>
-          <description>DCH2DAT register</description>
-          <addressOffset>0xb0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DATCLR</name>
-          <description>DCH2DATCLR register</description>
-          <addressOffset>0xb4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DATSET</name>
-          <description>DCH2DATSET register</description>
-          <addressOffset>0xb8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH2DATINV</name>
-          <description>DCH2DATINV register</description>
-          <addressOffset>0xbc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-      </registers>
     </peripheral>
-    <peripheral>
+    <peripheral derivedFrom="DMAC0">
       <name>DMAC3</name>
-      <description>DMAC3 peripheral</description>
       <baseAddress>0xbf8832a0</baseAddress>
-      <registers>
-        <register>
-          <name>DCH3CON</name>
-          <description>DCH3CON register</description>
-          <addressOffset>0x0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CONCLR</name>
-          <description>DCH3CONCLR register</description>
-          <addressOffset>0x4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CONSET</name>
-          <description>DCH3CONSET register</description>
-          <addressOffset>0x8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CONINV</name>
-          <description>DCH3CONINV register</description>
-          <addressOffset>0xc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHPRI</name>
-              <bitRange>[1:0]</bitRange>
-            </field>
-            <field>
-              <name>CHEDET</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHAEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHCHN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHAED</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHEN</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHCHNS</name>
-              <bitRange>[8:8]</bitRange>
-            </field>
-            <field>
-              <name>CHBUSY</name>
-              <bitRange>[15:15]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3ECON</name>
-          <description>DCH3ECON register</description>
-          <addressOffset>0x10</addressOffset>
-          <size>32</size>
-          <resetValue>16776960</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3ECONCLR</name>
-          <description>DCH3ECONCLR register</description>
-          <addressOffset>0x14</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3ECONSET</name>
-          <description>DCH3ECONSET register</description>
-          <addressOffset>0x18</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3ECONINV</name>
-          <description>DCH3ECONINV register</description>
-          <addressOffset>0x1c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>AIRQEN</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>SIRQEN</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>PATEN</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CABORT</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CFORCE</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHSIRQ</name>
-              <bitRange>[15:8]</bitRange>
-            </field>
-            <field>
-              <name>CHAIRQ</name>
-              <bitRange>[23:16]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3INT</name>
-          <description>DCH3INT register</description>
-          <addressOffset>0x20</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3INTCLR</name>
-          <description>DCH3INTCLR register</description>
-          <addressOffset>0x24</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3INTSET</name>
-          <description>DCH3INTSET register</description>
-          <addressOffset>0x28</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3INTINV</name>
-          <description>DCH3INTINV register</description>
-          <addressOffset>0x2c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHERIF</name>
-              <bitRange>[0:0]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIF</name>
-              <bitRange>[1:1]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIF</name>
-              <bitRange>[2:2]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIF</name>
-              <bitRange>[3:3]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIF</name>
-              <bitRange>[4:4]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIF</name>
-              <bitRange>[5:5]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIF</name>
-              <bitRange>[6:6]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIF</name>
-              <bitRange>[7:7]</bitRange>
-            </field>
-            <field>
-              <name>CHERIE</name>
-              <bitRange>[16:16]</bitRange>
-            </field>
-            <field>
-              <name>CHTAIE</name>
-              <bitRange>[17:17]</bitRange>
-            </field>
-            <field>
-              <name>CHCCIE</name>
-              <bitRange>[18:18]</bitRange>
-            </field>
-            <field>
-              <name>CHBCIE</name>
-              <bitRange>[19:19]</bitRange>
-            </field>
-            <field>
-              <name>CHDHIE</name>
-              <bitRange>[20:20]</bitRange>
-            </field>
-            <field>
-              <name>CHDDIE</name>
-              <bitRange>[21:21]</bitRange>
-            </field>
-            <field>
-              <name>CHSHIE</name>
-              <bitRange>[22:22]</bitRange>
-            </field>
-            <field>
-              <name>CHSDIE</name>
-              <bitRange>[23:23]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSA</name>
-          <description>DCH3SSA register</description>
-          <addressOffset>0x30</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSACLR</name>
-          <description>DCH3SSACLR register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSASET</name>
-          <description>DCH3SSASET register</description>
-          <addressOffset>0x38</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSAINV</name>
-          <description>DCH3SSAINV register</description>
-          <addressOffset>0x3c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3SSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSA</name>
-          <description>DCH3DSA register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSACLR</name>
-          <description>DCH3DSACLR register</description>
-          <addressOffset>0x44</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSASET</name>
-          <description>DCH3DSASET register</description>
-          <addressOffset>0x48</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSAINV</name>
-          <description>DCH3DSAINV register</description>
-          <addressOffset>0x4c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCH3DSA</name>
-              <bitRange>[31:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSIZ</name>
-          <description>DCH3SSIZ register</description>
-          <addressOffset>0x50</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSIZCLR</name>
-          <description>DCH3SSIZCLR register</description>
-          <addressOffset>0x54</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSIZSET</name>
-          <description>DCH3SSIZSET register</description>
-          <addressOffset>0x58</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SSIZINV</name>
-          <description>DCH3SSIZINV register</description>
-          <addressOffset>0x5c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSIZ</name>
-          <description>DCH3DSIZ register</description>
-          <addressOffset>0x60</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSIZCLR</name>
-          <description>DCH3DSIZCLR register</description>
-          <addressOffset>0x64</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSIZSET</name>
-          <description>DCH3DSIZSET register</description>
-          <addressOffset>0x68</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DSIZINV</name>
-          <description>DCH3DSIZINV register</description>
-          <addressOffset>0x6c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SPTR</name>
-          <description>DCH3SPTR register</description>
-          <addressOffset>0x70</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SPTRCLR</name>
-          <description>DCH3SPTRCLR register</description>
-          <addressOffset>0x74</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SPTRSET</name>
-          <description>DCH3SPTRSET register</description>
-          <addressOffset>0x78</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3SPTRINV</name>
-          <description>DCH3SPTRINV register</description>
-          <addressOffset>0x7c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHSPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DPTR</name>
-          <description>DCH3DPTR register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DPTRCLR</name>
-          <description>DCH3DPTRCLR register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DPTRSET</name>
-          <description>DCH3DPTRSET register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DPTRINV</name>
-          <description>DCH3DPTRINV register</description>
-          <addressOffset>0x8c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHDPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CSIZ</name>
-          <description>DCH3CSIZ register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CSIZCLR</name>
-          <description>DCH3CSIZCLR register</description>
-          <addressOffset>0x94</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CSIZSET</name>
-          <description>DCH3CSIZSET register</description>
-          <addressOffset>0x98</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CSIZINV</name>
-          <description>DCH3CSIZINV register</description>
-          <addressOffset>0x9c</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCSIZ</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CPTR</name>
-          <description>DCH3CPTR register</description>
-          <addressOffset>0xa0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CPTRCLR</name>
-          <description>DCH3CPTRCLR register</description>
-          <addressOffset>0xa4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CPTRSET</name>
-          <description>DCH3CPTRSET register</description>
-          <addressOffset>0xa8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3CPTRINV</name>
-          <description>DCH3CPTRINV register</description>
-          <addressOffset>0xac</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>CHCPTR</name>
-              <bitRange>[15:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DAT</name>
-          <description>DCH3DAT register</description>
-          <addressOffset>0xb0</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DATCLR</name>
-          <description>DCH3DATCLR register</description>
-          <addressOffset>0xb4</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DATSET</name>
-          <description>DCH3DATSET register</description>
-          <addressOffset>0xb8</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>DCH3DATINV</name>
-          <description>DCH3DATINV register</description>
-          <addressOffset>0xbc</addressOffset>
-          <size>32</size>
-          <resetValue>0</resetValue>
-          <fields>
-            <field>
-              <name>DCHPDAT</name>
-              <bitRange>[7:0]</bitRange>
-            </field>
-          </fields>
-        </register>
-      </registers>
     </peripheral>
     <peripheral>
       <name>PCACHE</name>
