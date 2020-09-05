@@ -2,7 +2,7 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "0x00 - SPI1CON register"]
-    pub con: CON,
+    pub con1: CON1,
     #[doc = "0x04 - SPI1CONCLR register"]
     pub conclr: CONCLR,
     #[doc = "0x08 - SPI1CONSET register"]
@@ -37,17 +37,17 @@ pub struct RegisterBlock {
     #[doc = "0x4c - SPI1CON2INV register"]
     pub con2inv: CON2INV,
 }
-#[doc = "SPI1CON register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [con](con) module"]
-pub type CON = crate::Reg<u32, _CON>;
+#[doc = "SPI1CON register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [con1](con1) module"]
+pub type CON1 = crate::Reg<u32, _CON1>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CON;
-#[doc = "`read()` method returns [con::R](con::R) reader structure"]
-impl crate::Readable for CON {}
-#[doc = "`write(|w| ..)` method takes [con::W](con::W) writer structure"]
-impl crate::Writable for CON {}
+pub struct _CON1;
+#[doc = "`read()` method returns [con1::R](con1::R) reader structure"]
+impl crate::Readable for CON1 {}
+#[doc = "`write(|w| ..)` method takes [con1::W](con1::W) writer structure"]
+impl crate::Writable for CON1 {}
 #[doc = "SPI1CON register"]
-pub mod con;
+pub mod con1;
 #[doc = "SPI1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [conclr](conclr) module"]
 pub type CONCLR = crate::Reg<u32, _CONCLR>;
 #[allow(missing_docs)]

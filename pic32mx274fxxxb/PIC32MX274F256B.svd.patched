@@ -5074,7 +5074,7 @@
       <baseAddress>0xbf805000</baseAddress>
       <registers>
         <register>
-          <name>CON</name>
+          <name>CONT</name>
           <description>I2C1CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -5842,7 +5842,7 @@
       <baseAddress>0xbf805800</baseAddress>
       <registers>
         <register>
-          <name>CON</name>
+          <name>CON1</name>
           <description>SPI1CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -19250,7 +19250,7 @@
       <baseAddress>0xbf883060</baseAddress>
       <registers>
         <register>
-          <name>CON</name>
+          <name>CONT</name>
           <description>DCH0CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>

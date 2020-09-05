@@ -11,14 +11,23 @@ _derive:
     DMAC3: DMAC0
 
 "DMAC0":
+    _modify:
+        DCH0CON:
+            name: CONT
     _strip:
         - DCH0
 
 "UART1":
+    _modify:
+        U1CON:
+            name: CONT
     _strip:
         - U1
 
 "I2C1":
+    _modify:
+        I2C1CON:
+            name: CONT
     "BRG*":
         _modify:
             I2CBRG:
@@ -40,6 +49,9 @@ _derive:
         - ["([A-D])(SET|CLR|INV)?$", '\2']
 
 "SPI1":
+    _modify:
+        SPI1CON:
+            name: CON1
     _strip:
         - SPI1
 

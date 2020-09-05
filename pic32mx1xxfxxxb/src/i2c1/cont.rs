@@ -1,9 +1,9 @@
-#[doc = "Reader of register CON"]
-pub type R = crate::R<u32, super::CON>;
-#[doc = "Writer for register CON"]
-pub type W = crate::W<u32, super::CON>;
-#[doc = "Register CON `reset()`'s with value 0x1000"]
-impl crate::ResetValue for super::CON {
+#[doc = "Reader of register CONT"]
+pub type R = crate::R<u32, super::CONT>;
+#[doc = "Writer for register CONT"]
+pub type W = crate::W<u32, super::CONT>;
+#[doc = "Register CONT `reset()`'s with value 0x1000"]
+impl crate::ResetValue for super::CONT {
     type Type = u32;
     #[inline(always)]
     fn reset_value() -> Self::Type {
