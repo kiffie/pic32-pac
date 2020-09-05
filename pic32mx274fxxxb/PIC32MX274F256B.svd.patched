@@ -5147,7 +5147,7 @@
           </fields>
         </register>
         <register>
-          <name>CONCLR</name>
+          <name>CONTCLR</name>
           <description>I2C1CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -5220,7 +5220,7 @@
           </fields>
         </register>
         <register>
-          <name>CONSET</name>
+          <name>CONTSET</name>
           <description>I2C1CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -5293,7 +5293,7 @@
           </fields>
         </register>
         <register>
-          <name>CONINV</name>
+          <name>CONTINV</name>
           <description>I2C1CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -5943,7 +5943,7 @@
           </fields>
         </register>
         <register>
-          <name>CONCLR</name>
+          <name>CON1CLR</name>
           <description>SPI1CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -6044,7 +6044,7 @@
           </fields>
         </register>
         <register>
-          <name>CONSET</name>
+          <name>CON1SET</name>
           <description>SPI1CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -6145,7 +6145,7 @@
           </fields>
         </register>
         <register>
-          <name>CONINV</name>
+          <name>CON1INV</name>
           <description>SPI1CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -19291,7 +19291,7 @@
           </fields>
         </register>
         <register>
-          <name>CONCLR</name>
+          <name>CONTCLR</name>
           <description>DCH0CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -19332,7 +19332,7 @@
           </fields>
         </register>
         <register>
-          <name>CONSET</name>
+          <name>CONTSET</name>
           <description>DCH0CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -19373,7 +19373,7 @@
           </fields>
         </register>
         <register>
-          <name>CONINV</name>
+          <name>CONTINV</name>
           <description>DCH0CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>

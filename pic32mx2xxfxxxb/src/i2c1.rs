@@ -4,11 +4,11 @@ pub struct RegisterBlock {
     #[doc = "0x00 - I2C1CON register"]
     pub cont: CONT,
     #[doc = "0x04 - I2C1CONCLR register"]
-    pub conclr: CONCLR,
+    pub contclr: CONTCLR,
     #[doc = "0x08 - I2C1CONSET register"]
-    pub conset: CONSET,
+    pub contset: CONTSET,
     #[doc = "0x0c - I2C1CONINV register"]
-    pub coninv: CONINV,
+    pub continv: CONTINV,
     #[doc = "0x10 - I2C1STAT register"]
     pub stat: STAT,
     #[doc = "0x14 - I2C1STATCLR register"]
@@ -63,39 +63,39 @@ impl crate::Readable for CONT {}
 impl crate::Writable for CONT {}
 #[doc = "I2C1CON register"]
 pub mod cont;
-#[doc = "I2C1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [conclr](conclr) module"]
-pub type CONCLR = crate::Reg<u32, _CONCLR>;
+#[doc = "I2C1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [contclr](contclr) module"]
+pub type CONTCLR = crate::Reg<u32, _CONTCLR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONCLR;
-#[doc = "`read()` method returns [conclr::R](conclr::R) reader structure"]
-impl crate::Readable for CONCLR {}
-#[doc = "`write(|w| ..)` method takes [conclr::W](conclr::W) writer structure"]
-impl crate::Writable for CONCLR {}
+pub struct _CONTCLR;
+#[doc = "`read()` method returns [contclr::R](contclr::R) reader structure"]
+impl crate::Readable for CONTCLR {}
+#[doc = "`write(|w| ..)` method takes [contclr::W](contclr::W) writer structure"]
+impl crate::Writable for CONTCLR {}
 #[doc = "I2C1CONCLR register"]
-pub mod conclr;
-#[doc = "I2C1CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [conset](conset) module"]
-pub type CONSET = crate::Reg<u32, _CONSET>;
+pub mod contclr;
+#[doc = "I2C1CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [contset](contset) module"]
+pub type CONTSET = crate::Reg<u32, _CONTSET>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONSET;
-#[doc = "`read()` method returns [conset::R](conset::R) reader structure"]
-impl crate::Readable for CONSET {}
-#[doc = "`write(|w| ..)` method takes [conset::W](conset::W) writer structure"]
-impl crate::Writable for CONSET {}
+pub struct _CONTSET;
+#[doc = "`read()` method returns [contset::R](contset::R) reader structure"]
+impl crate::Readable for CONTSET {}
+#[doc = "`write(|w| ..)` method takes [contset::W](contset::W) writer structure"]
+impl crate::Writable for CONTSET {}
 #[doc = "I2C1CONSET register"]
-pub mod conset;
-#[doc = "I2C1CONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [coninv](coninv) module"]
-pub type CONINV = crate::Reg<u32, _CONINV>;
+pub mod contset;
+#[doc = "I2C1CONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [continv](continv) module"]
+pub type CONTINV = crate::Reg<u32, _CONTINV>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONINV;
-#[doc = "`read()` method returns [coninv::R](coninv::R) reader structure"]
-impl crate::Readable for CONINV {}
-#[doc = "`write(|w| ..)` method takes [coninv::W](coninv::W) writer structure"]
-impl crate::Writable for CONINV {}
+pub struct _CONTINV;
+#[doc = "`read()` method returns [continv::R](continv::R) reader structure"]
+impl crate::Readable for CONTINV {}
+#[doc = "`write(|w| ..)` method takes [continv::W](continv::W) writer structure"]
+impl crate::Writable for CONTINV {}
 #[doc = "I2C1CONINV register"]
-pub mod coninv;
+pub mod continv;
 #[doc = "I2C1STAT register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [stat](stat) module"]
 pub type STAT = crate::Reg<u32, _STAT>;
 #[allow(missing_docs)]

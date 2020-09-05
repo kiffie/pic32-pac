@@ -4,11 +4,11 @@ pub struct RegisterBlock {
     #[doc = "0x00 - SPI1CON register"]
     pub con1: CON1,
     #[doc = "0x04 - SPI1CONCLR register"]
-    pub conclr: CONCLR,
+    pub con1clr: CON1CLR,
     #[doc = "0x08 - SPI1CONSET register"]
-    pub conset: CONSET,
+    pub con1set: CON1SET,
     #[doc = "0x0c - SPI1CONINV register"]
-    pub coninv: CONINV,
+    pub con1inv: CON1INV,
     #[doc = "0x10 - SPI1STAT register"]
     pub stat: STAT,
     #[doc = "0x14 - SPI1STATCLR register"]
@@ -48,39 +48,39 @@ impl crate::Readable for CON1 {}
 impl crate::Writable for CON1 {}
 #[doc = "SPI1CON register"]
 pub mod con1;
-#[doc = "SPI1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [conclr](conclr) module"]
-pub type CONCLR = crate::Reg<u32, _CONCLR>;
+#[doc = "SPI1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [con1clr](con1clr) module"]
+pub type CON1CLR = crate::Reg<u32, _CON1CLR>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONCLR;
-#[doc = "`read()` method returns [conclr::R](conclr::R) reader structure"]
-impl crate::Readable for CONCLR {}
-#[doc = "`write(|w| ..)` method takes [conclr::W](conclr::W) writer structure"]
-impl crate::Writable for CONCLR {}
+pub struct _CON1CLR;
+#[doc = "`read()` method returns [con1clr::R](con1clr::R) reader structure"]
+impl crate::Readable for CON1CLR {}
+#[doc = "`write(|w| ..)` method takes [con1clr::W](con1clr::W) writer structure"]
+impl crate::Writable for CON1CLR {}
 #[doc = "SPI1CONCLR register"]
-pub mod conclr;
-#[doc = "SPI1CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [conset](conset) module"]
-pub type CONSET = crate::Reg<u32, _CONSET>;
+pub mod con1clr;
+#[doc = "SPI1CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [con1set](con1set) module"]
+pub type CON1SET = crate::Reg<u32, _CON1SET>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONSET;
-#[doc = "`read()` method returns [conset::R](conset::R) reader structure"]
-impl crate::Readable for CONSET {}
-#[doc = "`write(|w| ..)` method takes [conset::W](conset::W) writer structure"]
-impl crate::Writable for CONSET {}
+pub struct _CON1SET;
+#[doc = "`read()` method returns [con1set::R](con1set::R) reader structure"]
+impl crate::Readable for CON1SET {}
+#[doc = "`write(|w| ..)` method takes [con1set::W](con1set::W) writer structure"]
+impl crate::Writable for CON1SET {}
 #[doc = "SPI1CONSET register"]
-pub mod conset;
-#[doc = "SPI1CONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [coninv](coninv) module"]
-pub type CONINV = crate::Reg<u32, _CONINV>;
+pub mod con1set;
+#[doc = "SPI1CONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [con1inv](con1inv) module"]
+pub type CON1INV = crate::Reg<u32, _CON1INV>;
 #[allow(missing_docs)]
 #[doc(hidden)]
-pub struct _CONINV;
-#[doc = "`read()` method returns [coninv::R](coninv::R) reader structure"]
-impl crate::Readable for CONINV {}
-#[doc = "`write(|w| ..)` method takes [coninv::W](coninv::W) writer structure"]
-impl crate::Writable for CONINV {}
+pub struct _CON1INV;
+#[doc = "`read()` method returns [con1inv::R](con1inv::R) reader structure"]
+impl crate::Readable for CON1INV {}
+#[doc = "`write(|w| ..)` method takes [con1inv::W](con1inv::W) writer structure"]
+impl crate::Writable for CON1INV {}
 #[doc = "SPI1CONINV register"]
-pub mod coninv;
+pub mod con1inv;
 #[doc = "SPI1STAT register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [stat](stat) module"]
 pub type STAT = crate::Reg<u32, _STAT>;
 #[allow(missing_docs)]

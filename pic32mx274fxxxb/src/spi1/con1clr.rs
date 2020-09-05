@@ -1,9 +1,9 @@
-#[doc = "Reader of register CONSET"]
-pub type R = crate::R<u32, super::CONSET>;
-#[doc = "Writer for register CONSET"]
-pub type W = crate::W<u32, super::CONSET>;
-#[doc = "Register CONSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::CONSET {
+#[doc = "Reader of register CON1CLR"]
+pub type R = crate::R<u32, super::CON1CLR>;
+#[doc = "Writer for register CON1CLR"]
+pub type W = crate::W<u32, super::CON1CLR>;
+#[doc = "Register CON1CLR `reset()`'s with value 0"]
+impl crate::ResetValue for super::CON1CLR {
     type Type = u32;
     #[inline(always)]
     fn reset_value() -> Self::Type {
