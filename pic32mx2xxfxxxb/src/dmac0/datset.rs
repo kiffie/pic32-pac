@@ -1,18 +1,52 @@
-#[doc = "Reader of register DATSET"]
-pub type R = crate::R<u32, super::DATSET>;
-#[doc = "Writer for register DATSET"]
-pub type W = crate::W<u32, super::DATSET>;
-#[doc = "Register DATSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::DATSET {
-    type Type = u32;
+#[doc = "Register `DATSET` reader"]
+pub struct R(crate::R<DATSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DATSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DCHPDAT`"]
-pub type DCHPDAT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DCHPDAT`"]
+impl core::convert::From<crate::R<DATSET_SPEC>> for R {
+    fn from(reader: crate::R<DATSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DATSET` writer"]
+pub struct W(crate::W<DATSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DATSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<DATSET_SPEC>> for W {
+    fn from(writer: crate::W<DATSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DCHPDAT` reader - "]
+pub struct DCHPDAT_R(crate::FieldReader<u8, u8>);
+impl DCHPDAT_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        DCHPDAT_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DCHPDAT_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DCHPDAT` writer - "]
 pub struct DCHPDAT_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn dchpdat(&mut self) -> DCHPDAT_W {
         DCHPDAT_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DCH0DATSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [datset](index.html) module"]
+pub struct DATSET_SPEC;
+impl crate::RegisterSpec for DATSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [datset::R](R) reader structure"]
+impl crate::Readable for DATSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [datset::W](W) writer structure"]
+impl crate::Writable for DATSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DATSET to value 0"]
+impl crate::Resettable for DATSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

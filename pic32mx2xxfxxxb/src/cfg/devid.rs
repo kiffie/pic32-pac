@@ -1,18 +1,52 @@
-#[doc = "Reader of register DEVID"]
-pub type R = crate::R<u32, super::DEVID>;
-#[doc = "Writer for register DEVID"]
-pub type W = crate::W<u32, super::DEVID>;
-#[doc = "Register DEVID `reset()`'s with value 0"]
-impl crate::ResetValue for super::DEVID {
-    type Type = u32;
+#[doc = "Register `DEVID` reader"]
+pub struct R(crate::R<DEVID_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DEVID_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DEVID`"]
-pub type DEVID_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DEVID`"]
+impl core::convert::From<crate::R<DEVID_SPEC>> for R {
+    fn from(reader: crate::R<DEVID_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DEVID` writer"]
+pub struct W(crate::W<DEVID_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DEVID_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<DEVID_SPEC>> for W {
+    fn from(writer: crate::W<DEVID_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DEVID` reader - "]
+pub struct DEVID_R(crate::FieldReader<u32, u32>);
+impl DEVID_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        DEVID_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DEVID_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DEVID` writer - "]
 pub struct DEVID_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> DEVID_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `VER`"]
-pub type VER_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `VER`"]
+#[doc = "Field `VER` reader - "]
+pub struct VER_R(crate::FieldReader<u8, u8>);
+impl VER_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        VER_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for VER_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `VER` writer - "]
 pub struct VER_W<'a> {
     w: &'a mut W,
 }
@@ -60,5 +106,30 @@ impl W {
     #[inline(always)]
     pub fn ver(&mut self) -> VER_W {
         VER_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DEVID register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [devid](index.html) module"]
+pub struct DEVID_SPEC;
+impl crate::RegisterSpec for DEVID_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [devid::R](R) reader structure"]
+impl crate::Readable for DEVID_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [devid::W](W) writer structure"]
+impl crate::Writable for DEVID_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DEVID to value 0"]
+impl crate::Resettable for DEVID_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

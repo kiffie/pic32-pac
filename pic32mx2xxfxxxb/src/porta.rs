@@ -2,523 +2,243 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "0x00 - ANSELA register"]
-    pub ansel: ANSEL,
+    pub ansel: crate::Reg<ansel::ANSEL_SPEC>,
     #[doc = "0x04 - ANSELACLR register"]
-    pub anselclr: ANSELCLR,
+    pub anselclr: crate::Reg<anselclr::ANSELCLR_SPEC>,
     #[doc = "0x08 - ANSELASET register"]
-    pub anselset: ANSELSET,
+    pub anselset: crate::Reg<anselset::ANSELSET_SPEC>,
     #[doc = "0x0c - ANSELAINV register"]
-    pub anselinv: ANSELINV,
+    pub anselinv: crate::Reg<anselinv::ANSELINV_SPEC>,
     #[doc = "0x10 - TRISA register"]
-    pub tris: TRIS,
+    pub tris: crate::Reg<tris::TRIS_SPEC>,
     #[doc = "0x14 - TRISACLR register"]
-    pub trisclr: TRISCLR,
+    pub trisclr: crate::Reg<trisclr::TRISCLR_SPEC>,
     #[doc = "0x18 - TRISASET register"]
-    pub trisset: TRISSET,
+    pub trisset: crate::Reg<trisset::TRISSET_SPEC>,
     #[doc = "0x1c - TRISAINV register"]
-    pub trisinv: TRISINV,
+    pub trisinv: crate::Reg<trisinv::TRISINV_SPEC>,
     #[doc = "0x20 - PORTA register"]
-    pub port: PORT,
+    pub port: crate::Reg<port::PORT_SPEC>,
     #[doc = "0x24 - PORTACLR register"]
-    pub portclr: PORTCLR,
+    pub portclr: crate::Reg<portclr::PORTCLR_SPEC>,
     #[doc = "0x28 - PORTASET register"]
-    pub portset: PORTSET,
+    pub portset: crate::Reg<portset::PORTSET_SPEC>,
     #[doc = "0x2c - PORTAINV register"]
-    pub portinv: PORTINV,
+    pub portinv: crate::Reg<portinv::PORTINV_SPEC>,
     #[doc = "0x30 - LATA register"]
-    pub lat: LAT,
+    pub lat: crate::Reg<lat::LAT_SPEC>,
     #[doc = "0x34 - LATACLR register"]
-    pub latclr: LATCLR,
+    pub latclr: crate::Reg<latclr::LATCLR_SPEC>,
     #[doc = "0x38 - LATASET register"]
-    pub latset: LATSET,
+    pub latset: crate::Reg<latset::LATSET_SPEC>,
     #[doc = "0x3c - LATAINV register"]
-    pub latinv: LATINV,
+    pub latinv: crate::Reg<latinv::LATINV_SPEC>,
     #[doc = "0x40 - ODCA register"]
-    pub odc: ODC,
+    pub odc: crate::Reg<odc::ODC_SPEC>,
     #[doc = "0x44 - ODCACLR register"]
-    pub odcclr: ODCCLR,
+    pub odcclr: crate::Reg<odcclr::ODCCLR_SPEC>,
     #[doc = "0x48 - ODCASET register"]
-    pub odcset: ODCSET,
+    pub odcset: crate::Reg<odcset::ODCSET_SPEC>,
     #[doc = "0x4c - ODCAINV register"]
-    pub odcinv: ODCINV,
+    pub odcinv: crate::Reg<odcinv::ODCINV_SPEC>,
     #[doc = "0x50 - CNPUA register"]
-    pub cnpu: CNPU,
+    pub cnpu: crate::Reg<cnpu::CNPU_SPEC>,
     #[doc = "0x54 - CNPUACLR register"]
-    pub cnpuclr: CNPUCLR,
+    pub cnpuclr: crate::Reg<cnpuclr::CNPUCLR_SPEC>,
     #[doc = "0x58 - CNPUASET register"]
-    pub cnpuset: CNPUSET,
+    pub cnpuset: crate::Reg<cnpuset::CNPUSET_SPEC>,
     #[doc = "0x5c - CNPUAINV register"]
-    pub cnpuinv: CNPUINV,
+    pub cnpuinv: crate::Reg<cnpuinv::CNPUINV_SPEC>,
     #[doc = "0x60 - CNPDA register"]
-    pub cnpd: CNPD,
+    pub cnpd: crate::Reg<cnpd::CNPD_SPEC>,
     #[doc = "0x64 - CNPDACLR register"]
-    pub cnpdclr: CNPDCLR,
+    pub cnpdclr: crate::Reg<cnpdclr::CNPDCLR_SPEC>,
     #[doc = "0x68 - CNPDASET register"]
-    pub cnpdset: CNPDSET,
+    pub cnpdset: crate::Reg<cnpdset::CNPDSET_SPEC>,
     #[doc = "0x6c - CNPDAINV register"]
-    pub cnpdinv: CNPDINV,
+    pub cnpdinv: crate::Reg<cnpdinv::CNPDINV_SPEC>,
     #[doc = "0x70 - CNCONA register"]
-    pub cncon: CNCON,
+    pub cncon: crate::Reg<cncon::CNCON_SPEC>,
     #[doc = "0x74 - CNCONACLR register"]
-    pub cnconclr: CNCONCLR,
+    pub cnconclr: crate::Reg<cnconclr::CNCONCLR_SPEC>,
     #[doc = "0x78 - CNCONASET register"]
-    pub cnconset: CNCONSET,
+    pub cnconset: crate::Reg<cnconset::CNCONSET_SPEC>,
     #[doc = "0x7c - CNCONAINV register"]
-    pub cnconinv: CNCONINV,
+    pub cnconinv: crate::Reg<cnconinv::CNCONINV_SPEC>,
     #[doc = "0x80 - CNENA register"]
-    pub cnen: CNEN,
+    pub cnen: crate::Reg<cnen::CNEN_SPEC>,
     #[doc = "0x84 - CNENACLR register"]
-    pub cnenclr: CNENCLR,
+    pub cnenclr: crate::Reg<cnenclr::CNENCLR_SPEC>,
     #[doc = "0x88 - CNENASET register"]
-    pub cnenset: CNENSET,
+    pub cnenset: crate::Reg<cnenset::CNENSET_SPEC>,
     #[doc = "0x8c - CNENAINV register"]
-    pub cneninv: CNENINV,
+    pub cneninv: crate::Reg<cneninv::CNENINV_SPEC>,
     #[doc = "0x90 - CNSTATA register"]
-    pub cnstat: CNSTAT,
+    pub cnstat: crate::Reg<cnstat::CNSTAT_SPEC>,
     #[doc = "0x94 - CNSTATACLR register"]
-    pub cnstatclr: CNSTATCLR,
+    pub cnstatclr: crate::Reg<cnstatclr::CNSTATCLR_SPEC>,
     #[doc = "0x98 - CNSTATASET register"]
-    pub cnstatset: CNSTATSET,
+    pub cnstatset: crate::Reg<cnstatset::CNSTATSET_SPEC>,
     #[doc = "0x9c - CNSTATAINV register"]
-    pub cnstatinv: CNSTATINV,
+    pub cnstatinv: crate::Reg<cnstatinv::CNSTATINV_SPEC>,
 }
-#[doc = "ANSELA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ansel](ansel) module"]
-pub type ANSEL = crate::Reg<u32, _ANSEL>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ANSEL;
-#[doc = "`read()` method returns [ansel::R](ansel::R) reader structure"]
-impl crate::Readable for ANSEL {}
-#[doc = "`write(|w| ..)` method takes [ansel::W](ansel::W) writer structure"]
-impl crate::Writable for ANSEL {}
+#[doc = "ANSEL register accessor: an alias for `Reg<ANSEL_SPEC>`"]
+pub type ANSEL = crate::Reg<ansel::ANSEL_SPEC>;
 #[doc = "ANSELA register"]
 pub mod ansel;
-#[doc = "ANSELACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [anselclr](anselclr) module"]
-pub type ANSELCLR = crate::Reg<u32, _ANSELCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ANSELCLR;
-#[doc = "`read()` method returns [anselclr::R](anselclr::R) reader structure"]
-impl crate::Readable for ANSELCLR {}
-#[doc = "`write(|w| ..)` method takes [anselclr::W](anselclr::W) writer structure"]
-impl crate::Writable for ANSELCLR {}
+#[doc = "ANSELCLR register accessor: an alias for `Reg<ANSELCLR_SPEC>`"]
+pub type ANSELCLR = crate::Reg<anselclr::ANSELCLR_SPEC>;
 #[doc = "ANSELACLR register"]
 pub mod anselclr;
-#[doc = "ANSELASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [anselset](anselset) module"]
-pub type ANSELSET = crate::Reg<u32, _ANSELSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ANSELSET;
-#[doc = "`read()` method returns [anselset::R](anselset::R) reader structure"]
-impl crate::Readable for ANSELSET {}
-#[doc = "`write(|w| ..)` method takes [anselset::W](anselset::W) writer structure"]
-impl crate::Writable for ANSELSET {}
+#[doc = "ANSELSET register accessor: an alias for `Reg<ANSELSET_SPEC>`"]
+pub type ANSELSET = crate::Reg<anselset::ANSELSET_SPEC>;
 #[doc = "ANSELASET register"]
 pub mod anselset;
-#[doc = "ANSELAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [anselinv](anselinv) module"]
-pub type ANSELINV = crate::Reg<u32, _ANSELINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ANSELINV;
-#[doc = "`read()` method returns [anselinv::R](anselinv::R) reader structure"]
-impl crate::Readable for ANSELINV {}
-#[doc = "`write(|w| ..)` method takes [anselinv::W](anselinv::W) writer structure"]
-impl crate::Writable for ANSELINV {}
+#[doc = "ANSELINV register accessor: an alias for `Reg<ANSELINV_SPEC>`"]
+pub type ANSELINV = crate::Reg<anselinv::ANSELINV_SPEC>;
 #[doc = "ANSELAINV register"]
 pub mod anselinv;
-#[doc = "TRISA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tris](tris) module"]
-pub type TRIS = crate::Reg<u32, _TRIS>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRIS;
-#[doc = "`read()` method returns [tris::R](tris::R) reader structure"]
-impl crate::Readable for TRIS {}
-#[doc = "`write(|w| ..)` method takes [tris::W](tris::W) writer structure"]
-impl crate::Writable for TRIS {}
+#[doc = "TRIS register accessor: an alias for `Reg<TRIS_SPEC>`"]
+pub type TRIS = crate::Reg<tris::TRIS_SPEC>;
 #[doc = "TRISA register"]
 pub mod tris;
-#[doc = "TRISACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trisclr](trisclr) module"]
-pub type TRISCLR = crate::Reg<u32, _TRISCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRISCLR;
-#[doc = "`read()` method returns [trisclr::R](trisclr::R) reader structure"]
-impl crate::Readable for TRISCLR {}
-#[doc = "`write(|w| ..)` method takes [trisclr::W](trisclr::W) writer structure"]
-impl crate::Writable for TRISCLR {}
+#[doc = "TRISCLR register accessor: an alias for `Reg<TRISCLR_SPEC>`"]
+pub type TRISCLR = crate::Reg<trisclr::TRISCLR_SPEC>;
 #[doc = "TRISACLR register"]
 pub mod trisclr;
-#[doc = "TRISASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trisset](trisset) module"]
-pub type TRISSET = crate::Reg<u32, _TRISSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRISSET;
-#[doc = "`read()` method returns [trisset::R](trisset::R) reader structure"]
-impl crate::Readable for TRISSET {}
-#[doc = "`write(|w| ..)` method takes [trisset::W](trisset::W) writer structure"]
-impl crate::Writable for TRISSET {}
+#[doc = "TRISSET register accessor: an alias for `Reg<TRISSET_SPEC>`"]
+pub type TRISSET = crate::Reg<trisset::TRISSET_SPEC>;
 #[doc = "TRISASET register"]
 pub mod trisset;
-#[doc = "TRISAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trisinv](trisinv) module"]
-pub type TRISINV = crate::Reg<u32, _TRISINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRISINV;
-#[doc = "`read()` method returns [trisinv::R](trisinv::R) reader structure"]
-impl crate::Readable for TRISINV {}
-#[doc = "`write(|w| ..)` method takes [trisinv::W](trisinv::W) writer structure"]
-impl crate::Writable for TRISINV {}
+#[doc = "TRISINV register accessor: an alias for `Reg<TRISINV_SPEC>`"]
+pub type TRISINV = crate::Reg<trisinv::TRISINV_SPEC>;
 #[doc = "TRISAINV register"]
 pub mod trisinv;
-#[doc = "PORTA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [port](port) module"]
-pub type PORT = crate::Reg<u32, _PORT>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _PORT;
-#[doc = "`read()` method returns [port::R](port::R) reader structure"]
-impl crate::Readable for PORT {}
-#[doc = "`write(|w| ..)` method takes [port::W](port::W) writer structure"]
-impl crate::Writable for PORT {}
+#[doc = "PORT register accessor: an alias for `Reg<PORT_SPEC>`"]
+pub type PORT = crate::Reg<port::PORT_SPEC>;
 #[doc = "PORTA register"]
 pub mod port;
-#[doc = "PORTACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [portclr](portclr) module"]
-pub type PORTCLR = crate::Reg<u32, _PORTCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _PORTCLR;
-#[doc = "`read()` method returns [portclr::R](portclr::R) reader structure"]
-impl crate::Readable for PORTCLR {}
-#[doc = "`write(|w| ..)` method takes [portclr::W](portclr::W) writer structure"]
-impl crate::Writable for PORTCLR {}
+#[doc = "PORTCLR register accessor: an alias for `Reg<PORTCLR_SPEC>`"]
+pub type PORTCLR = crate::Reg<portclr::PORTCLR_SPEC>;
 #[doc = "PORTACLR register"]
 pub mod portclr;
-#[doc = "PORTASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [portset](portset) module"]
-pub type PORTSET = crate::Reg<u32, _PORTSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _PORTSET;
-#[doc = "`read()` method returns [portset::R](portset::R) reader structure"]
-impl crate::Readable for PORTSET {}
-#[doc = "`write(|w| ..)` method takes [portset::W](portset::W) writer structure"]
-impl crate::Writable for PORTSET {}
+#[doc = "PORTSET register accessor: an alias for `Reg<PORTSET_SPEC>`"]
+pub type PORTSET = crate::Reg<portset::PORTSET_SPEC>;
 #[doc = "PORTASET register"]
 pub mod portset;
-#[doc = "PORTAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [portinv](portinv) module"]
-pub type PORTINV = crate::Reg<u32, _PORTINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _PORTINV;
-#[doc = "`read()` method returns [portinv::R](portinv::R) reader structure"]
-impl crate::Readable for PORTINV {}
-#[doc = "`write(|w| ..)` method takes [portinv::W](portinv::W) writer structure"]
-impl crate::Writable for PORTINV {}
+#[doc = "PORTINV register accessor: an alias for `Reg<PORTINV_SPEC>`"]
+pub type PORTINV = crate::Reg<portinv::PORTINV_SPEC>;
 #[doc = "PORTAINV register"]
 pub mod portinv;
-#[doc = "LATA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lat](lat) module"]
-pub type LAT = crate::Reg<u32, _LAT>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _LAT;
-#[doc = "`read()` method returns [lat::R](lat::R) reader structure"]
-impl crate::Readable for LAT {}
-#[doc = "`write(|w| ..)` method takes [lat::W](lat::W) writer structure"]
-impl crate::Writable for LAT {}
+#[doc = "LAT register accessor: an alias for `Reg<LAT_SPEC>`"]
+pub type LAT = crate::Reg<lat::LAT_SPEC>;
 #[doc = "LATA register"]
 pub mod lat;
-#[doc = "LATACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [latclr](latclr) module"]
-pub type LATCLR = crate::Reg<u32, _LATCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _LATCLR;
-#[doc = "`read()` method returns [latclr::R](latclr::R) reader structure"]
-impl crate::Readable for LATCLR {}
-#[doc = "`write(|w| ..)` method takes [latclr::W](latclr::W) writer structure"]
-impl crate::Writable for LATCLR {}
+#[doc = "LATCLR register accessor: an alias for `Reg<LATCLR_SPEC>`"]
+pub type LATCLR = crate::Reg<latclr::LATCLR_SPEC>;
 #[doc = "LATACLR register"]
 pub mod latclr;
-#[doc = "LATASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [latset](latset) module"]
-pub type LATSET = crate::Reg<u32, _LATSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _LATSET;
-#[doc = "`read()` method returns [latset::R](latset::R) reader structure"]
-impl crate::Readable for LATSET {}
-#[doc = "`write(|w| ..)` method takes [latset::W](latset::W) writer structure"]
-impl crate::Writable for LATSET {}
+#[doc = "LATSET register accessor: an alias for `Reg<LATSET_SPEC>`"]
+pub type LATSET = crate::Reg<latset::LATSET_SPEC>;
 #[doc = "LATASET register"]
 pub mod latset;
-#[doc = "LATAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [latinv](latinv) module"]
-pub type LATINV = crate::Reg<u32, _LATINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _LATINV;
-#[doc = "`read()` method returns [latinv::R](latinv::R) reader structure"]
-impl crate::Readable for LATINV {}
-#[doc = "`write(|w| ..)` method takes [latinv::W](latinv::W) writer structure"]
-impl crate::Writable for LATINV {}
+#[doc = "LATINV register accessor: an alias for `Reg<LATINV_SPEC>`"]
+pub type LATINV = crate::Reg<latinv::LATINV_SPEC>;
 #[doc = "LATAINV register"]
 pub mod latinv;
-#[doc = "ODCA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [odc](odc) module"]
-pub type ODC = crate::Reg<u32, _ODC>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ODC;
-#[doc = "`read()` method returns [odc::R](odc::R) reader structure"]
-impl crate::Readable for ODC {}
-#[doc = "`write(|w| ..)` method takes [odc::W](odc::W) writer structure"]
-impl crate::Writable for ODC {}
+#[doc = "ODC register accessor: an alias for `Reg<ODC_SPEC>`"]
+pub type ODC = crate::Reg<odc::ODC_SPEC>;
 #[doc = "ODCA register"]
 pub mod odc;
-#[doc = "ODCACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [odcclr](odcclr) module"]
-pub type ODCCLR = crate::Reg<u32, _ODCCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ODCCLR;
-#[doc = "`read()` method returns [odcclr::R](odcclr::R) reader structure"]
-impl crate::Readable for ODCCLR {}
-#[doc = "`write(|w| ..)` method takes [odcclr::W](odcclr::W) writer structure"]
-impl crate::Writable for ODCCLR {}
+#[doc = "ODCCLR register accessor: an alias for `Reg<ODCCLR_SPEC>`"]
+pub type ODCCLR = crate::Reg<odcclr::ODCCLR_SPEC>;
 #[doc = "ODCACLR register"]
 pub mod odcclr;
-#[doc = "ODCASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [odcset](odcset) module"]
-pub type ODCSET = crate::Reg<u32, _ODCSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ODCSET;
-#[doc = "`read()` method returns [odcset::R](odcset::R) reader structure"]
-impl crate::Readable for ODCSET {}
-#[doc = "`write(|w| ..)` method takes [odcset::W](odcset::W) writer structure"]
-impl crate::Writable for ODCSET {}
+#[doc = "ODCSET register accessor: an alias for `Reg<ODCSET_SPEC>`"]
+pub type ODCSET = crate::Reg<odcset::ODCSET_SPEC>;
 #[doc = "ODCASET register"]
 pub mod odcset;
-#[doc = "ODCAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [odcinv](odcinv) module"]
-pub type ODCINV = crate::Reg<u32, _ODCINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ODCINV;
-#[doc = "`read()` method returns [odcinv::R](odcinv::R) reader structure"]
-impl crate::Readable for ODCINV {}
-#[doc = "`write(|w| ..)` method takes [odcinv::W](odcinv::W) writer structure"]
-impl crate::Writable for ODCINV {}
+#[doc = "ODCINV register accessor: an alias for `Reg<ODCINV_SPEC>`"]
+pub type ODCINV = crate::Reg<odcinv::ODCINV_SPEC>;
 #[doc = "ODCAINV register"]
 pub mod odcinv;
-#[doc = "CNPUA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpu](cnpu) module"]
-pub type CNPU = crate::Reg<u32, _CNPU>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPU;
-#[doc = "`read()` method returns [cnpu::R](cnpu::R) reader structure"]
-impl crate::Readable for CNPU {}
-#[doc = "`write(|w| ..)` method takes [cnpu::W](cnpu::W) writer structure"]
-impl crate::Writable for CNPU {}
+#[doc = "CNPU register accessor: an alias for `Reg<CNPU_SPEC>`"]
+pub type CNPU = crate::Reg<cnpu::CNPU_SPEC>;
 #[doc = "CNPUA register"]
 pub mod cnpu;
-#[doc = "CNPUACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpuclr](cnpuclr) module"]
-pub type CNPUCLR = crate::Reg<u32, _CNPUCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPUCLR;
-#[doc = "`read()` method returns [cnpuclr::R](cnpuclr::R) reader structure"]
-impl crate::Readable for CNPUCLR {}
-#[doc = "`write(|w| ..)` method takes [cnpuclr::W](cnpuclr::W) writer structure"]
-impl crate::Writable for CNPUCLR {}
+#[doc = "CNPUCLR register accessor: an alias for `Reg<CNPUCLR_SPEC>`"]
+pub type CNPUCLR = crate::Reg<cnpuclr::CNPUCLR_SPEC>;
 #[doc = "CNPUACLR register"]
 pub mod cnpuclr;
-#[doc = "CNPUASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpuset](cnpuset) module"]
-pub type CNPUSET = crate::Reg<u32, _CNPUSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPUSET;
-#[doc = "`read()` method returns [cnpuset::R](cnpuset::R) reader structure"]
-impl crate::Readable for CNPUSET {}
-#[doc = "`write(|w| ..)` method takes [cnpuset::W](cnpuset::W) writer structure"]
-impl crate::Writable for CNPUSET {}
+#[doc = "CNPUSET register accessor: an alias for `Reg<CNPUSET_SPEC>`"]
+pub type CNPUSET = crate::Reg<cnpuset::CNPUSET_SPEC>;
 #[doc = "CNPUASET register"]
 pub mod cnpuset;
-#[doc = "CNPUAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpuinv](cnpuinv) module"]
-pub type CNPUINV = crate::Reg<u32, _CNPUINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPUINV;
-#[doc = "`read()` method returns [cnpuinv::R](cnpuinv::R) reader structure"]
-impl crate::Readable for CNPUINV {}
-#[doc = "`write(|w| ..)` method takes [cnpuinv::W](cnpuinv::W) writer structure"]
-impl crate::Writable for CNPUINV {}
+#[doc = "CNPUINV register accessor: an alias for `Reg<CNPUINV_SPEC>`"]
+pub type CNPUINV = crate::Reg<cnpuinv::CNPUINV_SPEC>;
 #[doc = "CNPUAINV register"]
 pub mod cnpuinv;
-#[doc = "CNPDA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpd](cnpd) module"]
-pub type CNPD = crate::Reg<u32, _CNPD>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPD;
-#[doc = "`read()` method returns [cnpd::R](cnpd::R) reader structure"]
-impl crate::Readable for CNPD {}
-#[doc = "`write(|w| ..)` method takes [cnpd::W](cnpd::W) writer structure"]
-impl crate::Writable for CNPD {}
+#[doc = "CNPD register accessor: an alias for `Reg<CNPD_SPEC>`"]
+pub type CNPD = crate::Reg<cnpd::CNPD_SPEC>;
 #[doc = "CNPDA register"]
 pub mod cnpd;
-#[doc = "CNPDACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpdclr](cnpdclr) module"]
-pub type CNPDCLR = crate::Reg<u32, _CNPDCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPDCLR;
-#[doc = "`read()` method returns [cnpdclr::R](cnpdclr::R) reader structure"]
-impl crate::Readable for CNPDCLR {}
-#[doc = "`write(|w| ..)` method takes [cnpdclr::W](cnpdclr::W) writer structure"]
-impl crate::Writable for CNPDCLR {}
+#[doc = "CNPDCLR register accessor: an alias for `Reg<CNPDCLR_SPEC>`"]
+pub type CNPDCLR = crate::Reg<cnpdclr::CNPDCLR_SPEC>;
 #[doc = "CNPDACLR register"]
 pub mod cnpdclr;
-#[doc = "CNPDASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpdset](cnpdset) module"]
-pub type CNPDSET = crate::Reg<u32, _CNPDSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPDSET;
-#[doc = "`read()` method returns [cnpdset::R](cnpdset::R) reader structure"]
-impl crate::Readable for CNPDSET {}
-#[doc = "`write(|w| ..)` method takes [cnpdset::W](cnpdset::W) writer structure"]
-impl crate::Writable for CNPDSET {}
+#[doc = "CNPDSET register accessor: an alias for `Reg<CNPDSET_SPEC>`"]
+pub type CNPDSET = crate::Reg<cnpdset::CNPDSET_SPEC>;
 #[doc = "CNPDASET register"]
 pub mod cnpdset;
-#[doc = "CNPDAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpdinv](cnpdinv) module"]
-pub type CNPDINV = crate::Reg<u32, _CNPDINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNPDINV;
-#[doc = "`read()` method returns [cnpdinv::R](cnpdinv::R) reader structure"]
-impl crate::Readable for CNPDINV {}
-#[doc = "`write(|w| ..)` method takes [cnpdinv::W](cnpdinv::W) writer structure"]
-impl crate::Writable for CNPDINV {}
+#[doc = "CNPDINV register accessor: an alias for `Reg<CNPDINV_SPEC>`"]
+pub type CNPDINV = crate::Reg<cnpdinv::CNPDINV_SPEC>;
 #[doc = "CNPDAINV register"]
 pub mod cnpdinv;
-#[doc = "CNCONA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cncon](cncon) module"]
-pub type CNCON = crate::Reg<u32, _CNCON>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNCON;
-#[doc = "`read()` method returns [cncon::R](cncon::R) reader structure"]
-impl crate::Readable for CNCON {}
-#[doc = "`write(|w| ..)` method takes [cncon::W](cncon::W) writer structure"]
-impl crate::Writable for CNCON {}
+#[doc = "CNCON register accessor: an alias for `Reg<CNCON_SPEC>`"]
+pub type CNCON = crate::Reg<cncon::CNCON_SPEC>;
 #[doc = "CNCONA register"]
 pub mod cncon;
-#[doc = "CNCONACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnconclr](cnconclr) module"]
-pub type CNCONCLR = crate::Reg<u32, _CNCONCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNCONCLR;
-#[doc = "`read()` method returns [cnconclr::R](cnconclr::R) reader structure"]
-impl crate::Readable for CNCONCLR {}
-#[doc = "`write(|w| ..)` method takes [cnconclr::W](cnconclr::W) writer structure"]
-impl crate::Writable for CNCONCLR {}
+#[doc = "CNCONCLR register accessor: an alias for `Reg<CNCONCLR_SPEC>`"]
+pub type CNCONCLR = crate::Reg<cnconclr::CNCONCLR_SPEC>;
 #[doc = "CNCONACLR register"]
 pub mod cnconclr;
-#[doc = "CNCONASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnconset](cnconset) module"]
-pub type CNCONSET = crate::Reg<u32, _CNCONSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNCONSET;
-#[doc = "`read()` method returns [cnconset::R](cnconset::R) reader structure"]
-impl crate::Readable for CNCONSET {}
-#[doc = "`write(|w| ..)` method takes [cnconset::W](cnconset::W) writer structure"]
-impl crate::Writable for CNCONSET {}
+#[doc = "CNCONSET register accessor: an alias for `Reg<CNCONSET_SPEC>`"]
+pub type CNCONSET = crate::Reg<cnconset::CNCONSET_SPEC>;
 #[doc = "CNCONASET register"]
 pub mod cnconset;
-#[doc = "CNCONAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnconinv](cnconinv) module"]
-pub type CNCONINV = crate::Reg<u32, _CNCONINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNCONINV;
-#[doc = "`read()` method returns [cnconinv::R](cnconinv::R) reader structure"]
-impl crate::Readable for CNCONINV {}
-#[doc = "`write(|w| ..)` method takes [cnconinv::W](cnconinv::W) writer structure"]
-impl crate::Writable for CNCONINV {}
+#[doc = "CNCONINV register accessor: an alias for `Reg<CNCONINV_SPEC>`"]
+pub type CNCONINV = crate::Reg<cnconinv::CNCONINV_SPEC>;
 #[doc = "CNCONAINV register"]
 pub mod cnconinv;
-#[doc = "CNENA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnen](cnen) module"]
-pub type CNEN = crate::Reg<u32, _CNEN>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNEN;
-#[doc = "`read()` method returns [cnen::R](cnen::R) reader structure"]
-impl crate::Readable for CNEN {}
-#[doc = "`write(|w| ..)` method takes [cnen::W](cnen::W) writer structure"]
-impl crate::Writable for CNEN {}
+#[doc = "CNEN register accessor: an alias for `Reg<CNEN_SPEC>`"]
+pub type CNEN = crate::Reg<cnen::CNEN_SPEC>;
 #[doc = "CNENA register"]
 pub mod cnen;
-#[doc = "CNENACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnenclr](cnenclr) module"]
-pub type CNENCLR = crate::Reg<u32, _CNENCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNENCLR;
-#[doc = "`read()` method returns [cnenclr::R](cnenclr::R) reader structure"]
-impl crate::Readable for CNENCLR {}
-#[doc = "`write(|w| ..)` method takes [cnenclr::W](cnenclr::W) writer structure"]
-impl crate::Writable for CNENCLR {}
+#[doc = "CNENCLR register accessor: an alias for `Reg<CNENCLR_SPEC>`"]
+pub type CNENCLR = crate::Reg<cnenclr::CNENCLR_SPEC>;
 #[doc = "CNENACLR register"]
 pub mod cnenclr;
-#[doc = "CNENASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnenset](cnenset) module"]
-pub type CNENSET = crate::Reg<u32, _CNENSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNENSET;
-#[doc = "`read()` method returns [cnenset::R](cnenset::R) reader structure"]
-impl crate::Readable for CNENSET {}
-#[doc = "`write(|w| ..)` method takes [cnenset::W](cnenset::W) writer structure"]
-impl crate::Writable for CNENSET {}
+#[doc = "CNENSET register accessor: an alias for `Reg<CNENSET_SPEC>`"]
+pub type CNENSET = crate::Reg<cnenset::CNENSET_SPEC>;
 #[doc = "CNENASET register"]
 pub mod cnenset;
-#[doc = "CNENAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cneninv](cneninv) module"]
-pub type CNENINV = crate::Reg<u32, _CNENINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNENINV;
-#[doc = "`read()` method returns [cneninv::R](cneninv::R) reader structure"]
-impl crate::Readable for CNENINV {}
-#[doc = "`write(|w| ..)` method takes [cneninv::W](cneninv::W) writer structure"]
-impl crate::Writable for CNENINV {}
+#[doc = "CNENINV register accessor: an alias for `Reg<CNENINV_SPEC>`"]
+pub type CNENINV = crate::Reg<cneninv::CNENINV_SPEC>;
 #[doc = "CNENAINV register"]
 pub mod cneninv;
-#[doc = "CNSTATA register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnstat](cnstat) module"]
-pub type CNSTAT = crate::Reg<u32, _CNSTAT>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNSTAT;
-#[doc = "`read()` method returns [cnstat::R](cnstat::R) reader structure"]
-impl crate::Readable for CNSTAT {}
-#[doc = "`write(|w| ..)` method takes [cnstat::W](cnstat::W) writer structure"]
-impl crate::Writable for CNSTAT {}
+#[doc = "CNSTAT register accessor: an alias for `Reg<CNSTAT_SPEC>`"]
+pub type CNSTAT = crate::Reg<cnstat::CNSTAT_SPEC>;
 #[doc = "CNSTATA register"]
 pub mod cnstat;
-#[doc = "CNSTATACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnstatclr](cnstatclr) module"]
-pub type CNSTATCLR = crate::Reg<u32, _CNSTATCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNSTATCLR;
-#[doc = "`read()` method returns [cnstatclr::R](cnstatclr::R) reader structure"]
-impl crate::Readable for CNSTATCLR {}
-#[doc = "`write(|w| ..)` method takes [cnstatclr::W](cnstatclr::W) writer structure"]
-impl crate::Writable for CNSTATCLR {}
+#[doc = "CNSTATCLR register accessor: an alias for `Reg<CNSTATCLR_SPEC>`"]
+pub type CNSTATCLR = crate::Reg<cnstatclr::CNSTATCLR_SPEC>;
 #[doc = "CNSTATACLR register"]
 pub mod cnstatclr;
-#[doc = "CNSTATASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnstatset](cnstatset) module"]
-pub type CNSTATSET = crate::Reg<u32, _CNSTATSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNSTATSET;
-#[doc = "`read()` method returns [cnstatset::R](cnstatset::R) reader structure"]
-impl crate::Readable for CNSTATSET {}
-#[doc = "`write(|w| ..)` method takes [cnstatset::W](cnstatset::W) writer structure"]
-impl crate::Writable for CNSTATSET {}
+#[doc = "CNSTATSET register accessor: an alias for `Reg<CNSTATSET_SPEC>`"]
+pub type CNSTATSET = crate::Reg<cnstatset::CNSTATSET_SPEC>;
 #[doc = "CNSTATASET register"]
 pub mod cnstatset;
-#[doc = "CNSTATAINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnstatinv](cnstatinv) module"]
-pub type CNSTATINV = crate::Reg<u32, _CNSTATINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CNSTATINV;
-#[doc = "`read()` method returns [cnstatinv::R](cnstatinv::R) reader structure"]
-impl crate::Readable for CNSTATINV {}
-#[doc = "`write(|w| ..)` method takes [cnstatinv::W](cnstatinv::W) writer structure"]
-impl crate::Writable for CNSTATINV {}
+#[doc = "CNSTATINV register accessor: an alias for `Reg<CNSTATINV_SPEC>`"]
+pub type CNSTATINV = crate::Reg<cnstatinv::CNSTATINV_SPEC>;
 #[doc = "CNSTATAINV register"]
 pub mod cnstatinv;

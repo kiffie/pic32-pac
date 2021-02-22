@@ -2,328 +2,153 @@
 #[repr(C)]
 pub struct RegisterBlock {
     #[doc = "0x00 - I2C1CON register"]
-    pub cont: CONT,
+    pub cont: crate::Reg<cont::CONT_SPEC>,
     #[doc = "0x04 - I2C1CONCLR register"]
-    pub contclr: CONTCLR,
+    pub contclr: crate::Reg<contclr::CONTCLR_SPEC>,
     #[doc = "0x08 - I2C1CONSET register"]
-    pub contset: CONTSET,
+    pub contset: crate::Reg<contset::CONTSET_SPEC>,
     #[doc = "0x0c - I2C1CONINV register"]
-    pub continv: CONTINV,
+    pub continv: crate::Reg<continv::CONTINV_SPEC>,
     #[doc = "0x10 - I2C1STAT register"]
-    pub stat: STAT,
+    pub stat: crate::Reg<stat::STAT_SPEC>,
     #[doc = "0x14 - I2C1STATCLR register"]
-    pub statclr: STATCLR,
+    pub statclr: crate::Reg<statclr::STATCLR_SPEC>,
     #[doc = "0x18 - I2C1STATSET register"]
-    pub statset: STATSET,
+    pub statset: crate::Reg<statset::STATSET_SPEC>,
     #[doc = "0x1c - I2C1STATINV register"]
-    pub statinv: STATINV,
+    pub statinv: crate::Reg<statinv::STATINV_SPEC>,
     #[doc = "0x20 - I2C1ADD register"]
-    pub add: ADD,
+    pub add: crate::Reg<add::ADD_SPEC>,
     #[doc = "0x24 - I2C1ADDCLR register"]
-    pub addclr: ADDCLR,
+    pub addclr: crate::Reg<addclr::ADDCLR_SPEC>,
     #[doc = "0x28 - I2C1ADDSET register"]
-    pub addset: ADDSET,
+    pub addset: crate::Reg<addset::ADDSET_SPEC>,
     #[doc = "0x2c - I2C1ADDINV register"]
-    pub addinv: ADDINV,
+    pub addinv: crate::Reg<addinv::ADDINV_SPEC>,
     #[doc = "0x30 - I2C1MSK register"]
-    pub msk: MSK,
+    pub msk: crate::Reg<msk::MSK_SPEC>,
     #[doc = "0x34 - I2C1MSKCLR register"]
-    pub mskclr: MSKCLR,
+    pub mskclr: crate::Reg<mskclr::MSKCLR_SPEC>,
     #[doc = "0x38 - I2C1MSKSET register"]
-    pub mskset: MSKSET,
+    pub mskset: crate::Reg<mskset::MSKSET_SPEC>,
     #[doc = "0x3c - I2C1MSKINV register"]
-    pub mskinv: MSKINV,
+    pub mskinv: crate::Reg<mskinv::MSKINV_SPEC>,
     #[doc = "0x40 - I2C1BRG register"]
-    pub brg: BRG,
+    pub brg: crate::Reg<brg::BRG_SPEC>,
     #[doc = "0x44 - I2C1BRGCLR register"]
-    pub brgclr: BRGCLR,
+    pub brgclr: crate::Reg<brgclr::BRGCLR_SPEC>,
     #[doc = "0x48 - I2C1BRGSET register"]
-    pub brgset: BRGSET,
+    pub brgset: crate::Reg<brgset::BRGSET_SPEC>,
     #[doc = "0x4c - I2C1BRGINV register"]
-    pub brginv: BRGINV,
+    pub brginv: crate::Reg<brginv::BRGINV_SPEC>,
     #[doc = "0x50 - I2C1TRN register"]
-    pub trn: TRN,
+    pub trn: crate::Reg<trn::TRN_SPEC>,
     #[doc = "0x54 - I2C1TRNCLR register"]
-    pub trnclr: TRNCLR,
+    pub trnclr: crate::Reg<trnclr::TRNCLR_SPEC>,
     #[doc = "0x58 - I2C1TRNSET register"]
-    pub trnset: TRNSET,
+    pub trnset: crate::Reg<trnset::TRNSET_SPEC>,
     #[doc = "0x5c - I2C1TRNINV register"]
-    pub trninv: TRNINV,
+    pub trninv: crate::Reg<trninv::TRNINV_SPEC>,
     #[doc = "0x60 - I2C1RCV register"]
-    pub rcv: RCV,
+    pub rcv: crate::Reg<rcv::RCV_SPEC>,
 }
-#[doc = "I2C1CON register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cont](cont) module"]
-pub type CONT = crate::Reg<u32, _CONT>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CONT;
-#[doc = "`read()` method returns [cont::R](cont::R) reader structure"]
-impl crate::Readable for CONT {}
-#[doc = "`write(|w| ..)` method takes [cont::W](cont::W) writer structure"]
-impl crate::Writable for CONT {}
+#[doc = "CONT register accessor: an alias for `Reg<CONT_SPEC>`"]
+pub type CONT = crate::Reg<cont::CONT_SPEC>;
 #[doc = "I2C1CON register"]
 pub mod cont;
-#[doc = "I2C1CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [contclr](contclr) module"]
-pub type CONTCLR = crate::Reg<u32, _CONTCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CONTCLR;
-#[doc = "`read()` method returns [contclr::R](contclr::R) reader structure"]
-impl crate::Readable for CONTCLR {}
-#[doc = "`write(|w| ..)` method takes [contclr::W](contclr::W) writer structure"]
-impl crate::Writable for CONTCLR {}
+#[doc = "CONTCLR register accessor: an alias for `Reg<CONTCLR_SPEC>`"]
+pub type CONTCLR = crate::Reg<contclr::CONTCLR_SPEC>;
 #[doc = "I2C1CONCLR register"]
 pub mod contclr;
-#[doc = "I2C1CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [contset](contset) module"]
-pub type CONTSET = crate::Reg<u32, _CONTSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CONTSET;
-#[doc = "`read()` method returns [contset::R](contset::R) reader structure"]
-impl crate::Readable for CONTSET {}
-#[doc = "`write(|w| ..)` method takes [contset::W](contset::W) writer structure"]
-impl crate::Writable for CONTSET {}
+#[doc = "CONTSET register accessor: an alias for `Reg<CONTSET_SPEC>`"]
+pub type CONTSET = crate::Reg<contset::CONTSET_SPEC>;
 #[doc = "I2C1CONSET register"]
 pub mod contset;
-#[doc = "I2C1CONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [continv](continv) module"]
-pub type CONTINV = crate::Reg<u32, _CONTINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _CONTINV;
-#[doc = "`read()` method returns [continv::R](continv::R) reader structure"]
-impl crate::Readable for CONTINV {}
-#[doc = "`write(|w| ..)` method takes [continv::W](continv::W) writer structure"]
-impl crate::Writable for CONTINV {}
+#[doc = "CONTINV register accessor: an alias for `Reg<CONTINV_SPEC>`"]
+pub type CONTINV = crate::Reg<continv::CONTINV_SPEC>;
 #[doc = "I2C1CONINV register"]
 pub mod continv;
-#[doc = "I2C1STAT register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [stat](stat) module"]
-pub type STAT = crate::Reg<u32, _STAT>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _STAT;
-#[doc = "`read()` method returns [stat::R](stat::R) reader structure"]
-impl crate::Readable for STAT {}
-#[doc = "`write(|w| ..)` method takes [stat::W](stat::W) writer structure"]
-impl crate::Writable for STAT {}
+#[doc = "STAT register accessor: an alias for `Reg<STAT_SPEC>`"]
+pub type STAT = crate::Reg<stat::STAT_SPEC>;
 #[doc = "I2C1STAT register"]
 pub mod stat;
-#[doc = "I2C1STATCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [statclr](statclr) module"]
-pub type STATCLR = crate::Reg<u32, _STATCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _STATCLR;
-#[doc = "`read()` method returns [statclr::R](statclr::R) reader structure"]
-impl crate::Readable for STATCLR {}
-#[doc = "`write(|w| ..)` method takes [statclr::W](statclr::W) writer structure"]
-impl crate::Writable for STATCLR {}
+#[doc = "STATCLR register accessor: an alias for `Reg<STATCLR_SPEC>`"]
+pub type STATCLR = crate::Reg<statclr::STATCLR_SPEC>;
 #[doc = "I2C1STATCLR register"]
 pub mod statclr;
-#[doc = "I2C1STATSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [statset](statset) module"]
-pub type STATSET = crate::Reg<u32, _STATSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _STATSET;
-#[doc = "`read()` method returns [statset::R](statset::R) reader structure"]
-impl crate::Readable for STATSET {}
-#[doc = "`write(|w| ..)` method takes [statset::W](statset::W) writer structure"]
-impl crate::Writable for STATSET {}
+#[doc = "STATSET register accessor: an alias for `Reg<STATSET_SPEC>`"]
+pub type STATSET = crate::Reg<statset::STATSET_SPEC>;
 #[doc = "I2C1STATSET register"]
 pub mod statset;
-#[doc = "I2C1STATINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [statinv](statinv) module"]
-pub type STATINV = crate::Reg<u32, _STATINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _STATINV;
-#[doc = "`read()` method returns [statinv::R](statinv::R) reader structure"]
-impl crate::Readable for STATINV {}
-#[doc = "`write(|w| ..)` method takes [statinv::W](statinv::W) writer structure"]
-impl crate::Writable for STATINV {}
+#[doc = "STATINV register accessor: an alias for `Reg<STATINV_SPEC>`"]
+pub type STATINV = crate::Reg<statinv::STATINV_SPEC>;
 #[doc = "I2C1STATINV register"]
 pub mod statinv;
-#[doc = "I2C1ADD register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [add](add) module"]
-pub type ADD = crate::Reg<u32, _ADD>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ADD;
-#[doc = "`read()` method returns [add::R](add::R) reader structure"]
-impl crate::Readable for ADD {}
-#[doc = "`write(|w| ..)` method takes [add::W](add::W) writer structure"]
-impl crate::Writable for ADD {}
+#[doc = "ADD register accessor: an alias for `Reg<ADD_SPEC>`"]
+pub type ADD = crate::Reg<add::ADD_SPEC>;
 #[doc = "I2C1ADD register"]
 pub mod add;
-#[doc = "I2C1ADDCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [addclr](addclr) module"]
-pub type ADDCLR = crate::Reg<u32, _ADDCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ADDCLR;
-#[doc = "`read()` method returns [addclr::R](addclr::R) reader structure"]
-impl crate::Readable for ADDCLR {}
-#[doc = "`write(|w| ..)` method takes [addclr::W](addclr::W) writer structure"]
-impl crate::Writable for ADDCLR {}
+#[doc = "ADDCLR register accessor: an alias for `Reg<ADDCLR_SPEC>`"]
+pub type ADDCLR = crate::Reg<addclr::ADDCLR_SPEC>;
 #[doc = "I2C1ADDCLR register"]
 pub mod addclr;
-#[doc = "I2C1ADDSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [addset](addset) module"]
-pub type ADDSET = crate::Reg<u32, _ADDSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ADDSET;
-#[doc = "`read()` method returns [addset::R](addset::R) reader structure"]
-impl crate::Readable for ADDSET {}
-#[doc = "`write(|w| ..)` method takes [addset::W](addset::W) writer structure"]
-impl crate::Writable for ADDSET {}
+#[doc = "ADDSET register accessor: an alias for `Reg<ADDSET_SPEC>`"]
+pub type ADDSET = crate::Reg<addset::ADDSET_SPEC>;
 #[doc = "I2C1ADDSET register"]
 pub mod addset;
-#[doc = "I2C1ADDINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [addinv](addinv) module"]
-pub type ADDINV = crate::Reg<u32, _ADDINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _ADDINV;
-#[doc = "`read()` method returns [addinv::R](addinv::R) reader structure"]
-impl crate::Readable for ADDINV {}
-#[doc = "`write(|w| ..)` method takes [addinv::W](addinv::W) writer structure"]
-impl crate::Writable for ADDINV {}
+#[doc = "ADDINV register accessor: an alias for `Reg<ADDINV_SPEC>`"]
+pub type ADDINV = crate::Reg<addinv::ADDINV_SPEC>;
 #[doc = "I2C1ADDINV register"]
 pub mod addinv;
-#[doc = "I2C1MSK register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [msk](msk) module"]
-pub type MSK = crate::Reg<u32, _MSK>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _MSK;
-#[doc = "`read()` method returns [msk::R](msk::R) reader structure"]
-impl crate::Readable for MSK {}
-#[doc = "`write(|w| ..)` method takes [msk::W](msk::W) writer structure"]
-impl crate::Writable for MSK {}
+#[doc = "MSK register accessor: an alias for `Reg<MSK_SPEC>`"]
+pub type MSK = crate::Reg<msk::MSK_SPEC>;
 #[doc = "I2C1MSK register"]
 pub mod msk;
-#[doc = "I2C1MSKCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mskclr](mskclr) module"]
-pub type MSKCLR = crate::Reg<u32, _MSKCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _MSKCLR;
-#[doc = "`read()` method returns [mskclr::R](mskclr::R) reader structure"]
-impl crate::Readable for MSKCLR {}
-#[doc = "`write(|w| ..)` method takes [mskclr::W](mskclr::W) writer structure"]
-impl crate::Writable for MSKCLR {}
+#[doc = "MSKCLR register accessor: an alias for `Reg<MSKCLR_SPEC>`"]
+pub type MSKCLR = crate::Reg<mskclr::MSKCLR_SPEC>;
 #[doc = "I2C1MSKCLR register"]
 pub mod mskclr;
-#[doc = "I2C1MSKSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mskset](mskset) module"]
-pub type MSKSET = crate::Reg<u32, _MSKSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _MSKSET;
-#[doc = "`read()` method returns [mskset::R](mskset::R) reader structure"]
-impl crate::Readable for MSKSET {}
-#[doc = "`write(|w| ..)` method takes [mskset::W](mskset::W) writer structure"]
-impl crate::Writable for MSKSET {}
+#[doc = "MSKSET register accessor: an alias for `Reg<MSKSET_SPEC>`"]
+pub type MSKSET = crate::Reg<mskset::MSKSET_SPEC>;
 #[doc = "I2C1MSKSET register"]
 pub mod mskset;
-#[doc = "I2C1MSKINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [mskinv](mskinv) module"]
-pub type MSKINV = crate::Reg<u32, _MSKINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _MSKINV;
-#[doc = "`read()` method returns [mskinv::R](mskinv::R) reader structure"]
-impl crate::Readable for MSKINV {}
-#[doc = "`write(|w| ..)` method takes [mskinv::W](mskinv::W) writer structure"]
-impl crate::Writable for MSKINV {}
+#[doc = "MSKINV register accessor: an alias for `Reg<MSKINV_SPEC>`"]
+pub type MSKINV = crate::Reg<mskinv::MSKINV_SPEC>;
 #[doc = "I2C1MSKINV register"]
 pub mod mskinv;
-#[doc = "I2C1BRG register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [brg](brg) module"]
-pub type BRG = crate::Reg<u32, _BRG>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _BRG;
-#[doc = "`read()` method returns [brg::R](brg::R) reader structure"]
-impl crate::Readable for BRG {}
-#[doc = "`write(|w| ..)` method takes [brg::W](brg::W) writer structure"]
-impl crate::Writable for BRG {}
+#[doc = "BRG register accessor: an alias for `Reg<BRG_SPEC>`"]
+pub type BRG = crate::Reg<brg::BRG_SPEC>;
 #[doc = "I2C1BRG register"]
 pub mod brg;
-#[doc = "I2C1BRGCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [brgclr](brgclr) module"]
-pub type BRGCLR = crate::Reg<u32, _BRGCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _BRGCLR;
-#[doc = "`read()` method returns [brgclr::R](brgclr::R) reader structure"]
-impl crate::Readable for BRGCLR {}
-#[doc = "`write(|w| ..)` method takes [brgclr::W](brgclr::W) writer structure"]
-impl crate::Writable for BRGCLR {}
+#[doc = "BRGCLR register accessor: an alias for `Reg<BRGCLR_SPEC>`"]
+pub type BRGCLR = crate::Reg<brgclr::BRGCLR_SPEC>;
 #[doc = "I2C1BRGCLR register"]
 pub mod brgclr;
-#[doc = "I2C1BRGSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [brgset](brgset) module"]
-pub type BRGSET = crate::Reg<u32, _BRGSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _BRGSET;
-#[doc = "`read()` method returns [brgset::R](brgset::R) reader structure"]
-impl crate::Readable for BRGSET {}
-#[doc = "`write(|w| ..)` method takes [brgset::W](brgset::W) writer structure"]
-impl crate::Writable for BRGSET {}
+#[doc = "BRGSET register accessor: an alias for `Reg<BRGSET_SPEC>`"]
+pub type BRGSET = crate::Reg<brgset::BRGSET_SPEC>;
 #[doc = "I2C1BRGSET register"]
 pub mod brgset;
-#[doc = "I2C1BRGINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [brginv](brginv) module"]
-pub type BRGINV = crate::Reg<u32, _BRGINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _BRGINV;
-#[doc = "`read()` method returns [brginv::R](brginv::R) reader structure"]
-impl crate::Readable for BRGINV {}
-#[doc = "`write(|w| ..)` method takes [brginv::W](brginv::W) writer structure"]
-impl crate::Writable for BRGINV {}
+#[doc = "BRGINV register accessor: an alias for `Reg<BRGINV_SPEC>`"]
+pub type BRGINV = crate::Reg<brginv::BRGINV_SPEC>;
 #[doc = "I2C1BRGINV register"]
 pub mod brginv;
-#[doc = "I2C1TRN register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trn](trn) module"]
-pub type TRN = crate::Reg<u32, _TRN>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRN;
-#[doc = "`read()` method returns [trn::R](trn::R) reader structure"]
-impl crate::Readable for TRN {}
-#[doc = "`write(|w| ..)` method takes [trn::W](trn::W) writer structure"]
-impl crate::Writable for TRN {}
+#[doc = "TRN register accessor: an alias for `Reg<TRN_SPEC>`"]
+pub type TRN = crate::Reg<trn::TRN_SPEC>;
 #[doc = "I2C1TRN register"]
 pub mod trn;
-#[doc = "I2C1TRNCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trnclr](trnclr) module"]
-pub type TRNCLR = crate::Reg<u32, _TRNCLR>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRNCLR;
-#[doc = "`read()` method returns [trnclr::R](trnclr::R) reader structure"]
-impl crate::Readable for TRNCLR {}
-#[doc = "`write(|w| ..)` method takes [trnclr::W](trnclr::W) writer structure"]
-impl crate::Writable for TRNCLR {}
+#[doc = "TRNCLR register accessor: an alias for `Reg<TRNCLR_SPEC>`"]
+pub type TRNCLR = crate::Reg<trnclr::TRNCLR_SPEC>;
 #[doc = "I2C1TRNCLR register"]
 pub mod trnclr;
-#[doc = "I2C1TRNSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trnset](trnset) module"]
-pub type TRNSET = crate::Reg<u32, _TRNSET>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRNSET;
-#[doc = "`read()` method returns [trnset::R](trnset::R) reader structure"]
-impl crate::Readable for TRNSET {}
-#[doc = "`write(|w| ..)` method takes [trnset::W](trnset::W) writer structure"]
-impl crate::Writable for TRNSET {}
+#[doc = "TRNSET register accessor: an alias for `Reg<TRNSET_SPEC>`"]
+pub type TRNSET = crate::Reg<trnset::TRNSET_SPEC>;
 #[doc = "I2C1TRNSET register"]
 pub mod trnset;
-#[doc = "I2C1TRNINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trninv](trninv) module"]
-pub type TRNINV = crate::Reg<u32, _TRNINV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _TRNINV;
-#[doc = "`read()` method returns [trninv::R](trninv::R) reader structure"]
-impl crate::Readable for TRNINV {}
-#[doc = "`write(|w| ..)` method takes [trninv::W](trninv::W) writer structure"]
-impl crate::Writable for TRNINV {}
+#[doc = "TRNINV register accessor: an alias for `Reg<TRNINV_SPEC>`"]
+pub type TRNINV = crate::Reg<trninv::TRNINV_SPEC>;
 #[doc = "I2C1TRNINV register"]
 pub mod trninv;
-#[doc = "I2C1RCV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rcv](rcv) module"]
-pub type RCV = crate::Reg<u32, _RCV>;
-#[allow(missing_docs)]
-#[doc(hidden)]
-pub struct _RCV;
-#[doc = "`read()` method returns [rcv::R](rcv::R) reader structure"]
-impl crate::Readable for RCV {}
-#[doc = "`write(|w| ..)` method takes [rcv::W](rcv::W) writer structure"]
-impl crate::Writable for RCV {}
+#[doc = "RCV register accessor: an alias for `Reg<RCV_SPEC>`"]
+pub type RCV = crate::Reg<rcv::RCV_SPEC>;
 #[doc = "I2C1RCV register"]
 pub mod rcv;

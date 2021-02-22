@@ -8,6 +8,13 @@ license = "MIT"
 authors = ["Stephan <kiffie@mailbox.org>"]
 edition = "2018"
 
+[features]
+rt = ["mips_rt"]
+
 [dependencies]
-bare-metal = "0.2.4"
 vcell = "0.1.2"
+
+[dependencies.mips_rt]
+optional = true
+git = "https://github.com/kiffie/pic32-rs.git"
+

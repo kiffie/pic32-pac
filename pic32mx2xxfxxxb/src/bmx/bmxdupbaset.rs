@@ -1,18 +1,52 @@
-#[doc = "Reader of register BMXDUPBASET"]
-pub type R = crate::R<u32, super::BMXDUPBASET>;
-#[doc = "Writer for register BMXDUPBASET"]
-pub type W = crate::W<u32, super::BMXDUPBASET>;
-#[doc = "Register BMXDUPBASET `reset()`'s with value 0"]
-impl crate::ResetValue for super::BMXDUPBASET {
-    type Type = u32;
+#[doc = "Register `BMXDUPBASET` reader"]
+pub struct R(crate::R<BMXDUPBASET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<BMXDUPBASET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `BMXDUPBA`"]
-pub type BMXDUPBA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `BMXDUPBA`"]
+impl core::convert::From<crate::R<BMXDUPBASET_SPEC>> for R {
+    fn from(reader: crate::R<BMXDUPBASET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `BMXDUPBASET` writer"]
+pub struct W(crate::W<BMXDUPBASET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<BMXDUPBASET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<BMXDUPBASET_SPEC>> for W {
+    fn from(writer: crate::W<BMXDUPBASET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `BMXDUPBA` reader - "]
+pub struct BMXDUPBA_R(crate::FieldReader<u32, u32>);
+impl BMXDUPBA_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        BMXDUPBA_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXDUPBA_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXDUPBA` writer - "]
 pub struct BMXDUPBA_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn bmxdupba(&mut self) -> BMXDUPBA_W {
         BMXDUPBA_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "BMXDUPBASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bmxdupbaset](index.html) module"]
+pub struct BMXDUPBASET_SPEC;
+impl crate::RegisterSpec for BMXDUPBASET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [bmxdupbaset::R](R) reader structure"]
+impl crate::Readable for BMXDUPBASET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [bmxdupbaset::W](W) writer structure"]
+impl crate::Writable for BMXDUPBASET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets BMXDUPBASET to value 0"]
+impl crate::Resettable for BMXDUPBASET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

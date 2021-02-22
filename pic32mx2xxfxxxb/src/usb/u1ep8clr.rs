@@ -1,18 +1,52 @@
-#[doc = "Reader of register U1EP8CLR"]
-pub type R = crate::R<u32, super::U1EP8CLR>;
-#[doc = "Writer for register U1EP8CLR"]
-pub type W = crate::W<u32, super::U1EP8CLR>;
-#[doc = "Register U1EP8CLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::U1EP8CLR {
-    type Type = u32;
+#[doc = "Register `U1EP8CLR` reader"]
+pub struct R(crate::R<U1EP8CLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<U1EP8CLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `EPHSHK`"]
-pub type EPHSHK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EPHSHK`"]
+impl core::convert::From<crate::R<U1EP8CLR_SPEC>> for R {
+    fn from(reader: crate::R<U1EP8CLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `U1EP8CLR` writer"]
+pub struct W(crate::W<U1EP8CLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<U1EP8CLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<U1EP8CLR_SPEC>> for W {
+    fn from(writer: crate::W<U1EP8CLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `EPHSHK` reader - "]
+pub struct EPHSHK_R(crate::FieldReader<bool, bool>);
+impl EPHSHK_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        EPHSHK_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for EPHSHK_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `EPHSHK` writer - "]
 pub struct EPHSHK_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> EPHSHK_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EPSTALL`"]
-pub type EPSTALL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EPSTALL`"]
+#[doc = "Field `EPSTALL` reader - "]
+pub struct EPSTALL_R(crate::FieldReader<bool, bool>);
+impl EPSTALL_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        EPSTALL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for EPSTALL_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `EPSTALL` writer - "]
 pub struct EPSTALL_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> EPSTALL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EPTXEN`"]
-pub type EPTXEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EPTXEN`"]
+#[doc = "Field `EPTXEN` reader - "]
+pub struct EPTXEN_R(crate::FieldReader<bool, bool>);
+impl EPTXEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        EPTXEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for EPTXEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `EPTXEN` writer - "]
 pub struct EPTXEN_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> EPTXEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EPRXEN`"]
-pub type EPRXEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EPRXEN`"]
+#[doc = "Field `EPRXEN` reader - "]
+pub struct EPRXEN_R(crate::FieldReader<bool, bool>);
+impl EPRXEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        EPRXEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for EPRXEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `EPRXEN` writer - "]
 pub struct EPRXEN_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> EPRXEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `EPCONDIS`"]
-pub type EPCONDIS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `EPCONDIS`"]
+#[doc = "Field `EPCONDIS` reader - "]
+pub struct EPCONDIS_R(crate::FieldReader<bool, bool>);
+impl EPCONDIS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        EPCONDIS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for EPCONDIS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `EPCONDIS` writer - "]
 pub struct EPCONDIS_W<'a> {
     w: &'a mut W,
 }
@@ -182,5 +264,30 @@ impl W {
     #[inline(always)]
     pub fn epcondis(&mut self) -> EPCONDIS_W {
         EPCONDIS_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "U1EP8CLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [u1ep8clr](index.html) module"]
+pub struct U1EP8CLR_SPEC;
+impl crate::RegisterSpec for U1EP8CLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [u1ep8clr::R](R) reader structure"]
+impl crate::Readable for U1EP8CLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [u1ep8clr::W](W) writer structure"]
+impl crate::Writable for U1EP8CLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets U1EP8CLR to value 0"]
+impl crate::Resettable for U1EP8CLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

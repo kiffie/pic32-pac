@@ -1,18 +1,52 @@
-#[doc = "Reader of register INTCONCLR"]
-pub type R = crate::R<u32, super::INTCONCLR>;
-#[doc = "Writer for register INTCONCLR"]
-pub type W = crate::W<u32, super::INTCONCLR>;
-#[doc = "Register INTCONCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::INTCONCLR {
-    type Type = u32;
+#[doc = "Register `INTCONCLR` reader"]
+pub struct R(crate::R<INTCONCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<INTCONCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `INT0EP`"]
-pub type INT0EP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `INT0EP`"]
+impl core::convert::From<crate::R<INTCONCLR_SPEC>> for R {
+    fn from(reader: crate::R<INTCONCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `INTCONCLR` writer"]
+pub struct W(crate::W<INTCONCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<INTCONCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<INTCONCLR_SPEC>> for W {
+    fn from(writer: crate::W<INTCONCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `INT0EP` reader - "]
+pub struct INT0EP_R(crate::FieldReader<bool, bool>);
+impl INT0EP_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        INT0EP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT0EP_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT0EP` writer - "]
 pub struct INT0EP_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> INT0EP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT1EP`"]
-pub type INT1EP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `INT1EP`"]
+#[doc = "Field `INT1EP` reader - "]
+pub struct INT1EP_R(crate::FieldReader<bool, bool>);
+impl INT1EP_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        INT1EP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT1EP_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT1EP` writer - "]
 pub struct INT1EP_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> INT1EP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT2EP`"]
-pub type INT2EP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `INT2EP`"]
+#[doc = "Field `INT2EP` reader - "]
+pub struct INT2EP_R(crate::FieldReader<bool, bool>);
+impl INT2EP_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        INT2EP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT2EP_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT2EP` writer - "]
 pub struct INT2EP_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> INT2EP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT3EP`"]
-pub type INT3EP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `INT3EP`"]
+#[doc = "Field `INT3EP` reader - "]
+pub struct INT3EP_R(crate::FieldReader<bool, bool>);
+impl INT3EP_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        INT3EP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT3EP_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT3EP` writer - "]
 pub struct INT3EP_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> INT3EP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT4EP`"]
-pub type INT4EP_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `INT4EP`"]
+#[doc = "Field `INT4EP` reader - "]
+pub struct INT4EP_R(crate::FieldReader<bool, bool>);
+impl INT4EP_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        INT4EP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT4EP_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT4EP` writer - "]
 pub struct INT4EP_W<'a> {
     w: &'a mut W,
 }
@@ -130,9 +212,21 @@ impl<'a> INT4EP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TPC`"]
-pub type TPC_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `TPC`"]
+#[doc = "Field `TPC` reader - "]
+pub struct TPC_R(crate::FieldReader<u8, u8>);
+impl TPC_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        TPC_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TPC_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TPC` writer - "]
 pub struct TPC_W<'a> {
     w: &'a mut W,
 }
@@ -144,9 +238,21 @@ impl<'a> TPC_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MVEC`"]
-pub type MVEC_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `MVEC`"]
+#[doc = "Field `MVEC` reader - "]
+pub struct MVEC_R(crate::FieldReader<bool, bool>);
+impl MVEC_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        MVEC_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MVEC_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MVEC` writer - "]
 pub struct MVEC_W<'a> {
     w: &'a mut W,
 }
@@ -168,9 +274,21 @@ impl<'a> MVEC_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `FRZ`"]
-pub type FRZ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `FRZ`"]
+#[doc = "Field `FRZ` reader - "]
+pub struct FRZ_R(crate::FieldReader<bool, bool>);
+impl FRZ_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        FRZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for FRZ_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `FRZ` writer - "]
 pub struct FRZ_W<'a> {
     w: &'a mut W,
 }
@@ -192,9 +310,21 @@ impl<'a> FRZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SS0`"]
-pub type SS0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SS0`"]
+#[doc = "Field `SS0` reader - "]
+pub struct SS0_R(crate::FieldReader<bool, bool>);
+impl SS0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SS0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SS0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SS0` writer - "]
 pub struct SS0_W<'a> {
     w: &'a mut W,
 }
@@ -308,5 +438,30 @@ impl W {
     #[inline(always)]
     pub fn ss0(&mut self) -> SS0_W {
         SS0_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "INTCONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [intconclr](index.html) module"]
+pub struct INTCONCLR_SPEC;
+impl crate::RegisterSpec for INTCONCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [intconclr::R](R) reader structure"]
+impl crate::Readable for INTCONCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [intconclr::W](W) writer structure"]
+impl crate::Writable for INTCONCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets INTCONCLR to value 0"]
+impl crate::Resettable for INTCONCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register ANSELINV"]
-pub type R = crate::R<u32, super::ANSELINV>;
-#[doc = "Writer for register ANSELINV"]
-pub type W = crate::W<u32, super::ANSELINV>;
-#[doc = "Register ANSELINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::ANSELINV {
-    type Type = u32;
+#[doc = "Register `ANSELINV` reader"]
+pub struct R(crate::R<ANSELINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<ANSELINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ANSB0`"]
-pub type ANSB0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB0`"]
+impl core::convert::From<crate::R<ANSELINV_SPEC>> for R {
+    fn from(reader: crate::R<ANSELINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `ANSELINV` writer"]
+pub struct W(crate::W<ANSELINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<ANSELINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<ANSELINV_SPEC>> for W {
+    fn from(writer: crate::W<ANSELINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ANSB0` reader - "]
+pub struct ANSB0_R(crate::FieldReader<bool, bool>);
+impl ANSB0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB0` writer - "]
 pub struct ANSB0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> ANSB0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB1`"]
-pub type ANSB1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB1`"]
+#[doc = "Field `ANSB1` reader - "]
+pub struct ANSB1_R(crate::FieldReader<bool, bool>);
+impl ANSB1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB1` writer - "]
 pub struct ANSB1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> ANSB1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB2`"]
-pub type ANSB2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB2`"]
+#[doc = "Field `ANSB2` reader - "]
+pub struct ANSB2_R(crate::FieldReader<bool, bool>);
+impl ANSB2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB2` writer - "]
 pub struct ANSB2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> ANSB2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB3`"]
-pub type ANSB3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB3`"]
+#[doc = "Field `ANSB3` reader - "]
+pub struct ANSB3_R(crate::FieldReader<bool, bool>);
+impl ANSB3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB3` writer - "]
 pub struct ANSB3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> ANSB3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB13`"]
-pub type ANSB13_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB13`"]
+#[doc = "Field `ANSB13` reader - "]
+pub struct ANSB13_R(crate::FieldReader<bool, bool>);
+impl ANSB13_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB13_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB13_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB13` writer - "]
 pub struct ANSB13_W<'a> {
     w: &'a mut W,
 }
@@ -130,9 +212,21 @@ impl<'a> ANSB13_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB14`"]
-pub type ANSB14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB14`"]
+#[doc = "Field `ANSB14` reader - "]
+pub struct ANSB14_R(crate::FieldReader<bool, bool>);
+impl ANSB14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB14` writer - "]
 pub struct ANSB14_W<'a> {
     w: &'a mut W,
 }
@@ -154,9 +248,21 @@ impl<'a> ANSB14_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSB15`"]
-pub type ANSB15_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSB15`"]
+#[doc = "Field `ANSB15` reader - "]
+pub struct ANSB15_R(crate::FieldReader<bool, bool>);
+impl ANSB15_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSB15_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSB15_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSB15` writer - "]
 pub struct ANSB15_W<'a> {
     w: &'a mut W,
 }
@@ -250,5 +356,30 @@ impl W {
     #[inline(always)]
     pub fn ansb15(&mut self) -> ANSB15_W {
         ANSB15_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "ANSELBINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [anselinv](index.html) module"]
+pub struct ANSELINV_SPEC;
+impl crate::RegisterSpec for ANSELINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [anselinv::R](R) reader structure"]
+impl crate::Readable for ANSELINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [anselinv::W](W) writer structure"]
+impl crate::Writable for ANSELINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets ANSELINV to value 0"]
+impl crate::Resettable for ANSELINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

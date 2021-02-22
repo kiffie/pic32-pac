@@ -1,18 +1,52 @@
-#[doc = "Reader of register PR3SET"]
-pub type R = crate::R<u32, super::PR3SET>;
-#[doc = "Writer for register PR3SET"]
-pub type W = crate::W<u32, super::PR3SET>;
-#[doc = "Register PR3SET `reset()`'s with value 0"]
-impl crate::ResetValue for super::PR3SET {
-    type Type = u32;
+#[doc = "Register `PR3SET` reader"]
+pub struct R(crate::R<PR3SET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PR3SET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `PR3`"]
-pub type PR3_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `PR3`"]
+impl core::convert::From<crate::R<PR3SET_SPEC>> for R {
+    fn from(reader: crate::R<PR3SET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PR3SET` writer"]
+pub struct W(crate::W<PR3SET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PR3SET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PR3SET_SPEC>> for W {
+    fn from(writer: crate::W<PR3SET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `PR3` reader - "]
+pub struct PR3_R(crate::FieldReader<u32, u32>);
+impl PR3_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        PR3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PR3_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PR3` writer - "]
 pub struct PR3_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn pr3(&mut self) -> PR3_W {
         PR3_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PR3SET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pr3set](index.html) module"]
+pub struct PR3SET_SPEC;
+impl crate::RegisterSpec for PR3SET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pr3set::R](R) reader structure"]
+impl crate::Readable for PR3SET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pr3set::W](W) writer structure"]
+impl crate::Writable for PR3SET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PR3SET to value 0"]
+impl crate::Resettable for PR3SET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

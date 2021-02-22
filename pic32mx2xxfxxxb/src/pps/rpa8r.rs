@@ -1,18 +1,52 @@
-#[doc = "Reader of register RPA8R"]
-pub type R = crate::R<u32, super::RPA8R>;
-#[doc = "Writer for register RPA8R"]
-pub type W = crate::W<u32, super::RPA8R>;
-#[doc = "Register RPA8R `reset()`'s with value 0"]
-impl crate::ResetValue for super::RPA8R {
-    type Type = u32;
+#[doc = "Register `RPA8R` reader"]
+pub struct R(crate::R<RPA8R_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<RPA8R_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `RPA8R`"]
-pub type RPA8R_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RPA8R`"]
+impl core::convert::From<crate::R<RPA8R_SPEC>> for R {
+    fn from(reader: crate::R<RPA8R_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `RPA8R` writer"]
+pub struct W(crate::W<RPA8R_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<RPA8R_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<RPA8R_SPEC>> for W {
+    fn from(writer: crate::W<RPA8R_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `RPA8R` reader - "]
+pub struct RPA8R_R(crate::FieldReader<u8, u8>);
+impl RPA8R_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        RPA8R_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for RPA8R_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `RPA8R` writer - "]
 pub struct RPA8R_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn rpa8r(&mut self) -> RPA8R_W {
         RPA8R_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "RPA8R register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rpa8r](index.html) module"]
+pub struct RPA8R_SPEC;
+impl crate::RegisterSpec for RPA8R_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [rpa8r::R](R) reader structure"]
+impl crate::Readable for RPA8R_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [rpa8r::W](W) writer structure"]
+impl crate::Writable for RPA8R_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets RPA8R to value 0"]
+impl crate::Resettable for RPA8R_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

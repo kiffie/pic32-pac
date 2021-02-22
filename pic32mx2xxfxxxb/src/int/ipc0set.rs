@@ -1,18 +1,52 @@
-#[doc = "Reader of register IPC0SET"]
-pub type R = crate::R<u32, super::IPC0SET>;
-#[doc = "Writer for register IPC0SET"]
-pub type W = crate::W<u32, super::IPC0SET>;
-#[doc = "Register IPC0SET `reset()`'s with value 0"]
-impl crate::ResetValue for super::IPC0SET {
-    type Type = u32;
+#[doc = "Register `IPC0SET` reader"]
+pub struct R(crate::R<IPC0SET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<IPC0SET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CTIS`"]
-pub type CTIS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CTIS`"]
+impl core::convert::From<crate::R<IPC0SET_SPEC>> for R {
+    fn from(reader: crate::R<IPC0SET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `IPC0SET` writer"]
+pub struct W(crate::W<IPC0SET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<IPC0SET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<IPC0SET_SPEC>> for W {
+    fn from(writer: crate::W<IPC0SET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CTIS` reader - "]
+pub struct CTIS_R(crate::FieldReader<u8, u8>);
+impl CTIS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CTIS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CTIS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CTIS` writer - "]
 pub struct CTIS_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> CTIS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CTIP`"]
-pub type CTIP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CTIP`"]
+#[doc = "Field `CTIP` reader - "]
+pub struct CTIP_R(crate::FieldReader<u8, u8>);
+impl CTIP_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CTIP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CTIP_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CTIP` writer - "]
 pub struct CTIP_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> CTIP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CS0IS`"]
-pub type CS0IS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CS0IS`"]
+#[doc = "Field `CS0IS` reader - "]
+pub struct CS0IS_R(crate::FieldReader<u8, u8>);
+impl CS0IS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CS0IS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CS0IS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CS0IS` writer - "]
 pub struct CS0IS_W<'a> {
     w: &'a mut W,
 }
@@ -52,9 +110,21 @@ impl<'a> CS0IS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CS0IP`"]
-pub type CS0IP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CS0IP`"]
+#[doc = "Field `CS0IP` reader - "]
+pub struct CS0IP_R(crate::FieldReader<u8, u8>);
+impl CS0IP_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CS0IP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CS0IP_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CS0IP` writer - "]
 pub struct CS0IP_W<'a> {
     w: &'a mut W,
 }
@@ -66,9 +136,21 @@ impl<'a> CS0IP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CS1IS`"]
-pub type CS1IS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CS1IS`"]
+#[doc = "Field `CS1IS` reader - "]
+pub struct CS1IS_R(crate::FieldReader<u8, u8>);
+impl CS1IS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CS1IS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CS1IS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CS1IS` writer - "]
 pub struct CS1IS_W<'a> {
     w: &'a mut W,
 }
@@ -80,9 +162,21 @@ impl<'a> CS1IS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CS1IP`"]
-pub type CS1IP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CS1IP`"]
+#[doc = "Field `CS1IP` reader - "]
+pub struct CS1IP_R(crate::FieldReader<u8, u8>);
+impl CS1IP_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CS1IP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CS1IP_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CS1IP` writer - "]
 pub struct CS1IP_W<'a> {
     w: &'a mut W,
 }
@@ -94,9 +188,21 @@ impl<'a> CS1IP_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT0IS`"]
-pub type INT0IS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `INT0IS`"]
+#[doc = "Field `INT0IS` reader - "]
+pub struct INT0IS_R(crate::FieldReader<u8, u8>);
+impl INT0IS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        INT0IS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT0IS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT0IS` writer - "]
 pub struct INT0IS_W<'a> {
     w: &'a mut W,
 }
@@ -108,9 +214,21 @@ impl<'a> INT0IS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INT0IP`"]
-pub type INT0IP_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `INT0IP`"]
+#[doc = "Field `INT0IP` reader - "]
+pub struct INT0IP_R(crate::FieldReader<u8, u8>);
+impl INT0IP_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        INT0IP_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INT0IP_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INT0IP` writer - "]
 pub struct INT0IP_W<'a> {
     w: &'a mut W,
 }
@@ -204,5 +322,30 @@ impl W {
     #[inline(always)]
     pub fn int0ip(&mut self) -> INT0IP_W {
         INT0IP_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "IPC0SET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ipc0set](index.html) module"]
+pub struct IPC0SET_SPEC;
+impl crate::RegisterSpec for IPC0SET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [ipc0set::R](R) reader structure"]
+impl crate::Readable for IPC0SET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [ipc0set::W](W) writer structure"]
+impl crate::Writable for IPC0SET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets IPC0SET to value 0"]
+impl crate::Resettable for IPC0SET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

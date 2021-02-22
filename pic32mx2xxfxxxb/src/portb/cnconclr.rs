@@ -1,18 +1,52 @@
-#[doc = "Reader of register CNCONCLR"]
-pub type R = crate::R<u32, super::CNCONCLR>;
-#[doc = "Writer for register CNCONCLR"]
-pub type W = crate::W<u32, super::CNCONCLR>;
-#[doc = "Register CNCONCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::CNCONCLR {
-    type Type = u32;
+#[doc = "Register `CNCONCLR` reader"]
+pub struct R(crate::R<CNCONCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CNCONCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `SIDL`"]
-pub type SIDL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SIDL`"]
+impl core::convert::From<crate::R<CNCONCLR_SPEC>> for R {
+    fn from(reader: crate::R<CNCONCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CNCONCLR` writer"]
+pub struct W(crate::W<CNCONCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CNCONCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CNCONCLR_SPEC>> for W {
+    fn from(writer: crate::W<CNCONCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `SIDL` reader - "]
+pub struct SIDL_R(crate::FieldReader<bool, bool>);
+impl SIDL_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SIDL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SIDL_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SIDL` writer - "]
 pub struct SIDL_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> SIDL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `FRZ`"]
-pub type FRZ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `FRZ`"]
+#[doc = "Field `FRZ` reader - "]
+pub struct FRZ_R(crate::FieldReader<bool, bool>);
+impl FRZ_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        FRZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for FRZ_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `FRZ` writer - "]
 pub struct FRZ_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> FRZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -114,5 +172,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CNCONBCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnconclr](index.html) module"]
+pub struct CNCONCLR_SPEC;
+impl crate::RegisterSpec for CNCONCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cnconclr::R](R) reader structure"]
+impl crate::Readable for CNCONCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [cnconclr::W](W) writer structure"]
+impl crate::Writable for CNCONCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CNCONCLR to value 0"]
+impl crate::Resettable for CNCONCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

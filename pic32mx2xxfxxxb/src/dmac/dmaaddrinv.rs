@@ -1,18 +1,52 @@
-#[doc = "Reader of register DMAADDRINV"]
-pub type R = crate::R<u32, super::DMAADDRINV>;
-#[doc = "Writer for register DMAADDRINV"]
-pub type W = crate::W<u32, super::DMAADDRINV>;
-#[doc = "Register DMAADDRINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::DMAADDRINV {
-    type Type = u32;
+#[doc = "Register `DMAADDRINV` reader"]
+pub struct R(crate::R<DMAADDRINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DMAADDRINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DMAADDR`"]
-pub type DMAADDR_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DMAADDR`"]
+impl core::convert::From<crate::R<DMAADDRINV_SPEC>> for R {
+    fn from(reader: crate::R<DMAADDRINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DMAADDRINV` writer"]
+pub struct W(crate::W<DMAADDRINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DMAADDRINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<DMAADDRINV_SPEC>> for W {
+    fn from(writer: crate::W<DMAADDRINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DMAADDR` reader - "]
+pub struct DMAADDR_R(crate::FieldReader<u32, u32>);
+impl DMAADDR_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        DMAADDR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMAADDR_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMAADDR` writer - "]
 pub struct DMAADDR_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn dmaaddr(&mut self) -> DMAADDR_W {
         DMAADDR_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DMAADDRINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dmaaddrinv](index.html) module"]
+pub struct DMAADDRINV_SPEC;
+impl crate::RegisterSpec for DMAADDRINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dmaaddrinv::R](R) reader structure"]
+impl crate::Readable for DMAADDRINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dmaaddrinv::W](W) writer structure"]
+impl crate::Writable for DMAADDRINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DMAADDRINV to value 0"]
+impl crate::Resettable for DMAADDRINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

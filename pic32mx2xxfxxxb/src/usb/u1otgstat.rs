@@ -1,18 +1,52 @@
-#[doc = "Reader of register U1OTGSTAT"]
-pub type R = crate::R<u32, super::U1OTGSTAT>;
-#[doc = "Writer for register U1OTGSTAT"]
-pub type W = crate::W<u32, super::U1OTGSTAT>;
-#[doc = "Register U1OTGSTAT `reset()`'s with value 0"]
-impl crate::ResetValue for super::U1OTGSTAT {
-    type Type = u32;
+#[doc = "Register `U1OTGSTAT` reader"]
+pub struct R(crate::R<U1OTGSTAT_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<U1OTGSTAT_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `VBUSVD`"]
-pub type VBUSVD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `VBUSVD`"]
+impl core::convert::From<crate::R<U1OTGSTAT_SPEC>> for R {
+    fn from(reader: crate::R<U1OTGSTAT_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `U1OTGSTAT` writer"]
+pub struct W(crate::W<U1OTGSTAT_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<U1OTGSTAT_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<U1OTGSTAT_SPEC>> for W {
+    fn from(writer: crate::W<U1OTGSTAT_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `VBUSVD` reader - "]
+pub struct VBUSVD_R(crate::FieldReader<bool, bool>);
+impl VBUSVD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        VBUSVD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for VBUSVD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `VBUSVD` writer - "]
 pub struct VBUSVD_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> VBUSVD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SESEND`"]
-pub type SESEND_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SESEND`"]
+#[doc = "Field `SESEND` reader - "]
+pub struct SESEND_R(crate::FieldReader<bool, bool>);
+impl SESEND_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SESEND_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SESEND_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SESEND` writer - "]
 pub struct SESEND_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> SESEND_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SESVD`"]
-pub type SESVD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SESVD`"]
+#[doc = "Field `SESVD` reader - "]
+pub struct SESVD_R(crate::FieldReader<bool, bool>);
+impl SESVD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SESVD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SESVD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SESVD` writer - "]
 pub struct SESVD_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> SESVD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LSTATE`"]
-pub type LSTATE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LSTATE`"]
+#[doc = "Field `LSTATE` reader - "]
+pub struct LSTATE_R(crate::FieldReader<bool, bool>);
+impl LSTATE_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LSTATE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LSTATE_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LSTATE` writer - "]
 pub struct LSTATE_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> LSTATE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ID`"]
-pub type ID_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ID`"]
+#[doc = "Field `ID` reader - "]
+pub struct ID_R(crate::FieldReader<bool, bool>);
+impl ID_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ID_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ID_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ID` writer - "]
 pub struct ID_W<'a> {
     w: &'a mut W,
 }
@@ -182,5 +264,30 @@ impl W {
     #[inline(always)]
     pub fn id(&mut self) -> ID_W {
         ID_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "U1OTGSTAT register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [u1otgstat](index.html) module"]
+pub struct U1OTGSTAT_SPEC;
+impl crate::RegisterSpec for U1OTGSTAT_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [u1otgstat::R](R) reader structure"]
+impl crate::Readable for U1OTGSTAT_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [u1otgstat::W](W) writer structure"]
+impl crate::Writable for U1OTGSTAT_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets U1OTGSTAT to value 0"]
+impl crate::Resettable for U1OTGSTAT_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register BMXCONINV"]
-pub type R = crate::R<u32, super::BMXCONINV>;
-#[doc = "Writer for register BMXCONINV"]
-pub type W = crate::W<u32, super::BMXCONINV>;
-#[doc = "Register BMXCONINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::BMXCONINV {
-    type Type = u32;
+#[doc = "Register `BMXCONINV` reader"]
+pub struct R(crate::R<BMXCONINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<BMXCONINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `BMXARB`"]
-pub type BMXARB_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `BMXARB`"]
+impl core::convert::From<crate::R<BMXCONINV_SPEC>> for R {
+    fn from(reader: crate::R<BMXCONINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `BMXCONINV` writer"]
+pub struct W(crate::W<BMXCONINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<BMXCONINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<BMXCONINV_SPEC>> for W {
+    fn from(writer: crate::W<BMXCONINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `BMXARB` reader - "]
+pub struct BMXARB_R(crate::FieldReader<u8, u8>);
+impl BMXARB_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        BMXARB_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXARB_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXARB` writer - "]
 pub struct BMXARB_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> BMXARB_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXWSDRM`"]
-pub type BMXWSDRM_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXWSDRM`"]
+#[doc = "Field `BMXWSDRM` reader - "]
+pub struct BMXWSDRM_R(crate::FieldReader<bool, bool>);
+impl BMXWSDRM_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXWSDRM_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXWSDRM_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXWSDRM` writer - "]
 pub struct BMXWSDRM_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> BMXWSDRM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXERRIS`"]
-pub type BMXERRIS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXERRIS`"]
+#[doc = "Field `BMXERRIS` reader - "]
+pub struct BMXERRIS_R(crate::FieldReader<bool, bool>);
+impl BMXERRIS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXERRIS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXERRIS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXERRIS` writer - "]
 pub struct BMXERRIS_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> BMXERRIS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXERRDS`"]
-pub type BMXERRDS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXERRDS`"]
+#[doc = "Field `BMXERRDS` reader - "]
+pub struct BMXERRDS_R(crate::FieldReader<bool, bool>);
+impl BMXERRDS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXERRDS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXERRDS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXERRDS` writer - "]
 pub struct BMXERRDS_W<'a> {
     w: &'a mut W,
 }
@@ -96,9 +166,21 @@ impl<'a> BMXERRDS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXERRDMA`"]
-pub type BMXERRDMA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXERRDMA`"]
+#[doc = "Field `BMXERRDMA` reader - "]
+pub struct BMXERRDMA_R(crate::FieldReader<bool, bool>);
+impl BMXERRDMA_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXERRDMA_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXERRDMA_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXERRDMA` writer - "]
 pub struct BMXERRDMA_W<'a> {
     w: &'a mut W,
 }
@@ -120,9 +202,21 @@ impl<'a> BMXERRDMA_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXERRICD`"]
-pub type BMXERRICD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXERRICD`"]
+#[doc = "Field `BMXERRICD` reader - "]
+pub struct BMXERRICD_R(crate::FieldReader<bool, bool>);
+impl BMXERRICD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXERRICD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXERRICD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXERRICD` writer - "]
 pub struct BMXERRICD_W<'a> {
     w: &'a mut W,
 }
@@ -144,9 +238,21 @@ impl<'a> BMXERRICD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXERRIXI`"]
-pub type BMXERRIXI_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXERRIXI`"]
+#[doc = "Field `BMXERRIXI` reader - "]
+pub struct BMXERRIXI_R(crate::FieldReader<bool, bool>);
+impl BMXERRIXI_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXERRIXI_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXERRIXI_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXERRIXI` writer - "]
 pub struct BMXERRIXI_W<'a> {
     w: &'a mut W,
 }
@@ -168,9 +274,21 @@ impl<'a> BMXERRIXI_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BMXCHEDMA`"]
-pub type BMXCHEDMA_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BMXCHEDMA`"]
+#[doc = "Field `BMXCHEDMA` reader - "]
+pub struct BMXCHEDMA_R(crate::FieldReader<bool, bool>);
+impl BMXCHEDMA_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BMXCHEDMA_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BMXCHEDMA_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BMXCHEDMA` writer - "]
 pub struct BMXCHEDMA_W<'a> {
     w: &'a mut W,
 }
@@ -274,5 +392,30 @@ impl W {
     #[inline(always)]
     pub fn bmxchedma(&mut self) -> BMXCHEDMA_W {
         BMXCHEDMA_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "BMXCONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bmxconinv](index.html) module"]
+pub struct BMXCONINV_SPEC;
+impl crate::RegisterSpec for BMXCONINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [bmxconinv::R](R) reader structure"]
+impl crate::Readable for BMXCONINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [bmxconinv::W](W) writer structure"]
+impl crate::Writable for BMXCONINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets BMXCONINV to value 0"]
+impl crate::Resettable for BMXCONINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register ANSELCLR"]
-pub type R = crate::R<u32, super::ANSELCLR>;
-#[doc = "Writer for register ANSELCLR"]
-pub type W = crate::W<u32, super::ANSELCLR>;
-#[doc = "Register ANSELCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::ANSELCLR {
-    type Type = u32;
+#[doc = "Register `ANSELCLR` reader"]
+pub struct R(crate::R<ANSELCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<ANSELCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ANSA0`"]
-pub type ANSA0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSA0`"]
+impl core::convert::From<crate::R<ANSELCLR_SPEC>> for R {
+    fn from(reader: crate::R<ANSELCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `ANSELCLR` writer"]
+pub struct W(crate::W<ANSELCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<ANSELCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<ANSELCLR_SPEC>> for W {
+    fn from(writer: crate::W<ANSELCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ANSA0` reader - "]
+pub struct ANSA0_R(crate::FieldReader<bool, bool>);
+impl ANSA0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSA0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSA0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSA0` writer - "]
 pub struct ANSA0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> ANSA0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ANSA1`"]
-pub type ANSA1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ANSA1`"]
+#[doc = "Field `ANSA1` reader - "]
+pub struct ANSA1_R(crate::FieldReader<bool, bool>);
+impl ANSA1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ANSA1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ANSA1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ANSA1` writer - "]
 pub struct ANSA1_W<'a> {
     w: &'a mut W,
 }
@@ -80,5 +126,30 @@ impl W {
     #[inline(always)]
     pub fn ansa1(&mut self) -> ANSA1_W {
         ANSA1_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "ANSELACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [anselclr](index.html) module"]
+pub struct ANSELCLR_SPEC;
+impl crate::RegisterSpec for ANSELCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [anselclr::R](R) reader structure"]
+impl crate::Readable for ANSELCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [anselclr::W](W) writer structure"]
+impl crate::Writable for ANSELCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets ANSELCLR to value 0"]
+impl crate::Resettable for ANSELCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }
