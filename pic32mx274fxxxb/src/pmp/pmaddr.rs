@@ -1,18 +1,52 @@
-#[doc = "Reader of register PMADDR"]
-pub type R = crate::R<u32, super::PMADDR>;
-#[doc = "Writer for register PMADDR"]
-pub type W = crate::W<u32, super::PMADDR>;
-#[doc = "Register PMADDR `reset()`'s with value 0"]
-impl crate::ResetValue for super::PMADDR {
-    type Type = u32;
+#[doc = "Register `PMADDR` reader"]
+pub struct R(crate::R<PMADDR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PMADDR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ADDR`"]
-pub type ADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `ADDR`"]
+impl core::convert::From<crate::R<PMADDR_SPEC>> for R {
+    fn from(reader: crate::R<PMADDR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PMADDR` writer"]
+pub struct W(crate::W<PMADDR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PMADDR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PMADDR_SPEC>> for W {
+    fn from(writer: crate::W<PMADDR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ADDR` reader - "]
+pub struct ADDR_R(crate::FieldReader<u16, u16>);
+impl ADDR_R {
+    pub(crate) fn new(bits: u16) -> Self {
+        ADDR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ADDR_R {
+    type Target = crate::FieldReader<u16, u16>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ADDR` writer - "]
 pub struct ADDR_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> ADDR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ADDR14`"]
-pub type ADDR14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ADDR14`"]
+#[doc = "Field `ADDR14` reader - "]
+pub struct ADDR14_R(crate::FieldReader<bool, bool>);
+impl ADDR14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ADDR14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ADDR14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ADDR14` writer - "]
 pub struct ADDR14_W<'a> {
     w: &'a mut W,
 }
@@ -70,5 +116,30 @@ impl W {
     #[inline(always)]
     pub fn addr14(&mut self) -> ADDR14_W {
         ADDR14_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PMADDR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pmaddr](index.html) module"]
+pub struct PMADDR_SPEC;
+impl crate::RegisterSpec for PMADDR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pmaddr::R](R) reader structure"]
+impl crate::Readable for PMADDR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pmaddr::W](W) writer structure"]
+impl crate::Writable for PMADDR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PMADDR to value 0"]
+impl crate::Resettable for PMADDR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

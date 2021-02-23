@@ -1,18 +1,52 @@
-#[doc = "Reader of register T3CONCLR"]
-pub type R = crate::R<u32, super::T3CONCLR>;
-#[doc = "Writer for register T3CONCLR"]
-pub type W = crate::W<u32, super::T3CONCLR>;
-#[doc = "Register T3CONCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::T3CONCLR {
-    type Type = u32;
+#[doc = "Register `T3CONCLR` reader"]
+pub struct R(crate::R<T3CONCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<T3CONCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `TCS`"]
-pub type TCS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TCS`"]
+impl core::convert::From<crate::R<T3CONCLR_SPEC>> for R {
+    fn from(reader: crate::R<T3CONCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `T3CONCLR` writer"]
+pub struct W(crate::W<T3CONCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<T3CONCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<T3CONCLR_SPEC>> for W {
+    fn from(writer: crate::W<T3CONCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `TCS` reader - "]
+pub struct TCS_R(crate::FieldReader<bool, bool>);
+impl TCS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TCS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TCS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TCS` writer - "]
 pub struct TCS_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> TCS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TCKPS`"]
-pub type TCKPS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `TCKPS`"]
+#[doc = "Field `TCKPS` reader - "]
+pub struct TCKPS_R(crate::FieldReader<u8, u8>);
+impl TCKPS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        TCKPS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TCKPS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TCKPS` writer - "]
 pub struct TCKPS_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> TCKPS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TGATE`"]
-pub type TGATE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TGATE`"]
+#[doc = "Field `TGATE` reader - "]
+pub struct TGATE_R(crate::FieldReader<bool, bool>);
+impl TGATE_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TGATE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TGATE_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TGATE` writer - "]
 pub struct TGATE_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> TGATE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SIDL`"]
-pub type SIDL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SIDL`"]
+#[doc = "Field `SIDL` reader - "]
+pub struct SIDL_R(crate::FieldReader<bool, bool>);
+impl SIDL_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SIDL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SIDL_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SIDL` writer - "]
 pub struct SIDL_W<'a> {
     w: &'a mut W,
 }
@@ -96,9 +166,21 @@ impl<'a> SIDL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `FRZ`"]
-pub type FRZ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `FRZ`"]
+#[doc = "Field `FRZ` reader - "]
+pub struct FRZ_R(crate::FieldReader<bool, bool>);
+impl FRZ_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        FRZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for FRZ_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `FRZ` writer - "]
 pub struct FRZ_W<'a> {
     w: &'a mut W,
 }
@@ -120,9 +202,21 @@ impl<'a> FRZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -206,5 +300,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "T3CONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [t3conclr](index.html) module"]
+pub struct T3CONCLR_SPEC;
+impl crate::RegisterSpec for T3CONCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [t3conclr::R](R) reader structure"]
+impl crate::Readable for T3CONCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [t3conclr::W](W) writer structure"]
+impl crate::Writable for T3CONCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets T3CONCLR to value 0"]
+impl crate::Resettable for T3CONCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

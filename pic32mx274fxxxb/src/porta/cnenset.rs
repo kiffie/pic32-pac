@@ -1,18 +1,52 @@
-#[doc = "Reader of register CNENSET"]
-pub type R = crate::R<u32, super::CNENSET>;
-#[doc = "Writer for register CNENSET"]
-pub type W = crate::W<u32, super::CNENSET>;
-#[doc = "Register CNENSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::CNENSET {
-    type Type = u32;
+#[doc = "Register `CNENSET` reader"]
+pub struct R(crate::R<CNENSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CNENSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CNIEA0`"]
-pub type CNIEA0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNIEA0`"]
+impl core::convert::From<crate::R<CNENSET_SPEC>> for R {
+    fn from(reader: crate::R<CNENSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CNENSET` writer"]
+pub struct W(crate::W<CNENSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CNENSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CNENSET_SPEC>> for W {
+    fn from(writer: crate::W<CNENSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CNIEA0` reader - "]
+pub struct CNIEA0_R(crate::FieldReader<bool, bool>);
+impl CNIEA0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNIEA0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNIEA0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNIEA0` writer - "]
 pub struct CNIEA0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> CNIEA0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNIEA1`"]
-pub type CNIEA1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNIEA1`"]
+#[doc = "Field `CNIEA1` reader - "]
+pub struct CNIEA1_R(crate::FieldReader<bool, bool>);
+impl CNIEA1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNIEA1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNIEA1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNIEA1` writer - "]
 pub struct CNIEA1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> CNIEA1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNIEA2`"]
-pub type CNIEA2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNIEA2`"]
+#[doc = "Field `CNIEA2` reader - "]
+pub struct CNIEA2_R(crate::FieldReader<bool, bool>);
+impl CNIEA2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNIEA2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNIEA2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNIEA2` writer - "]
 pub struct CNIEA2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> CNIEA2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNIEA3`"]
-pub type CNIEA3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNIEA3`"]
+#[doc = "Field `CNIEA3` reader - "]
+pub struct CNIEA3_R(crate::FieldReader<bool, bool>);
+impl CNIEA3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNIEA3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNIEA3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNIEA3` writer - "]
 pub struct CNIEA3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> CNIEA3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNIEA4`"]
-pub type CNIEA4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNIEA4`"]
+#[doc = "Field `CNIEA4` reader - "]
+pub struct CNIEA4_R(crate::FieldReader<bool, bool>);
+impl CNIEA4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNIEA4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNIEA4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNIEA4` writer - "]
 pub struct CNIEA4_W<'a> {
     w: &'a mut W,
 }
@@ -182,5 +264,30 @@ impl W {
     #[inline(always)]
     pub fn cniea4(&mut self) -> CNIEA4_W {
         CNIEA4_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CNENASET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnenset](index.html) module"]
+pub struct CNENSET_SPEC;
+impl crate::RegisterSpec for CNENSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cnenset::R](R) reader structure"]
+impl crate::Readable for CNENSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [cnenset::W](W) writer structure"]
+impl crate::Writable for CNENSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CNENSET to value 0"]
+impl crate::Resettable for CNENSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

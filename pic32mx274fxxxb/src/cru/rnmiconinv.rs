@@ -1,18 +1,52 @@
-#[doc = "Reader of register RNMICONINV"]
-pub type R = crate::R<u32, super::RNMICONINV>;
-#[doc = "Writer for register RNMICONINV"]
-pub type W = crate::W<u32, super::RNMICONINV>;
-#[doc = "Register RNMICONINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::RNMICONINV {
-    type Type = u32;
+#[doc = "Register `RNMICONINV` reader"]
+pub struct R(crate::R<RNMICONINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<RNMICONINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `NMICNT`"]
-pub type NMICNT_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `NMICNT`"]
+impl core::convert::From<crate::R<RNMICONINV_SPEC>> for R {
+    fn from(reader: crate::R<RNMICONINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `RNMICONINV` writer"]
+pub struct W(crate::W<RNMICONINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<RNMICONINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<RNMICONINV_SPEC>> for W {
+    fn from(writer: crate::W<RNMICONINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `NMICNT` reader - "]
+pub struct NMICNT_R(crate::FieldReader<u16, u16>);
+impl NMICNT_R {
+    pub(crate) fn new(bits: u16) -> Self {
+        NMICNT_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for NMICNT_R {
+    type Target = crate::FieldReader<u16, u16>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `NMICNT` writer - "]
 pub struct NMICNT_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> NMICNT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `WDTS`"]
-pub type WDTS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `WDTS`"]
+#[doc = "Field `WDTS` reader - "]
+pub struct WDTS_R(crate::FieldReader<bool, bool>);
+impl WDTS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        WDTS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WDTS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WDTS` writer - "]
 pub struct WDTS_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> WDTS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CF`"]
-pub type CF_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CF`"]
+#[doc = "Field `CF` reader - "]
+pub struct CF_R(crate::FieldReader<bool, bool>);
+impl CF_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CF_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CF_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CF` writer - "]
 pub struct CF_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> CF_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `HLVD`"]
-pub type HLVD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `HLVD`"]
+#[doc = "Field `HLVD` reader - "]
+pub struct HLVD_R(crate::FieldReader<bool, bool>);
+impl HLVD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        HLVD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for HLVD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `HLVD` writer - "]
 pub struct HLVD_W<'a> {
     w: &'a mut W,
 }
@@ -96,9 +166,21 @@ impl<'a> HLVD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `GNMI`"]
-pub type GNMI_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `GNMI`"]
+#[doc = "Field `GNMI` reader - "]
+pub struct GNMI_R(crate::FieldReader<bool, bool>);
+impl GNMI_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        GNMI_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for GNMI_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `GNMI` writer - "]
 pub struct GNMI_W<'a> {
     w: &'a mut W,
 }
@@ -120,9 +202,21 @@ impl<'a> GNMI_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SWNMI`"]
-pub type SWNMI_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SWNMI`"]
+#[doc = "Field `SWNMI` reader - "]
+pub struct SWNMI_R(crate::FieldReader<bool, bool>);
+impl SWNMI_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SWNMI_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SWNMI_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SWNMI` writer - "]
 pub struct SWNMI_W<'a> {
     w: &'a mut W,
 }
@@ -144,9 +238,21 @@ impl<'a> SWNMI_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `WDTO`"]
-pub type WDTO_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `WDTO`"]
+#[doc = "Field `WDTO` reader - "]
+pub struct WDTO_R(crate::FieldReader<bool, bool>);
+impl WDTO_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        WDTO_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WDTO_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WDTO` writer - "]
 pub struct WDTO_W<'a> {
     w: &'a mut W,
 }
@@ -240,5 +346,30 @@ impl W {
     #[inline(always)]
     pub fn wdto(&mut self) -> WDTO_W {
         WDTO_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "RNMICONINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rnmiconinv](index.html) module"]
+pub struct RNMICONINV_SPEC;
+impl crate::RegisterSpec for RNMICONINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [rnmiconinv::R](R) reader structure"]
+impl crate::Readable for RNMICONINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [rnmiconinv::W](W) writer structure"]
+impl crate::Writable for RNMICONINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets RNMICONINV to value 0"]
+impl crate::Resettable for RNMICONINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

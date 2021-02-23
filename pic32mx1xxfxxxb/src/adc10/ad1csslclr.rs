@@ -1,18 +1,52 @@
-#[doc = "Reader of register AD1CSSLCLR"]
-pub type R = crate::R<u32, super::AD1CSSLCLR>;
-#[doc = "Writer for register AD1CSSLCLR"]
-pub type W = crate::W<u32, super::AD1CSSLCLR>;
-#[doc = "Register AD1CSSLCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::AD1CSSLCLR {
-    type Type = u32;
+#[doc = "Register `AD1CSSLCLR` reader"]
+pub struct R(crate::R<AD1CSSLCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<AD1CSSLCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CSSL`"]
-pub type CSSL_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `CSSL`"]
+impl core::convert::From<crate::R<AD1CSSLCLR_SPEC>> for R {
+    fn from(reader: crate::R<AD1CSSLCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `AD1CSSLCLR` writer"]
+pub struct W(crate::W<AD1CSSLCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<AD1CSSLCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<AD1CSSLCLR_SPEC>> for W {
+    fn from(writer: crate::W<AD1CSSLCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CSSL` reader - "]
+pub struct CSSL_R(crate::FieldReader<u16, u16>);
+impl CSSL_R {
+    pub(crate) fn new(bits: u16) -> Self {
+        CSSL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL_R {
+    type Target = crate::FieldReader<u16, u16>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL` writer - "]
 pub struct CSSL_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn cssl(&mut self) -> CSSL_W {
         CSSL_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "AD1CSSLCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ad1csslclr](index.html) module"]
+pub struct AD1CSSLCLR_SPEC;
+impl crate::RegisterSpec for AD1CSSLCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [ad1csslclr::R](R) reader structure"]
+impl crate::Readable for AD1CSSLCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [ad1csslclr::W](W) writer structure"]
+impl crate::Writable for AD1CSSLCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets AD1CSSLCLR to value 0"]
+impl crate::Resettable for AD1CSSLCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

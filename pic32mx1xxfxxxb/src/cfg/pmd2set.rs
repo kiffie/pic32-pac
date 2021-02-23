@@ -1,18 +1,52 @@
-#[doc = "Reader of register PMD2SET"]
-pub type R = crate::R<u32, super::PMD2SET>;
-#[doc = "Writer for register PMD2SET"]
-pub type W = crate::W<u32, super::PMD2SET>;
-#[doc = "Register PMD2SET `reset()`'s with value 0"]
-impl crate::ResetValue for super::PMD2SET {
-    type Type = u32;
+#[doc = "Register `PMD2SET` reader"]
+pub struct R(crate::R<PMD2SET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PMD2SET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CMP1MD`"]
-pub type CMP1MD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CMP1MD`"]
+impl core::convert::From<crate::R<PMD2SET_SPEC>> for R {
+    fn from(reader: crate::R<PMD2SET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PMD2SET` writer"]
+pub struct W(crate::W<PMD2SET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PMD2SET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PMD2SET_SPEC>> for W {
+    fn from(writer: crate::W<PMD2SET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CMP1MD` reader - "]
+pub struct CMP1MD_R(crate::FieldReader<bool, bool>);
+impl CMP1MD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CMP1MD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CMP1MD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CMP1MD` writer - "]
 pub struct CMP1MD_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> CMP1MD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CMP2MD`"]
-pub type CMP2MD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CMP2MD`"]
+#[doc = "Field `CMP2MD` reader - "]
+pub struct CMP2MD_R(crate::FieldReader<bool, bool>);
+impl CMP2MD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CMP2MD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CMP2MD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CMP2MD` writer - "]
 pub struct CMP2MD_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> CMP2MD_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CMP3MD`"]
-pub type CMP3MD_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CMP3MD`"]
+#[doc = "Field `CMP3MD` reader - "]
+pub struct CMP3MD_R(crate::FieldReader<bool, bool>);
+impl CMP3MD_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CMP3MD_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CMP3MD_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CMP3MD` writer - "]
 pub struct CMP3MD_W<'a> {
     w: &'a mut W,
 }
@@ -114,5 +172,30 @@ impl W {
     #[inline(always)]
     pub fn cmp3md(&mut self) -> CMP3MD_W {
         CMP3MD_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PMD2SET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pmd2set](index.html) module"]
+pub struct PMD2SET_SPEC;
+impl crate::RegisterSpec for PMD2SET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pmd2set::R](R) reader structure"]
+impl crate::Readable for PMD2SET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pmd2set::W](W) writer structure"]
+impl crate::Writable for PMD2SET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PMD2SET to value 0"]
+impl crate::Resettable for PMD2SET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

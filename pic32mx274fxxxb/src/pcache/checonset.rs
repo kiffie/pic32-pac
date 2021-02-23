@@ -1,18 +1,52 @@
-#[doc = "Reader of register CHECONSET"]
-pub type R = crate::R<u32, super::CHECONSET>;
-#[doc = "Writer for register CHECONSET"]
-pub type W = crate::W<u32, super::CHECONSET>;
-#[doc = "Register CHECONSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::CHECONSET {
-    type Type = u32;
+#[doc = "Register `CHECONSET` reader"]
+pub struct R(crate::R<CHECONSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CHECONSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `PFMWS`"]
-pub type PFMWS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `PFMWS`"]
+impl core::convert::From<crate::R<CHECONSET_SPEC>> for R {
+    fn from(reader: crate::R<CHECONSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CHECONSET` writer"]
+pub struct W(crate::W<CHECONSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CHECONSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CHECONSET_SPEC>> for W {
+    fn from(writer: crate::W<CHECONSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `PFMWS` reader - "]
+pub struct PFMWS_R(crate::FieldReader<u8, u8>);
+impl PFMWS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        PFMWS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PFMWS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PFMWS` writer - "]
 pub struct PFMWS_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> PFMWS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PREFEN`"]
-pub type PREFEN_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `PREFEN`"]
+#[doc = "Field `PREFEN` reader - "]
+pub struct PREFEN_R(crate::FieldReader<u8, u8>);
+impl PREFEN_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        PREFEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PREFEN_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PREFEN` writer - "]
 pub struct PREFEN_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> PREFEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DCSZ`"]
-pub type DCSZ_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DCSZ`"]
+#[doc = "Field `DCSZ` reader - "]
+pub struct DCSZ_R(crate::FieldReader<u8, u8>);
+impl DCSZ_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        DCSZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DCSZ_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DCSZ` writer - "]
 pub struct DCSZ_W<'a> {
     w: &'a mut W,
 }
@@ -52,9 +110,21 @@ impl<'a> DCSZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CHECOH`"]
-pub type CHECOH_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CHECOH`"]
+#[doc = "Field `CHECOH` reader - "]
+pub struct CHECOH_R(crate::FieldReader<bool, bool>);
+impl CHECOH_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CHECOH_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CHECOH_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CHECOH` writer - "]
 pub struct CHECOH_W<'a> {
     w: &'a mut W,
 }
@@ -118,5 +188,30 @@ impl W {
     #[inline(always)]
     pub fn checoh(&mut self) -> CHECOH_W {
         CHECOH_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CHECONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [checonset](index.html) module"]
+pub struct CHECONSET_SPEC;
+impl crate::RegisterSpec for CHECONSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [checonset::R](R) reader structure"]
+impl crate::Readable for CHECONSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [checonset::W](W) writer structure"]
+impl crate::Writable for CHECONSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CHECONSET to value 0"]
+impl crate::Resettable for CHECONSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

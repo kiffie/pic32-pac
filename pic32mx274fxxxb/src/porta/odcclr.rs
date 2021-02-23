@@ -1,18 +1,52 @@
-#[doc = "Reader of register ODCCLR"]
-pub type R = crate::R<u32, super::ODCCLR>;
-#[doc = "Writer for register ODCCLR"]
-pub type W = crate::W<u32, super::ODCCLR>;
-#[doc = "Register ODCCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::ODCCLR {
-    type Type = u32;
+#[doc = "Register `ODCCLR` reader"]
+pub struct R(crate::R<ODCCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<ODCCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ODCA0`"]
-pub type ODCA0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ODCA0`"]
+impl core::convert::From<crate::R<ODCCLR_SPEC>> for R {
+    fn from(reader: crate::R<ODCCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `ODCCLR` writer"]
+pub struct W(crate::W<ODCCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<ODCCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<ODCCLR_SPEC>> for W {
+    fn from(writer: crate::W<ODCCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ODCA0` reader - "]
+pub struct ODCA0_R(crate::FieldReader<bool, bool>);
+impl ODCA0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ODCA0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ODCA0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ODCA0` writer - "]
 pub struct ODCA0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> ODCA0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ODCA1`"]
-pub type ODCA1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ODCA1`"]
+#[doc = "Field `ODCA1` reader - "]
+pub struct ODCA1_R(crate::FieldReader<bool, bool>);
+impl ODCA1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ODCA1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ODCA1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ODCA1` writer - "]
 pub struct ODCA1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> ODCA1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ODCA2`"]
-pub type ODCA2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ODCA2`"]
+#[doc = "Field `ODCA2` reader - "]
+pub struct ODCA2_R(crate::FieldReader<bool, bool>);
+impl ODCA2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ODCA2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ODCA2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ODCA2` writer - "]
 pub struct ODCA2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> ODCA2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ODCA3`"]
-pub type ODCA3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ODCA3`"]
+#[doc = "Field `ODCA3` reader - "]
+pub struct ODCA3_R(crate::FieldReader<bool, bool>);
+impl ODCA3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ODCA3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ODCA3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ODCA3` writer - "]
 pub struct ODCA3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> ODCA3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ODCA4`"]
-pub type ODCA4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ODCA4`"]
+#[doc = "Field `ODCA4` reader - "]
+pub struct ODCA4_R(crate::FieldReader<bool, bool>);
+impl ODCA4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ODCA4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ODCA4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ODCA4` writer - "]
 pub struct ODCA4_W<'a> {
     w: &'a mut W,
 }
@@ -182,5 +264,30 @@ impl W {
     #[inline(always)]
     pub fn odca4(&mut self) -> ODCA4_W {
         ODCA4_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "ODCACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [odcclr](index.html) module"]
+pub struct ODCCLR_SPEC;
+impl crate::RegisterSpec for ODCCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [odcclr::R](R) reader structure"]
+impl crate::Readable for ODCCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [odcclr::W](W) writer structure"]
+impl crate::Writable for ODCCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets ODCCLR to value 0"]
+impl crate::Resettable for ODCCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

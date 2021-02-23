@@ -1,18 +1,52 @@
-#[doc = "Reader of register OCFBR"]
-pub type R = crate::R<u32, super::OCFBR>;
-#[doc = "Writer for register OCFBR"]
-pub type W = crate::W<u32, super::OCFBR>;
-#[doc = "Register OCFBR `reset()`'s with value 0"]
-impl crate::ResetValue for super::OCFBR {
-    type Type = u32;
+#[doc = "Register `OCFBR` reader"]
+pub struct R(crate::R<OCFBR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<OCFBR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `OCFBR`"]
-pub type OCFBR_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `OCFBR`"]
+impl core::convert::From<crate::R<OCFBR_SPEC>> for R {
+    fn from(reader: crate::R<OCFBR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `OCFBR` writer"]
+pub struct W(crate::W<OCFBR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<OCFBR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<OCFBR_SPEC>> for W {
+    fn from(writer: crate::W<OCFBR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `OCFBR` reader - "]
+pub struct OCFBR_R(crate::FieldReader<u8, u8>);
+impl OCFBR_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        OCFBR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OCFBR_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OCFBR` writer - "]
 pub struct OCFBR_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn ocfbr(&mut self) -> OCFBR_W {
         OCFBR_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "OCFBR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ocfbr](index.html) module"]
+pub struct OCFBR_SPEC;
+impl crate::RegisterSpec for OCFBR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [ocfbr::R](R) reader structure"]
+impl crate::Readable for OCFBR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [ocfbr::W](W) writer structure"]
+impl crate::Writable for OCFBR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets OCFBR to value 0"]
+impl crate::Resettable for OCFBR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

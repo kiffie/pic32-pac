@@ -1,18 +1,52 @@
-#[doc = "Reader of register PMMODE"]
-pub type R = crate::R<u32, super::PMMODE>;
-#[doc = "Writer for register PMMODE"]
-pub type W = crate::W<u32, super::PMMODE>;
-#[doc = "Register PMMODE `reset()`'s with value 0"]
-impl crate::ResetValue for super::PMMODE {
-    type Type = u32;
+#[doc = "Register `PMMODE` reader"]
+pub struct R(crate::R<PMMODE_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PMMODE_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `WAITE`"]
-pub type WAITE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `WAITE`"]
+impl core::convert::From<crate::R<PMMODE_SPEC>> for R {
+    fn from(reader: crate::R<PMMODE_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PMMODE` writer"]
+pub struct W(crate::W<PMMODE_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PMMODE_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PMMODE_SPEC>> for W {
+    fn from(writer: crate::W<PMMODE_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `WAITE` reader - "]
+pub struct WAITE_R(crate::FieldReader<u8, u8>);
+impl WAITE_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        WAITE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WAITE_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WAITE` writer - "]
 pub struct WAITE_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> WAITE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `WAITM`"]
-pub type WAITM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `WAITM`"]
+#[doc = "Field `WAITM` reader - "]
+pub struct WAITM_R(crate::FieldReader<u8, u8>);
+impl WAITM_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        WAITM_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WAITM_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WAITM` writer - "]
 pub struct WAITM_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> WAITM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `WAITB`"]
-pub type WAITB_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `WAITB`"]
+#[doc = "Field `WAITB` reader - "]
+pub struct WAITB_R(crate::FieldReader<u8, u8>);
+impl WAITB_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        WAITB_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WAITB_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WAITB` writer - "]
 pub struct WAITB_W<'a> {
     w: &'a mut W,
 }
@@ -52,9 +110,21 @@ impl<'a> WAITB_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MODE`"]
-pub type MODE_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MODE`"]
+#[doc = "Field `MODE` reader - "]
+pub struct MODE_R(crate::FieldReader<u8, u8>);
+impl MODE_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        MODE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MODE_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MODE` writer - "]
 pub struct MODE_W<'a> {
     w: &'a mut W,
 }
@@ -66,9 +136,21 @@ impl<'a> MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `INCM`"]
-pub type INCM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `INCM`"]
+#[doc = "Field `INCM` reader - "]
+pub struct INCM_R(crate::FieldReader<u8, u8>);
+impl INCM_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        INCM_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for INCM_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `INCM` writer - "]
 pub struct INCM_W<'a> {
     w: &'a mut W,
 }
@@ -80,9 +162,21 @@ impl<'a> INCM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `IRQM`"]
-pub type IRQM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `IRQM`"]
+#[doc = "Field `IRQM` reader - "]
+pub struct IRQM_R(crate::FieldReader<u8, u8>);
+impl IRQM_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        IRQM_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for IRQM_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `IRQM` writer - "]
 pub struct IRQM_W<'a> {
     w: &'a mut W,
 }
@@ -94,9 +188,21 @@ impl<'a> IRQM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `BUSY`"]
-pub type BUSY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `BUSY`"]
+#[doc = "Field `BUSY` reader - "]
+pub struct BUSY_R(crate::FieldReader<bool, bool>);
+impl BUSY_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        BUSY_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for BUSY_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `BUSY` writer - "]
 pub struct BUSY_W<'a> {
     w: &'a mut W,
 }
@@ -190,5 +296,30 @@ impl W {
     #[inline(always)]
     pub fn busy(&mut self) -> BUSY_W {
         BUSY_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PMMODE register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pmmode](index.html) module"]
+pub struct PMMODE_SPEC;
+impl crate::RegisterSpec for PMMODE_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pmmode::R](R) reader structure"]
+impl crate::Readable for PMMODE_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pmmode::W](W) writer structure"]
+impl crate::Writable for PMMODE_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PMMODE to value 0"]
+impl crate::Resettable for PMMODE_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

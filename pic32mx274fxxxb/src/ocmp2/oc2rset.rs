@@ -1,18 +1,52 @@
-#[doc = "Reader of register OC2RSET"]
-pub type R = crate::R<u32, super::OC2RSET>;
-#[doc = "Writer for register OC2RSET"]
-pub type W = crate::W<u32, super::OC2RSET>;
-#[doc = "Register OC2RSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::OC2RSET {
-    type Type = u32;
+#[doc = "Register `OC2RSET` reader"]
+pub struct R(crate::R<OC2RSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<OC2RSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `OC2R`"]
-pub type OC2R_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `OC2R`"]
+impl core::convert::From<crate::R<OC2RSET_SPEC>> for R {
+    fn from(reader: crate::R<OC2RSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `OC2RSET` writer"]
+pub struct W(crate::W<OC2RSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<OC2RSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<OC2RSET_SPEC>> for W {
+    fn from(writer: crate::W<OC2RSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `OC2R` reader - "]
+pub struct OC2R_R(crate::FieldReader<u32, u32>);
+impl OC2R_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        OC2R_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OC2R_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OC2R` writer - "]
 pub struct OC2R_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn oc2r(&mut self) -> OC2R_W {
         OC2R_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "OC2RSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [oc2rset](index.html) module"]
+pub struct OC2RSET_SPEC;
+impl crate::RegisterSpec for OC2RSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [oc2rset::R](R) reader structure"]
+impl crate::Readable for OC2RSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [oc2rset::W](W) writer structure"]
+impl crate::Writable for OC2RSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets OC2RSET to value 0"]
+impl crate::Resettable for OC2RSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

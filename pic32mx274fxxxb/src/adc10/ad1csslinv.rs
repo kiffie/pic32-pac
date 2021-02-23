@@ -1,18 +1,52 @@
-#[doc = "Reader of register AD1CSSLINV"]
-pub type R = crate::R<u32, super::AD1CSSLINV>;
-#[doc = "Writer for register AD1CSSLINV"]
-pub type W = crate::W<u32, super::AD1CSSLINV>;
-#[doc = "Register AD1CSSLINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::AD1CSSLINV {
-    type Type = u32;
+#[doc = "Register `AD1CSSLINV` reader"]
+pub struct R(crate::R<AD1CSSLINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<AD1CSSLINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CSSL0`"]
-pub type CSSL0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL0`"]
+impl core::convert::From<crate::R<AD1CSSLINV_SPEC>> for R {
+    fn from(reader: crate::R<AD1CSSLINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `AD1CSSLINV` writer"]
+pub struct W(crate::W<AD1CSSLINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<AD1CSSLINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<AD1CSSLINV_SPEC>> for W {
+    fn from(writer: crate::W<AD1CSSLINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CSSL0` reader - "]
+pub struct CSSL0_R(crate::FieldReader<bool, bool>);
+impl CSSL0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL0` writer - "]
 pub struct CSSL0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> CSSL0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL1`"]
-pub type CSSL1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL1`"]
+#[doc = "Field `CSSL1` reader - "]
+pub struct CSSL1_R(crate::FieldReader<bool, bool>);
+impl CSSL1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL1` writer - "]
 pub struct CSSL1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> CSSL1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL2`"]
-pub type CSSL2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL2`"]
+#[doc = "Field `CSSL2` reader - "]
+pub struct CSSL2_R(crate::FieldReader<bool, bool>);
+impl CSSL2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL2` writer - "]
 pub struct CSSL2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> CSSL2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL3`"]
-pub type CSSL3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL3`"]
+#[doc = "Field `CSSL3` reader - "]
+pub struct CSSL3_R(crate::FieldReader<bool, bool>);
+impl CSSL3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL3` writer - "]
 pub struct CSSL3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> CSSL3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL4`"]
-pub type CSSL4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL4`"]
+#[doc = "Field `CSSL4` reader - "]
+pub struct CSSL4_R(crate::FieldReader<bool, bool>);
+impl CSSL4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL4` writer - "]
 pub struct CSSL4_W<'a> {
     w: &'a mut W,
 }
@@ -130,9 +212,21 @@ impl<'a> CSSL4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL5`"]
-pub type CSSL5_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL5`"]
+#[doc = "Field `CSSL5` reader - "]
+pub struct CSSL5_R(crate::FieldReader<bool, bool>);
+impl CSSL5_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL5_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL5_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL5` writer - "]
 pub struct CSSL5_W<'a> {
     w: &'a mut W,
 }
@@ -154,9 +248,21 @@ impl<'a> CSSL5_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL9`"]
-pub type CSSL9_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL9`"]
+#[doc = "Field `CSSL9` reader - "]
+pub struct CSSL9_R(crate::FieldReader<bool, bool>);
+impl CSSL9_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL9_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL9_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL9` writer - "]
 pub struct CSSL9_W<'a> {
     w: &'a mut W,
 }
@@ -178,9 +284,21 @@ impl<'a> CSSL9_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL10`"]
-pub type CSSL10_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL10`"]
+#[doc = "Field `CSSL10` reader - "]
+pub struct CSSL10_R(crate::FieldReader<bool, bool>);
+impl CSSL10_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL10_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL10` writer - "]
 pub struct CSSL10_W<'a> {
     w: &'a mut W,
 }
@@ -202,9 +320,21 @@ impl<'a> CSSL10_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL11`"]
-pub type CSSL11_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL11`"]
+#[doc = "Field `CSSL11` reader - "]
+pub struct CSSL11_R(crate::FieldReader<bool, bool>);
+impl CSSL11_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL11_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL11_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL11` writer - "]
 pub struct CSSL11_W<'a> {
     w: &'a mut W,
 }
@@ -226,9 +356,21 @@ impl<'a> CSSL11_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL13`"]
-pub type CSSL13_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL13`"]
+#[doc = "Field `CSSL13` reader - "]
+pub struct CSSL13_R(crate::FieldReader<bool, bool>);
+impl CSSL13_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL13_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL13_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL13` writer - "]
 pub struct CSSL13_W<'a> {
     w: &'a mut W,
 }
@@ -250,9 +392,21 @@ impl<'a> CSSL13_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL14`"]
-pub type CSSL14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL14`"]
+#[doc = "Field `CSSL14` reader - "]
+pub struct CSSL14_R(crate::FieldReader<bool, bool>);
+impl CSSL14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL14` writer - "]
 pub struct CSSL14_W<'a> {
     w: &'a mut W,
 }
@@ -274,9 +428,21 @@ impl<'a> CSSL14_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL15`"]
-pub type CSSL15_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL15`"]
+#[doc = "Field `CSSL15` reader - "]
+pub struct CSSL15_R(crate::FieldReader<bool, bool>);
+impl CSSL15_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL15_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL15_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL15` writer - "]
 pub struct CSSL15_W<'a> {
     w: &'a mut W,
 }
@@ -298,9 +464,21 @@ impl<'a> CSSL15_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CSSL17`"]
-pub type CSSL17_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CSSL17`"]
+#[doc = "Field `CSSL17` reader - "]
+pub struct CSSL17_R(crate::FieldReader<bool, bool>);
+impl CSSL17_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CSSL17_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CSSL17_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CSSL17` writer - "]
 pub struct CSSL17_W<'a> {
     w: &'a mut W,
 }
@@ -454,5 +632,30 @@ impl W {
     #[inline(always)]
     pub fn cssl17(&mut self) -> CSSL17_W {
         CSSL17_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "AD1CSSLINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ad1csslinv](index.html) module"]
+pub struct AD1CSSLINV_SPEC;
+impl crate::RegisterSpec for AD1CSSLINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [ad1csslinv::R](R) reader structure"]
+impl crate::Readable for AD1CSSLINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [ad1csslinv::W](W) writer structure"]
+impl crate::Writable for AD1CSSLINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets AD1CSSLINV to value 0"]
+impl crate::Resettable for AD1CSSLINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

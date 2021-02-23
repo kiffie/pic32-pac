@@ -1,18 +1,52 @@
-#[doc = "Reader of register DMACONCLR"]
-pub type R = crate::R<u32, super::DMACONCLR>;
-#[doc = "Writer for register DMACONCLR"]
-pub type W = crate::W<u32, super::DMACONCLR>;
-#[doc = "Register DMACONCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::DMACONCLR {
-    type Type = u32;
+#[doc = "Register `DMACONCLR` reader"]
+pub struct R(crate::R<DMACONCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DMACONCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DMABUSY`"]
-pub type DMABUSY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `DMABUSY`"]
+impl core::convert::From<crate::R<DMACONCLR_SPEC>> for R {
+    fn from(reader: crate::R<DMACONCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DMACONCLR` writer"]
+pub struct W(crate::W<DMACONCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DMACONCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<DMACONCLR_SPEC>> for W {
+    fn from(writer: crate::W<DMACONCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DMABUSY` reader - "]
+pub struct DMABUSY_R(crate::FieldReader<bool, bool>);
+impl DMABUSY_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        DMABUSY_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DMABUSY_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DMABUSY` writer - "]
 pub struct DMABUSY_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> DMABUSY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SUSPEND`"]
-pub type SUSPEND_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SUSPEND`"]
+#[doc = "Field `SUSPEND` reader - "]
+pub struct SUSPEND_R(crate::FieldReader<bool, bool>);
+impl SUSPEND_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SUSPEND_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SUSPEND_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SUSPEND` writer - "]
 pub struct SUSPEND_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> SUSPEND_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `FRZ`"]
-pub type FRZ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `FRZ`"]
+#[doc = "Field `FRZ` reader - "]
+pub struct FRZ_R(crate::FieldReader<bool, bool>);
+impl FRZ_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        FRZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for FRZ_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `FRZ` writer - "]
 pub struct FRZ_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> FRZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -148,5 +218,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DMACONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dmaconclr](index.html) module"]
+pub struct DMACONCLR_SPEC;
+impl crate::RegisterSpec for DMACONCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dmaconclr::R](R) reader structure"]
+impl crate::Readable for DMACONCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dmaconclr::W](W) writer structure"]
+impl crate::Writable for DMACONCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DMACONCLR to value 0"]
+impl crate::Resettable for DMACONCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

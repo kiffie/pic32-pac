@@ -1,18 +1,52 @@
-#[doc = "Reader of register TMR5SET"]
-pub type R = crate::R<u32, super::TMR5SET>;
-#[doc = "Writer for register TMR5SET"]
-pub type W = crate::W<u32, super::TMR5SET>;
-#[doc = "Register TMR5SET `reset()`'s with value 0"]
-impl crate::ResetValue for super::TMR5SET {
-    type Type = u32;
+#[doc = "Register `TMR5SET` reader"]
+pub struct R(crate::R<TMR5SET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<TMR5SET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `TMR5`"]
-pub type TMR5_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TMR5`"]
+impl core::convert::From<crate::R<TMR5SET_SPEC>> for R {
+    fn from(reader: crate::R<TMR5SET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `TMR5SET` writer"]
+pub struct W(crate::W<TMR5SET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<TMR5SET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<TMR5SET_SPEC>> for W {
+    fn from(writer: crate::W<TMR5SET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `TMR5` reader - "]
+pub struct TMR5_R(crate::FieldReader<u32, u32>);
+impl TMR5_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        TMR5_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TMR5_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TMR5` writer - "]
 pub struct TMR5_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn tmr5(&mut self) -> TMR5_W {
         TMR5_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "TMR5SET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tmr5set](index.html) module"]
+pub struct TMR5SET_SPEC;
+impl crate::RegisterSpec for TMR5SET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [tmr5set::R](R) reader structure"]
+impl crate::Readable for TMR5SET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [tmr5set::W](W) writer structure"]
+impl crate::Writable for TMR5SET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets TMR5SET to value 0"]
+impl crate::Resettable for TMR5SET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register RTCTIME"]
-pub type R = crate::R<u32, super::RTCTIME>;
-#[doc = "Writer for register RTCTIME"]
-pub type W = crate::W<u32, super::RTCTIME>;
-#[doc = "Register RTCTIME `reset()`'s with value 0"]
-impl crate::ResetValue for super::RTCTIME {
-    type Type = u32;
+#[doc = "Register `RTCTIME` reader"]
+pub struct R(crate::R<RTCTIME_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<RTCTIME_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `SEC01`"]
-pub type SEC01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SEC01`"]
+impl core::convert::From<crate::R<RTCTIME_SPEC>> for R {
+    fn from(reader: crate::R<RTCTIME_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `RTCTIME` writer"]
+pub struct W(crate::W<RTCTIME_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<RTCTIME_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<RTCTIME_SPEC>> for W {
+    fn from(writer: crate::W<RTCTIME_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `SEC01` reader - "]
+pub struct SEC01_R(crate::FieldReader<u8, u8>);
+impl SEC01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        SEC01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SEC01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SEC01` writer - "]
 pub struct SEC01_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> SEC01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SEC10`"]
-pub type SEC10_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SEC10`"]
+#[doc = "Field `SEC10` reader - "]
+pub struct SEC10_R(crate::FieldReader<u8, u8>);
+impl SEC10_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        SEC10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SEC10_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SEC10` writer - "]
 pub struct SEC10_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> SEC10_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MIN01`"]
-pub type MIN01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MIN01`"]
+#[doc = "Field `MIN01` reader - "]
+pub struct MIN01_R(crate::FieldReader<u8, u8>);
+impl MIN01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        MIN01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MIN01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MIN01` writer - "]
 pub struct MIN01_W<'a> {
     w: &'a mut W,
 }
@@ -52,9 +110,21 @@ impl<'a> MIN01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MIN10`"]
-pub type MIN10_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MIN10`"]
+#[doc = "Field `MIN10` reader - "]
+pub struct MIN10_R(crate::FieldReader<u8, u8>);
+impl MIN10_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        MIN10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MIN10_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MIN10` writer - "]
 pub struct MIN10_W<'a> {
     w: &'a mut W,
 }
@@ -66,9 +136,21 @@ impl<'a> MIN10_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `HR01`"]
-pub type HR01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `HR01`"]
+#[doc = "Field `HR01` reader - "]
+pub struct HR01_R(crate::FieldReader<u8, u8>);
+impl HR01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        HR01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for HR01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `HR01` writer - "]
 pub struct HR01_W<'a> {
     w: &'a mut W,
 }
@@ -80,9 +162,21 @@ impl<'a> HR01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `HR10`"]
-pub type HR10_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `HR10`"]
+#[doc = "Field `HR10` reader - "]
+pub struct HR10_R(crate::FieldReader<u8, u8>);
+impl HR10_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        HR10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for HR10_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `HR10` writer - "]
 pub struct HR10_W<'a> {
     w: &'a mut W,
 }
@@ -156,5 +250,30 @@ impl W {
     #[inline(always)]
     pub fn hr10(&mut self) -> HR10_W {
         HR10_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "RTCTIME register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rtctime](index.html) module"]
+pub struct RTCTIME_SPEC;
+impl crate::RegisterSpec for RTCTIME_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [rtctime::R](R) reader structure"]
+impl crate::Readable for RTCTIME_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [rtctime::W](W) writer structure"]
+impl crate::Writable for RTCTIME_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets RTCTIME to value 0"]
+impl crate::Resettable for RTCTIME_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

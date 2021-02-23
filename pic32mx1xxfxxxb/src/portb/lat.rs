@@ -1,18 +1,52 @@
-#[doc = "Reader of register LAT"]
-pub type R = crate::R<u32, super::LAT>;
-#[doc = "Writer for register LAT"]
-pub type W = crate::W<u32, super::LAT>;
-#[doc = "Register LAT `reset()`'s with value 0"]
-impl crate::ResetValue for super::LAT {
-    type Type = u32;
+#[doc = "Register `LAT` reader"]
+pub struct R(crate::R<LAT_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<LAT_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `LATB0`"]
-pub type LATB0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB0`"]
+impl core::convert::From<crate::R<LAT_SPEC>> for R {
+    fn from(reader: crate::R<LAT_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `LAT` writer"]
+pub struct W(crate::W<LAT_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<LAT_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<LAT_SPEC>> for W {
+    fn from(writer: crate::W<LAT_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `LATB0` reader - "]
+pub struct LATB0_R(crate::FieldReader<bool, bool>);
+impl LATB0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB0` writer - "]
 pub struct LATB0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> LATB0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB1`"]
-pub type LATB1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB1`"]
+#[doc = "Field `LATB1` reader - "]
+pub struct LATB1_R(crate::FieldReader<bool, bool>);
+impl LATB1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB1` writer - "]
 pub struct LATB1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> LATB1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB2`"]
-pub type LATB2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB2`"]
+#[doc = "Field `LATB2` reader - "]
+pub struct LATB2_R(crate::FieldReader<bool, bool>);
+impl LATB2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB2` writer - "]
 pub struct LATB2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> LATB2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB3`"]
-pub type LATB3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB3`"]
+#[doc = "Field `LATB3` reader - "]
+pub struct LATB3_R(crate::FieldReader<bool, bool>);
+impl LATB3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB3` writer - "]
 pub struct LATB3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> LATB3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB4`"]
-pub type LATB4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB4`"]
+#[doc = "Field `LATB4` reader - "]
+pub struct LATB4_R(crate::FieldReader<bool, bool>);
+impl LATB4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB4` writer - "]
 pub struct LATB4_W<'a> {
     w: &'a mut W,
 }
@@ -130,9 +212,21 @@ impl<'a> LATB4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB5`"]
-pub type LATB5_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB5`"]
+#[doc = "Field `LATB5` reader - "]
+pub struct LATB5_R(crate::FieldReader<bool, bool>);
+impl LATB5_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB5_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB5_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB5` writer - "]
 pub struct LATB5_W<'a> {
     w: &'a mut W,
 }
@@ -154,9 +248,21 @@ impl<'a> LATB5_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB6`"]
-pub type LATB6_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB6`"]
+#[doc = "Field `LATB6` reader - "]
+pub struct LATB6_R(crate::FieldReader<bool, bool>);
+impl LATB6_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB6_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB6_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB6` writer - "]
 pub struct LATB6_W<'a> {
     w: &'a mut W,
 }
@@ -178,9 +284,21 @@ impl<'a> LATB6_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB7`"]
-pub type LATB7_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB7`"]
+#[doc = "Field `LATB7` reader - "]
+pub struct LATB7_R(crate::FieldReader<bool, bool>);
+impl LATB7_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB7_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB7_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB7` writer - "]
 pub struct LATB7_W<'a> {
     w: &'a mut W,
 }
@@ -202,9 +320,21 @@ impl<'a> LATB7_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB8`"]
-pub type LATB8_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB8`"]
+#[doc = "Field `LATB8` reader - "]
+pub struct LATB8_R(crate::FieldReader<bool, bool>);
+impl LATB8_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB8_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB8_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB8` writer - "]
 pub struct LATB8_W<'a> {
     w: &'a mut W,
 }
@@ -226,9 +356,21 @@ impl<'a> LATB8_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB9`"]
-pub type LATB9_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB9`"]
+#[doc = "Field `LATB9` reader - "]
+pub struct LATB9_R(crate::FieldReader<bool, bool>);
+impl LATB9_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB9_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB9_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB9` writer - "]
 pub struct LATB9_W<'a> {
     w: &'a mut W,
 }
@@ -250,9 +392,21 @@ impl<'a> LATB9_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB10`"]
-pub type LATB10_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB10`"]
+#[doc = "Field `LATB10` reader - "]
+pub struct LATB10_R(crate::FieldReader<bool, bool>);
+impl LATB10_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB10_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB10` writer - "]
 pub struct LATB10_W<'a> {
     w: &'a mut W,
 }
@@ -274,9 +428,21 @@ impl<'a> LATB10_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB11`"]
-pub type LATB11_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB11`"]
+#[doc = "Field `LATB11` reader - "]
+pub struct LATB11_R(crate::FieldReader<bool, bool>);
+impl LATB11_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB11_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB11_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB11` writer - "]
 pub struct LATB11_W<'a> {
     w: &'a mut W,
 }
@@ -298,9 +464,21 @@ impl<'a> LATB11_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB12`"]
-pub type LATB12_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB12`"]
+#[doc = "Field `LATB12` reader - "]
+pub struct LATB12_R(crate::FieldReader<bool, bool>);
+impl LATB12_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB12_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB12_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB12` writer - "]
 pub struct LATB12_W<'a> {
     w: &'a mut W,
 }
@@ -322,9 +500,21 @@ impl<'a> LATB12_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB13`"]
-pub type LATB13_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB13`"]
+#[doc = "Field `LATB13` reader - "]
+pub struct LATB13_R(crate::FieldReader<bool, bool>);
+impl LATB13_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB13_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB13_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB13` writer - "]
 pub struct LATB13_W<'a> {
     w: &'a mut W,
 }
@@ -346,9 +536,21 @@ impl<'a> LATB13_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB14`"]
-pub type LATB14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB14`"]
+#[doc = "Field `LATB14` reader - "]
+pub struct LATB14_R(crate::FieldReader<bool, bool>);
+impl LATB14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB14` writer - "]
 pub struct LATB14_W<'a> {
     w: &'a mut W,
 }
@@ -370,9 +572,21 @@ impl<'a> LATB14_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `LATB15`"]
-pub type LATB15_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `LATB15`"]
+#[doc = "Field `LATB15` reader - "]
+pub struct LATB15_R(crate::FieldReader<bool, bool>);
+impl LATB15_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        LATB15_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for LATB15_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `LATB15` writer - "]
 pub struct LATB15_W<'a> {
     w: &'a mut W,
 }
@@ -556,5 +770,30 @@ impl W {
     #[inline(always)]
     pub fn latb15(&mut self) -> LATB15_W {
         LATB15_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "LATB register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [lat](index.html) module"]
+pub struct LAT_SPEC;
+impl crate::RegisterSpec for LAT_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [lat::R](R) reader structure"]
+impl crate::Readable for LAT_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [lat::W](W) writer structure"]
+impl crate::Writable for LAT_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets LAT to value 0"]
+impl crate::Resettable for LAT_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register CFGCON"]
-pub type R = crate::R<u32, super::CFGCON>;
-#[doc = "Writer for register CFGCON"]
-pub type W = crate::W<u32, super::CFGCON>;
-#[doc = "Register CFGCON `reset()`'s with value 0x08"]
-impl crate::ResetValue for super::CFGCON {
-    type Type = u32;
+#[doc = "Register `CFGCON` reader"]
+pub struct R(crate::R<CFGCON_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CFGCON_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0x08
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `TDOEN`"]
-pub type TDOEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TDOEN`"]
+impl core::convert::From<crate::R<CFGCON_SPEC>> for R {
+    fn from(reader: crate::R<CFGCON_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CFGCON` writer"]
+pub struct W(crate::W<CFGCON_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CFGCON_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CFGCON_SPEC>> for W {
+    fn from(writer: crate::W<CFGCON_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `TDOEN` reader - "]
+pub struct TDOEN_R(crate::FieldReader<bool, bool>);
+impl TDOEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TDOEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TDOEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TDOEN` writer - "]
 pub struct TDOEN_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> TDOEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `JTAGEN`"]
-pub type JTAGEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `JTAGEN`"]
+#[doc = "Field `JTAGEN` reader - "]
+pub struct JTAGEN_R(crate::FieldReader<bool, bool>);
+impl JTAGEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        JTAGEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for JTAGEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `JTAGEN` writer - "]
 pub struct JTAGEN_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> JTAGEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PMDLOCK`"]
-pub type PMDLOCK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PMDLOCK`"]
+#[doc = "Field `PMDLOCK` reader - "]
+pub struct PMDLOCK_R(crate::FieldReader<bool, bool>);
+impl PMDLOCK_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        PMDLOCK_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PMDLOCK_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PMDLOCK` writer - "]
 pub struct PMDLOCK_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> PMDLOCK_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `IOLOCK`"]
-pub type IOLOCK_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `IOLOCK`"]
+#[doc = "Field `IOLOCK` reader - "]
+pub struct IOLOCK_R(crate::FieldReader<bool, bool>);
+impl IOLOCK_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        IOLOCK_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for IOLOCK_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `IOLOCK` writer - "]
 pub struct IOLOCK_W<'a> {
     w: &'a mut W,
 }
@@ -148,5 +218,30 @@ impl W {
     #[inline(always)]
     pub fn iolock(&mut self) -> IOLOCK_W {
         IOLOCK_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CFGCON register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cfgcon](index.html) module"]
+pub struct CFGCON_SPEC;
+impl crate::RegisterSpec for CFGCON_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cfgcon::R](R) reader structure"]
+impl crate::Readable for CFGCON_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [cfgcon::W](W) writer structure"]
+impl crate::Writable for CFGCON_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CFGCON to value 0x08"]
+impl crate::Resettable for CFGCON_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0x08
     }
 }

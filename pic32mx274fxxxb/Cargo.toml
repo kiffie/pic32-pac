@@ -1,6 +1,6 @@
 [package]
 name = "pic32mx274fxxxb"
-version = "0.1.0"
+version = "0.3.0"
 description = "Peripheral access API for PIC32MX274 (28/44 pin) microcontrollers"
 repository = "https://github.com/kiffie/pic32-pac"
 keywords = ["no-std", "mips", "pic32", "svd2rust"]
@@ -8,6 +8,10 @@ license = "MIT"
 authors = ["Stephan <kiffie@mailbox.org>"]
 edition = "2018"
 
+[features]
+rt = []
+
 [dependencies]
-bare-metal = "0.2.4"
 vcell = "0.1.2"
+mips-mcu = "0.1.0"
+

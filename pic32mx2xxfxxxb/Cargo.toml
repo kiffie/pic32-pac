@@ -1,9 +1,9 @@
 [package]
 name = "pic32mx2xxfxxxb"
-version = "0.1.0"
+version = "0.3.0"
 description = "Peripheral access API for PIC32MX2xx (28 pin) microcontrollers"
 repository = "https://github.com/kiffie/pic32-pac"
-keywords = ["no-std", "mips", "pic32"]
+keywords = ["no-std", "mips", "pic32", "svd2rust"]
 license = "MIT"
 authors = ["Stephan <kiffie@mailbox.org>"]
 edition = "2018"

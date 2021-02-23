@@ -1,18 +1,52 @@
-#[doc = "Reader of register PMRADDRSET"]
-pub type R = crate::R<u32, super::PMRADDRSET>;
-#[doc = "Writer for register PMRADDRSET"]
-pub type W = crate::W<u32, super::PMRADDRSET>;
-#[doc = "Register PMRADDRSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::PMRADDRSET {
-    type Type = u32;
+#[doc = "Register `PMRADDRSET` reader"]
+pub struct R(crate::R<PMRADDRSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PMRADDRSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `RADDR`"]
-pub type RADDR_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `RADDR`"]
+impl core::convert::From<crate::R<PMRADDRSET_SPEC>> for R {
+    fn from(reader: crate::R<PMRADDRSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PMRADDRSET` writer"]
+pub struct W(crate::W<PMRADDRSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PMRADDRSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PMRADDRSET_SPEC>> for W {
+    fn from(writer: crate::W<PMRADDRSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `RADDR` reader - "]
+pub struct RADDR_R(crate::FieldReader<u16, u16>);
+impl RADDR_R {
+    pub(crate) fn new(bits: u16) -> Self {
+        RADDR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for RADDR_R {
+    type Target = crate::FieldReader<u16, u16>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `RADDR` writer - "]
 pub struct RADDR_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> RADDR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RADDR14`"]
-pub type RADDR14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RADDR14`"]
+#[doc = "Field `RADDR14` reader - "]
+pub struct RADDR14_R(crate::FieldReader<bool, bool>);
+impl RADDR14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        RADDR14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for RADDR14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `RADDR14` writer - "]
 pub struct RADDR14_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> RADDR14_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RADDR15`"]
-pub type RADDR15_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `RADDR15`"]
+#[doc = "Field `RADDR15` reader - "]
+pub struct RADDR15_R(crate::FieldReader<bool, bool>);
+impl RADDR15_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        RADDR15_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for RADDR15_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `RADDR15` writer - "]
 pub struct RADDR15_W<'a> {
     w: &'a mut W,
 }
@@ -104,5 +162,30 @@ impl W {
     #[inline(always)]
     pub fn raddr15(&mut self) -> RADDR15_W {
         RADDR15_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PMRADDRSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pmraddrset](index.html) module"]
+pub struct PMRADDRSET_SPEC;
+impl crate::RegisterSpec for PMRADDRSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pmraddrset::R](R) reader structure"]
+impl crate::Readable for PMRADDRSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pmraddrset::W](W) writer structure"]
+impl crate::Writable for PMRADDRSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PMRADDRSET to value 0"]
+impl crate::Resettable for PMRADDRSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

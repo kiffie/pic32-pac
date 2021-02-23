@@ -1,18 +1,52 @@
-#[doc = "Reader of register CNPDCLR"]
-pub type R = crate::R<u32, super::CNPDCLR>;
-#[doc = "Writer for register CNPDCLR"]
-pub type W = crate::W<u32, super::CNPDCLR>;
-#[doc = "Register CNPDCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::CNPDCLR {
-    type Type = u32;
+#[doc = "Register `CNPDCLR` reader"]
+pub struct R(crate::R<CNPDCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CNPDCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CNPDA0`"]
-pub type CNPDA0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNPDA0`"]
+impl core::convert::From<crate::R<CNPDCLR_SPEC>> for R {
+    fn from(reader: crate::R<CNPDCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CNPDCLR` writer"]
+pub struct W(crate::W<CNPDCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CNPDCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CNPDCLR_SPEC>> for W {
+    fn from(writer: crate::W<CNPDCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CNPDA0` reader - "]
+pub struct CNPDA0_R(crate::FieldReader<bool, bool>);
+impl CNPDA0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNPDA0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNPDA0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNPDA0` writer - "]
 pub struct CNPDA0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> CNPDA0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNPDA1`"]
-pub type CNPDA1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNPDA1`"]
+#[doc = "Field `CNPDA1` reader - "]
+pub struct CNPDA1_R(crate::FieldReader<bool, bool>);
+impl CNPDA1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNPDA1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNPDA1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNPDA1` writer - "]
 pub struct CNPDA1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> CNPDA1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNPDA2`"]
-pub type CNPDA2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNPDA2`"]
+#[doc = "Field `CNPDA2` reader - "]
+pub struct CNPDA2_R(crate::FieldReader<bool, bool>);
+impl CNPDA2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNPDA2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNPDA2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNPDA2` writer - "]
 pub struct CNPDA2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> CNPDA2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNPDA3`"]
-pub type CNPDA3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNPDA3`"]
+#[doc = "Field `CNPDA3` reader - "]
+pub struct CNPDA3_R(crate::FieldReader<bool, bool>);
+impl CNPDA3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNPDA3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNPDA3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNPDA3` writer - "]
 pub struct CNPDA3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> CNPDA3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CNPDA4`"]
-pub type CNPDA4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CNPDA4`"]
+#[doc = "Field `CNPDA4` reader - "]
+pub struct CNPDA4_R(crate::FieldReader<bool, bool>);
+impl CNPDA4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CNPDA4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CNPDA4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CNPDA4` writer - "]
 pub struct CNPDA4_W<'a> {
     w: &'a mut W,
 }
@@ -182,5 +264,30 @@ impl W {
     #[inline(always)]
     pub fn cnpda4(&mut self) -> CNPDA4_W {
         CNPDA4_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CNPDACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cnpdclr](index.html) module"]
+pub struct CNPDCLR_SPEC;
+impl crate::RegisterSpec for CNPDCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cnpdclr::R](R) reader structure"]
+impl crate::Readable for CNPDCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [cnpdclr::W](W) writer structure"]
+impl crate::Writable for CNPDCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CNPDCLR to value 0"]
+impl crate::Resettable for CNPDCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

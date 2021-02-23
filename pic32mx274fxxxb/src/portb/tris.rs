@@ -1,18 +1,52 @@
-#[doc = "Reader of register TRIS"]
-pub type R = crate::R<u32, super::TRIS>;
-#[doc = "Writer for register TRIS"]
-pub type W = crate::W<u32, super::TRIS>;
-#[doc = "Register TRIS `reset()`'s with value 0xe3bf"]
-impl crate::ResetValue for super::TRIS {
-    type Type = u32;
+#[doc = "Register `TRIS` reader"]
+pub struct R(crate::R<TRIS_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<TRIS_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0xe3bf
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `TRISB0`"]
-pub type TRISB0_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB0`"]
+impl core::convert::From<crate::R<TRIS_SPEC>> for R {
+    fn from(reader: crate::R<TRIS_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `TRIS` writer"]
+pub struct W(crate::W<TRIS_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<TRIS_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<TRIS_SPEC>> for W {
+    fn from(writer: crate::W<TRIS_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `TRISB0` reader - "]
+pub struct TRISB0_R(crate::FieldReader<bool, bool>);
+impl TRISB0_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB0_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB0_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB0` writer - "]
 pub struct TRISB0_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> TRISB0_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB1`"]
-pub type TRISB1_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB1`"]
+#[doc = "Field `TRISB1` reader - "]
+pub struct TRISB1_R(crate::FieldReader<bool, bool>);
+impl TRISB1_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB1_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB1_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB1` writer - "]
 pub struct TRISB1_W<'a> {
     w: &'a mut W,
 }
@@ -58,9 +104,21 @@ impl<'a> TRISB1_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB2`"]
-pub type TRISB2_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB2`"]
+#[doc = "Field `TRISB2` reader - "]
+pub struct TRISB2_R(crate::FieldReader<bool, bool>);
+impl TRISB2_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB2_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB2_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB2` writer - "]
 pub struct TRISB2_W<'a> {
     w: &'a mut W,
 }
@@ -82,9 +140,21 @@ impl<'a> TRISB2_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB3`"]
-pub type TRISB3_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB3`"]
+#[doc = "Field `TRISB3` reader - "]
+pub struct TRISB3_R(crate::FieldReader<bool, bool>);
+impl TRISB3_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB3_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB3` writer - "]
 pub struct TRISB3_W<'a> {
     w: &'a mut W,
 }
@@ -106,9 +176,21 @@ impl<'a> TRISB3_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB4`"]
-pub type TRISB4_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB4`"]
+#[doc = "Field `TRISB4` reader - "]
+pub struct TRISB4_R(crate::FieldReader<bool, bool>);
+impl TRISB4_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB4_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB4` writer - "]
 pub struct TRISB4_W<'a> {
     w: &'a mut W,
 }
@@ -130,9 +212,21 @@ impl<'a> TRISB4_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB5`"]
-pub type TRISB5_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB5`"]
+#[doc = "Field `TRISB5` reader - "]
+pub struct TRISB5_R(crate::FieldReader<bool, bool>);
+impl TRISB5_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB5_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB5_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB5` writer - "]
 pub struct TRISB5_W<'a> {
     w: &'a mut W,
 }
@@ -154,9 +248,21 @@ impl<'a> TRISB5_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB7`"]
-pub type TRISB7_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB7`"]
+#[doc = "Field `TRISB7` reader - "]
+pub struct TRISB7_R(crate::FieldReader<bool, bool>);
+impl TRISB7_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB7_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB7_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB7` writer - "]
 pub struct TRISB7_W<'a> {
     w: &'a mut W,
 }
@@ -178,9 +284,21 @@ impl<'a> TRISB7_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB8`"]
-pub type TRISB8_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB8`"]
+#[doc = "Field `TRISB8` reader - "]
+pub struct TRISB8_R(crate::FieldReader<bool, bool>);
+impl TRISB8_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB8_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB8_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB8` writer - "]
 pub struct TRISB8_W<'a> {
     w: &'a mut W,
 }
@@ -202,9 +320,21 @@ impl<'a> TRISB8_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB9`"]
-pub type TRISB9_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB9`"]
+#[doc = "Field `TRISB9` reader - "]
+pub struct TRISB9_R(crate::FieldReader<bool, bool>);
+impl TRISB9_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB9_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB9_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB9` writer - "]
 pub struct TRISB9_W<'a> {
     w: &'a mut W,
 }
@@ -226,9 +356,21 @@ impl<'a> TRISB9_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB13`"]
-pub type TRISB13_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB13`"]
+#[doc = "Field `TRISB13` reader - "]
+pub struct TRISB13_R(crate::FieldReader<bool, bool>);
+impl TRISB13_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB13_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB13_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB13` writer - "]
 pub struct TRISB13_W<'a> {
     w: &'a mut W,
 }
@@ -250,9 +392,21 @@ impl<'a> TRISB13_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB14`"]
-pub type TRISB14_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB14`"]
+#[doc = "Field `TRISB14` reader - "]
+pub struct TRISB14_R(crate::FieldReader<bool, bool>);
+impl TRISB14_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB14_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB14_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB14` writer - "]
 pub struct TRISB14_W<'a> {
     w: &'a mut W,
 }
@@ -274,9 +428,21 @@ impl<'a> TRISB14_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `TRISB15`"]
-pub type TRISB15_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `TRISB15`"]
+#[doc = "Field `TRISB15` reader - "]
+pub struct TRISB15_R(crate::FieldReader<bool, bool>);
+impl TRISB15_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        TRISB15_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TRISB15_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TRISB15` writer - "]
 pub struct TRISB15_W<'a> {
     w: &'a mut W,
 }
@@ -420,5 +586,30 @@ impl W {
     #[inline(always)]
     pub fn trisb15(&mut self) -> TRISB15_W {
         TRISB15_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "TRISB register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tris](index.html) module"]
+pub struct TRIS_SPEC;
+impl crate::RegisterSpec for TRIS_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [tris::R](R) reader structure"]
+impl crate::Readable for TRIS_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [tris::W](W) writer structure"]
+impl crate::Writable for TRIS_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets TRIS to value 0xe3bf"]
+impl crate::Resettable for TRIS_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0xe3bf
     }
 }

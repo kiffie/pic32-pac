@@ -1,18 +1,52 @@
-#[doc = "Reader of register CVRCON"]
-pub type R = crate::R<u32, super::CVRCON>;
-#[doc = "Writer for register CVRCON"]
-pub type W = crate::W<u32, super::CVRCON>;
-#[doc = "Register CVRCON `reset()`'s with value 0"]
-impl crate::ResetValue for super::CVRCON {
-    type Type = u32;
+#[doc = "Register `CVRCON` reader"]
+pub struct R(crate::R<CVRCON_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CVRCON_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CVR`"]
-pub type CVR_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `CVR`"]
+impl core::convert::From<crate::R<CVRCON_SPEC>> for R {
+    fn from(reader: crate::R<CVRCON_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CVRCON` writer"]
+pub struct W(crate::W<CVRCON_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CVRCON_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CVRCON_SPEC>> for W {
+    fn from(writer: crate::W<CVRCON_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CVR` reader - "]
+pub struct CVR_R(crate::FieldReader<u8, u8>);
+impl CVR_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        CVR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CVR_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CVR` writer - "]
 pub struct CVR_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> CVR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CVRSS`"]
-pub type CVRSS_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CVRSS`"]
+#[doc = "Field `CVRSS` reader - "]
+pub struct CVRSS_R(crate::FieldReader<bool, bool>);
+impl CVRSS_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CVRSS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CVRSS_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CVRSS` writer - "]
 pub struct CVRSS_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> CVRSS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CVRR`"]
-pub type CVRR_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CVRR`"]
+#[doc = "Field `CVRR` reader - "]
+pub struct CVRR_R(crate::FieldReader<bool, bool>);
+impl CVRR_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CVRR_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CVRR_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CVRR` writer - "]
 pub struct CVRR_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> CVRR_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CVROE`"]
-pub type CVROE_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CVROE`"]
+#[doc = "Field `CVROE` reader - "]
+pub struct CVROE_R(crate::FieldReader<bool, bool>);
+impl CVROE_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CVROE_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CVROE_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CVROE` writer - "]
 pub struct CVROE_W<'a> {
     w: &'a mut W,
 }
@@ -96,9 +166,21 @@ impl<'a> CVROE_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -172,5 +254,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CVRCON register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [cvrcon](index.html) module"]
+pub struct CVRCON_SPEC;
+impl crate::RegisterSpec for CVRCON_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [cvrcon::R](R) reader structure"]
+impl crate::Readable for CVRCON_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [cvrcon::W](W) writer structure"]
+impl crate::Writable for CVRCON_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CVRCON to value 0"]
+impl crate::Resettable for CVRCON_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

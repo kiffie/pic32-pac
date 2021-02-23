@@ -1,18 +1,52 @@
-#[doc = "Reader of register PMDIN"]
-pub type R = crate::R<u32, super::PMDIN>;
-#[doc = "Writer for register PMDIN"]
-pub type W = crate::W<u32, super::PMDIN>;
-#[doc = "Register PMDIN `reset()`'s with value 0"]
-impl crate::ResetValue for super::PMDIN {
-    type Type = u32;
+#[doc = "Register `PMDIN` reader"]
+pub struct R(crate::R<PMDIN_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PMDIN_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DATAIN`"]
-pub type DATAIN_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DATAIN`"]
+impl core::convert::From<crate::R<PMDIN_SPEC>> for R {
+    fn from(reader: crate::R<PMDIN_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PMDIN` writer"]
+pub struct W(crate::W<PMDIN_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PMDIN_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PMDIN_SPEC>> for W {
+    fn from(writer: crate::W<PMDIN_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DATAIN` reader - "]
+pub struct DATAIN_R(crate::FieldReader<u32, u32>);
+impl DATAIN_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        DATAIN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DATAIN_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DATAIN` writer - "]
 pub struct DATAIN_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn datain(&mut self) -> DATAIN_W {
         DATAIN_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PMDIN register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pmdin](index.html) module"]
+pub struct PMDIN_SPEC;
+impl crate::RegisterSpec for PMDIN_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pmdin::R](R) reader structure"]
+impl crate::Readable for PMDIN_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pmdin::W](W) writer structure"]
+impl crate::Writable for PMDIN_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PMDIN to value 0"]
+impl crate::Resettable for PMDIN_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

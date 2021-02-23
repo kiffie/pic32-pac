@@ -1,18 +1,52 @@
-#[doc = "Reader of register WDTCONCLR"]
-pub type R = crate::R<u32, super::WDTCONCLR>;
-#[doc = "Writer for register WDTCONCLR"]
-pub type W = crate::W<u32, super::WDTCONCLR>;
-#[doc = "Register WDTCONCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::WDTCONCLR {
-    type Type = u32;
+#[doc = "Register `WDTCONCLR` reader"]
+pub struct R(crate::R<WDTCONCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<WDTCONCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `WDTWINEN`"]
-pub type WDTWINEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `WDTWINEN`"]
+impl core::convert::From<crate::R<WDTCONCLR_SPEC>> for R {
+    fn from(reader: crate::R<WDTCONCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `WDTCONCLR` writer"]
+pub struct W(crate::W<WDTCONCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<WDTCONCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<WDTCONCLR_SPEC>> for W {
+    fn from(writer: crate::W<WDTCONCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `WDTWINEN` reader - "]
+pub struct WDTWINEN_R(crate::FieldReader<bool, bool>);
+impl WDTWINEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        WDTWINEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WDTWINEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WDTWINEN` writer - "]
 pub struct WDTWINEN_W<'a> {
     w: &'a mut W,
 }
@@ -34,9 +68,21 @@ impl<'a> WDTWINEN_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `RUNDIV`"]
-pub type RUNDIV_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `RUNDIV`"]
+#[doc = "Field `RUNDIV` reader - "]
+pub struct RUNDIV_R(crate::FieldReader<u8, u8>);
+impl RUNDIV_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        RUNDIV_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for RUNDIV_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `RUNDIV` writer - "]
 pub struct RUNDIV_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> RUNDIV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> ON_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `WDTCLRKEY`"]
-pub type WDTCLRKEY_R = crate::R<u16, u16>;
-#[doc = "Write proxy for field `WDTCLRKEY`"]
+#[doc = "Field `WDTCLRKEY` reader - "]
+pub struct WDTCLRKEY_R(crate::FieldReader<u16, u16>);
+impl WDTCLRKEY_R {
+    pub(crate) fn new(bits: u16) -> Self {
+        WDTCLRKEY_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WDTCLRKEY_R {
+    type Target = crate::FieldReader<u16, u16>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WDTCLRKEY` writer - "]
 pub struct WDTCLRKEY_W<'a> {
     w: &'a mut W,
 }
@@ -128,5 +198,30 @@ impl W {
     #[inline(always)]
     pub fn wdtclrkey(&mut self) -> WDTCLRKEY_W {
         WDTCLRKEY_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "WDTCONCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [wdtconclr](index.html) module"]
+pub struct WDTCONCLR_SPEC;
+impl crate::RegisterSpec for WDTCONCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [wdtconclr::R](R) reader structure"]
+impl crate::Readable for WDTCONCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [wdtconclr::W](W) writer structure"]
+impl crate::Writable for WDTCONCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets WDTCONCLR to value 0"]
+impl crate::Resettable for WDTCONCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

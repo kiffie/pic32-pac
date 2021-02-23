@@ -1,18 +1,52 @@
-#[doc = "Reader of register ALRMDATEINV"]
-pub type R = crate::R<u32, super::ALRMDATEINV>;
-#[doc = "Writer for register ALRMDATEINV"]
-pub type W = crate::W<u32, super::ALRMDATEINV>;
-#[doc = "Register ALRMDATEINV `reset()`'s with value 0"]
-impl crate::ResetValue for super::ALRMDATEINV {
-    type Type = u32;
+#[doc = "Register `ALRMDATEINV` reader"]
+pub struct R(crate::R<ALRMDATEINV_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<ALRMDATEINV_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `WDAY01`"]
-pub type WDAY01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `WDAY01`"]
+impl core::convert::From<crate::R<ALRMDATEINV_SPEC>> for R {
+    fn from(reader: crate::R<ALRMDATEINV_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `ALRMDATEINV` writer"]
+pub struct W(crate::W<ALRMDATEINV_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<ALRMDATEINV_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<ALRMDATEINV_SPEC>> for W {
+    fn from(writer: crate::W<ALRMDATEINV_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `WDAY01` reader - "]
+pub struct WDAY01_R(crate::FieldReader<u8, u8>);
+impl WDAY01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        WDAY01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for WDAY01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `WDAY01` writer - "]
 pub struct WDAY01_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> WDAY01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DAY01`"]
-pub type DAY01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DAY01`"]
+#[doc = "Field `DAY01` reader - "]
+pub struct DAY01_R(crate::FieldReader<u8, u8>);
+impl DAY01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        DAY01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DAY01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DAY01` writer - "]
 pub struct DAY01_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> DAY01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `DAY10`"]
-pub type DAY10_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `DAY10`"]
+#[doc = "Field `DAY10` reader - "]
+pub struct DAY10_R(crate::FieldReader<u8, u8>);
+impl DAY10_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        DAY10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DAY10_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DAY10` writer - "]
 pub struct DAY10_W<'a> {
     w: &'a mut W,
 }
@@ -52,9 +110,21 @@ impl<'a> DAY10_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MONTH01`"]
-pub type MONTH01_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MONTH01`"]
+#[doc = "Field `MONTH01` reader - "]
+pub struct MONTH01_R(crate::FieldReader<u8, u8>);
+impl MONTH01_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        MONTH01_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MONTH01_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MONTH01` writer - "]
 pub struct MONTH01_W<'a> {
     w: &'a mut W,
 }
@@ -66,9 +136,21 @@ impl<'a> MONTH01_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `MONTH10`"]
-pub type MONTH10_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `MONTH10`"]
+#[doc = "Field `MONTH10` reader - "]
+pub struct MONTH10_R(crate::FieldReader<u8, u8>);
+impl MONTH10_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        MONTH10_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for MONTH10_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `MONTH10` writer - "]
 pub struct MONTH10_W<'a> {
     w: &'a mut W,
 }
@@ -132,5 +214,30 @@ impl W {
     #[inline(always)]
     pub fn month10(&mut self) -> MONTH10_W {
         MONTH10_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "ALRMDATEINV register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [alrmdateinv](index.html) module"]
+pub struct ALRMDATEINV_SPEC;
+impl crate::RegisterSpec for ALRMDATEINV_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [alrmdateinv::R](R) reader structure"]
+impl crate::Readable for ALRMDATEINV_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [alrmdateinv::W](W) writer structure"]
+impl crate::Writable for ALRMDATEINV_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets ALRMDATEINV to value 0"]
+impl crate::Resettable for ALRMDATEINV_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

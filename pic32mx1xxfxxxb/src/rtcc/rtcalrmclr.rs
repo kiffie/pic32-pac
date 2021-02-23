@@ -1,18 +1,52 @@
-#[doc = "Reader of register RTCALRMCLR"]
-pub type R = crate::R<u32, super::RTCALRMCLR>;
-#[doc = "Writer for register RTCALRMCLR"]
-pub type W = crate::W<u32, super::RTCALRMCLR>;
-#[doc = "Register RTCALRMCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::RTCALRMCLR {
-    type Type = u32;
+#[doc = "Register `RTCALRMCLR` reader"]
+pub struct R(crate::R<RTCALRMCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<RTCALRMCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ARPT`"]
-pub type ARPT_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `ARPT`"]
+impl core::convert::From<crate::R<RTCALRMCLR_SPEC>> for R {
+    fn from(reader: crate::R<RTCALRMCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `RTCALRMCLR` writer"]
+pub struct W(crate::W<RTCALRMCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<RTCALRMCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<RTCALRMCLR_SPEC>> for W {
+    fn from(writer: crate::W<RTCALRMCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ARPT` reader - "]
+pub struct ARPT_R(crate::FieldReader<u8, u8>);
+impl ARPT_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        ARPT_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ARPT_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ARPT` writer - "]
 pub struct ARPT_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> ARPT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `AMASK`"]
-pub type AMASK_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `AMASK`"]
+#[doc = "Field `AMASK` reader - "]
+pub struct AMASK_R(crate::FieldReader<u8, u8>);
+impl AMASK_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        AMASK_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for AMASK_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `AMASK` writer - "]
 pub struct AMASK_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> AMASK_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ALRMSYNC`"]
-pub type ALRMSYNC_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ALRMSYNC`"]
+#[doc = "Field `ALRMSYNC` reader - "]
+pub struct ALRMSYNC_R(crate::FieldReader<bool, bool>);
+impl ALRMSYNC_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ALRMSYNC_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ALRMSYNC_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ALRMSYNC` writer - "]
 pub struct ALRMSYNC_W<'a> {
     w: &'a mut W,
 }
@@ -62,9 +120,21 @@ impl<'a> ALRMSYNC_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PIV`"]
-pub type PIV_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PIV`"]
+#[doc = "Field `PIV` reader - "]
+pub struct PIV_R(crate::FieldReader<bool, bool>);
+impl PIV_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        PIV_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PIV_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PIV` writer - "]
 pub struct PIV_W<'a> {
     w: &'a mut W,
 }
@@ -86,9 +156,21 @@ impl<'a> PIV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `CHIME`"]
-pub type CHIME_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `CHIME`"]
+#[doc = "Field `CHIME` reader - "]
+pub struct CHIME_R(crate::FieldReader<bool, bool>);
+impl CHIME_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        CHIME_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CHIME_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CHIME` writer - "]
 pub struct CHIME_W<'a> {
     w: &'a mut W,
 }
@@ -110,9 +192,21 @@ impl<'a> CHIME_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ALRMEN`"]
-pub type ALRMEN_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ALRMEN`"]
+#[doc = "Field `ALRMEN` reader - "]
+pub struct ALRMEN_R(crate::FieldReader<bool, bool>);
+impl ALRMEN_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ALRMEN_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ALRMEN_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ALRMEN` writer - "]
 pub struct ALRMEN_W<'a> {
     w: &'a mut W,
 }
@@ -196,5 +290,30 @@ impl W {
     #[inline(always)]
     pub fn alrmen(&mut self) -> ALRMEN_W {
         ALRMEN_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "RTCALRMCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rtcalrmclr](index.html) module"]
+pub struct RTCALRMCLR_SPEC;
+impl crate::RegisterSpec for RTCALRMCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [rtcalrmclr::R](R) reader structure"]
+impl crate::Readable for RTCALRMCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [rtcalrmclr::W](W) writer structure"]
+impl crate::Writable for RTCALRMCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets RTCALRMCLR to value 0"]
+impl crate::Resettable for RTCALRMCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

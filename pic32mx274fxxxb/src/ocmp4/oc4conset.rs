@@ -1,18 +1,52 @@
-#[doc = "Reader of register OC4CONSET"]
-pub type R = crate::R<u32, super::OC4CONSET>;
-#[doc = "Writer for register OC4CONSET"]
-pub type W = crate::W<u32, super::OC4CONSET>;
-#[doc = "Register OC4CONSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::OC4CONSET {
-    type Type = u32;
+#[doc = "Register `OC4CONSET` reader"]
+pub struct R(crate::R<OC4CONSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<OC4CONSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `OCM`"]
-pub type OCM_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `OCM`"]
+impl core::convert::From<crate::R<OC4CONSET_SPEC>> for R {
+    fn from(reader: crate::R<OC4CONSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `OC4CONSET` writer"]
+pub struct W(crate::W<OC4CONSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<OC4CONSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<OC4CONSET_SPEC>> for W {
+    fn from(writer: crate::W<OC4CONSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `OCM` reader - "]
+pub struct OCM_R(crate::FieldReader<u8, u8>);
+impl OCM_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        OCM_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OCM_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OCM` writer - "]
 pub struct OCM_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> OCM_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `OCTSEL`"]
-pub type OCTSEL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `OCTSEL`"]
+#[doc = "Field `OCTSEL` reader - "]
+pub struct OCTSEL_R(crate::FieldReader<bool, bool>);
+impl OCTSEL_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        OCTSEL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OCTSEL_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OCTSEL` writer - "]
 pub struct OCTSEL_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> OCTSEL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `OCFLT`"]
-pub type OCFLT_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `OCFLT`"]
+#[doc = "Field `OCFLT` reader - "]
+pub struct OCFLT_R(crate::FieldReader<bool, bool>);
+impl OCFLT_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        OCFLT_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OCFLT_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OCFLT` writer - "]
 pub struct OCFLT_W<'a> {
     w: &'a mut W,
 }
@@ -72,9 +130,21 @@ impl<'a> OCFLT_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `OC32`"]
-pub type OC32_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `OC32`"]
+#[doc = "Field `OC32` reader - "]
+pub struct OC32_R(crate::FieldReader<bool, bool>);
+impl OC32_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        OC32_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for OC32_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `OC32` writer - "]
 pub struct OC32_W<'a> {
     w: &'a mut W,
 }
@@ -96,9 +166,21 @@ impl<'a> OC32_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SIDL`"]
-pub type SIDL_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SIDL`"]
+#[doc = "Field `SIDL` reader - "]
+pub struct SIDL_R(crate::FieldReader<bool, bool>);
+impl SIDL_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SIDL_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SIDL_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SIDL` writer - "]
 pub struct SIDL_W<'a> {
     w: &'a mut W,
 }
@@ -120,9 +202,21 @@ impl<'a> SIDL_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `FRZ`"]
-pub type FRZ_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `FRZ`"]
+#[doc = "Field `FRZ` reader - "]
+pub struct FRZ_R(crate::FieldReader<bool, bool>);
+impl FRZ_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        FRZ_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for FRZ_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `FRZ` writer - "]
 pub struct FRZ_W<'a> {
     w: &'a mut W,
 }
@@ -144,9 +238,21 @@ impl<'a> FRZ_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -240,5 +346,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "OC4CONSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [oc4conset](index.html) module"]
+pub struct OC4CONSET_SPEC;
+impl crate::RegisterSpec for OC4CONSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [oc4conset::R](R) reader structure"]
+impl crate::Readable for OC4CONSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [oc4conset::W](W) writer structure"]
+impl crate::Writable for OC4CONSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets OC4CONSET to value 0"]
+impl crate::Resettable for OC4CONSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

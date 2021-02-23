@@ -1,18 +1,52 @@
-#[doc = "Reader of register ADC1BUF4"]
-pub type R = crate::R<u32, super::ADC1BUF4>;
-#[doc = "Writer for register ADC1BUF4"]
-pub type W = crate::W<u32, super::ADC1BUF4>;
-#[doc = "Register ADC1BUF4 `reset()`'s with value 0"]
-impl crate::ResetValue for super::ADC1BUF4 {
-    type Type = u32;
+#[doc = "Register `ADC1BUF4` reader"]
+pub struct R(crate::R<ADC1BUF4_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<ADC1BUF4_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ADC1BUF4`"]
-pub type ADC1BUF4_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `ADC1BUF4`"]
+impl core::convert::From<crate::R<ADC1BUF4_SPEC>> for R {
+    fn from(reader: crate::R<ADC1BUF4_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `ADC1BUF4` writer"]
+pub struct W(crate::W<ADC1BUF4_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<ADC1BUF4_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<ADC1BUF4_SPEC>> for W {
+    fn from(writer: crate::W<ADC1BUF4_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ADC1BUF4` reader - "]
+pub struct ADC1BUF4_R(crate::FieldReader<u32, u32>);
+impl ADC1BUF4_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        ADC1BUF4_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ADC1BUF4_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ADC1BUF4` writer - "]
 pub struct ADC1BUF4_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn adc1buf4(&mut self) -> ADC1BUF4_W {
         ADC1BUF4_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "ADC1BUF4 register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [adc1buf4](index.html) module"]
+pub struct ADC1BUF4_SPEC;
+impl crate::RegisterSpec for ADC1BUF4_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [adc1buf4::R](R) reader structure"]
+impl crate::Readable for ADC1BUF4_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [adc1buf4::W](W) writer structure"]
+impl crate::Writable for ADC1BUF4_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets ADC1BUF4 to value 0"]
+impl crate::Resettable for ADC1BUF4_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

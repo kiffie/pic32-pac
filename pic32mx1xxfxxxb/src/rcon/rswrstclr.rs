@@ -1,18 +1,52 @@
-#[doc = "Reader of register RSWRSTCLR"]
-pub type R = crate::R<u32, super::RSWRSTCLR>;
-#[doc = "Writer for register RSWRSTCLR"]
-pub type W = crate::W<u32, super::RSWRSTCLR>;
-#[doc = "Register RSWRSTCLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::RSWRSTCLR {
-    type Type = u32;
+#[doc = "Register `RSWRSTCLR` reader"]
+pub struct R(crate::R<RSWRSTCLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<RSWRSTCLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `SWRST`"]
-pub type SWRST_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `SWRST`"]
+impl core::convert::From<crate::R<RSWRSTCLR_SPEC>> for R {
+    fn from(reader: crate::R<RSWRSTCLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `RSWRSTCLR` writer"]
+pub struct W(crate::W<RSWRSTCLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<RSWRSTCLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<RSWRSTCLR_SPEC>> for W {
+    fn from(writer: crate::W<RSWRSTCLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `SWRST` reader - "]
+pub struct SWRST_R(crate::FieldReader<bool, bool>);
+impl SWRST_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        SWRST_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SWRST_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SWRST` writer - "]
 pub struct SWRST_W<'a> {
     w: &'a mut W,
 }
@@ -46,5 +80,30 @@ impl W {
     #[inline(always)]
     pub fn swrst(&mut self) -> SWRST_W {
         SWRST_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "RSWRSTCLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [rswrstclr](index.html) module"]
+pub struct RSWRSTCLR_SPEC;
+impl crate::RegisterSpec for RSWRSTCLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [rswrstclr::R](R) reader structure"]
+impl crate::Readable for RSWRSTCLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [rswrstclr::W](W) writer structure"]
+impl crate::Writable for RSWRSTCLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets RSWRSTCLR to value 0"]
+impl crate::Resettable for RSWRSTCLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

@@ -1,18 +1,52 @@
-#[doc = "Reader of register TMR3CLR"]
-pub type R = crate::R<u32, super::TMR3CLR>;
-#[doc = "Writer for register TMR3CLR"]
-pub type W = crate::W<u32, super::TMR3CLR>;
-#[doc = "Register TMR3CLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::TMR3CLR {
-    type Type = u32;
+#[doc = "Register `TMR3CLR` reader"]
+pub struct R(crate::R<TMR3CLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<TMR3CLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `TMR3`"]
-pub type TMR3_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `TMR3`"]
+impl core::convert::From<crate::R<TMR3CLR_SPEC>> for R {
+    fn from(reader: crate::R<TMR3CLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `TMR3CLR` writer"]
+pub struct W(crate::W<TMR3CLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<TMR3CLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<TMR3CLR_SPEC>> for W {
+    fn from(writer: crate::W<TMR3CLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `TMR3` reader - "]
+pub struct TMR3_R(crate::FieldReader<u32, u32>);
+impl TMR3_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        TMR3_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for TMR3_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `TMR3` writer - "]
 pub struct TMR3_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn tmr3(&mut self) -> TMR3_W {
         TMR3_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "TMR3CLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [tmr3clr](index.html) module"]
+pub struct TMR3CLR_SPEC;
+impl crate::RegisterSpec for TMR3CLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [tmr3clr::R](R) reader structure"]
+impl crate::Readable for TMR3CLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [tmr3clr::W](W) writer structure"]
+impl crate::Writable for TMR3CLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets TMR3CLR to value 0"]
+impl crate::Resettable for TMR3CLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

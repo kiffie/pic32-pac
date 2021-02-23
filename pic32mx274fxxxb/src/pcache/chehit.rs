@@ -1,18 +1,52 @@
-#[doc = "Reader of register CHEHIT"]
-pub type R = crate::R<u32, super::CHEHIT>;
-#[doc = "Writer for register CHEHIT"]
-pub type W = crate::W<u32, super::CHEHIT>;
-#[doc = "Register CHEHIT `reset()`'s with value 0"]
-impl crate::ResetValue for super::CHEHIT {
-    type Type = u32;
+#[doc = "Register `CHEHIT` reader"]
+pub struct R(crate::R<CHEHIT_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<CHEHIT_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `CHEHIT`"]
-pub type CHEHIT_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `CHEHIT`"]
+impl core::convert::From<crate::R<CHEHIT_SPEC>> for R {
+    fn from(reader: crate::R<CHEHIT_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `CHEHIT` writer"]
+pub struct W(crate::W<CHEHIT_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<CHEHIT_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<CHEHIT_SPEC>> for W {
+    fn from(writer: crate::W<CHEHIT_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `CHEHIT` reader - "]
+pub struct CHEHIT_R(crate::FieldReader<u32, u32>);
+impl CHEHIT_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        CHEHIT_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for CHEHIT_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `CHEHIT` writer - "]
 pub struct CHEHIT_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn chehit(&mut self) -> CHEHIT_W {
         CHEHIT_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "CHEHIT register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [chehit](index.html) module"]
+pub struct CHEHIT_SPEC;
+impl crate::RegisterSpec for CHEHIT_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [chehit::R](R) reader structure"]
+impl crate::Readable for CHEHIT_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [chehit::W](W) writer structure"]
+impl crate::Writable for CHEHIT_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets CHEHIT to value 0"]
+impl crate::Resettable for CHEHIT_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

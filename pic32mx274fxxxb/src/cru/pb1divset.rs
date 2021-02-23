@@ -1,18 +1,52 @@
-#[doc = "Reader of register PB1DIVSET"]
-pub type R = crate::R<u32, super::PB1DIVSET>;
-#[doc = "Writer for register PB1DIVSET"]
-pub type W = crate::W<u32, super::PB1DIVSET>;
-#[doc = "Register PB1DIVSET `reset()`'s with value 0"]
-impl crate::ResetValue for super::PB1DIVSET {
-    type Type = u32;
+#[doc = "Register `PB1DIVSET` reader"]
+pub struct R(crate::R<PB1DIVSET_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<PB1DIVSET_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `PBDIV`"]
-pub type PBDIV_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `PBDIV`"]
+impl core::convert::From<crate::R<PB1DIVSET_SPEC>> for R {
+    fn from(reader: crate::R<PB1DIVSET_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `PB1DIVSET` writer"]
+pub struct W(crate::W<PB1DIVSET_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<PB1DIVSET_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<PB1DIVSET_SPEC>> for W {
+    fn from(writer: crate::W<PB1DIVSET_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `PBDIV` reader - "]
+pub struct PBDIV_R(crate::FieldReader<u8, u8>);
+impl PBDIV_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        PBDIV_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PBDIV_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PBDIV` writer - "]
 pub struct PBDIV_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> PBDIV_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `PBDIVRDY`"]
-pub type PBDIVRDY_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `PBDIVRDY`"]
+#[doc = "Field `PBDIVRDY` reader - "]
+pub struct PBDIVRDY_R(crate::FieldReader<bool, bool>);
+impl PBDIVRDY_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        PBDIVRDY_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for PBDIVRDY_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `PBDIVRDY` writer - "]
 pub struct PBDIVRDY_W<'a> {
     w: &'a mut W,
 }
@@ -48,9 +94,21 @@ impl<'a> PBDIVRDY_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ON`"]
-pub type ON_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ON`"]
+#[doc = "Field `ON` reader - "]
+pub struct ON_R(crate::FieldReader<bool, bool>);
+impl ON_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ON_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ON_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ON` writer - "]
 pub struct ON_W<'a> {
     w: &'a mut W,
 }
@@ -104,5 +162,30 @@ impl W {
     #[inline(always)]
     pub fn on(&mut self) -> ON_W {
         ON_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "PB1DIVSET register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [pb1divset](index.html) module"]
+pub struct PB1DIVSET_SPEC;
+impl crate::RegisterSpec for PB1DIVSET_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [pb1divset::R](R) reader structure"]
+impl crate::Readable for PB1DIVSET_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [pb1divset::W](W) writer structure"]
+impl crate::Writable for PB1DIVSET_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets PB1DIVSET to value 0"]
+impl crate::Resettable for PB1DIVSET_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

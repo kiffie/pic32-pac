@@ -1,18 +1,52 @@
-#[doc = "Reader of register AD1CON3CLR"]
-pub type R = crate::R<u32, super::AD1CON3CLR>;
-#[doc = "Writer for register AD1CON3CLR"]
-pub type W = crate::W<u32, super::AD1CON3CLR>;
-#[doc = "Register AD1CON3CLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::AD1CON3CLR {
-    type Type = u32;
+#[doc = "Register `AD1CON3CLR` reader"]
+pub struct R(crate::R<AD1CON3CLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<AD1CON3CLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `ADCS`"]
-pub type ADCS_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `ADCS`"]
+impl core::convert::From<crate::R<AD1CON3CLR_SPEC>> for R {
+    fn from(reader: crate::R<AD1CON3CLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `AD1CON3CLR` writer"]
+pub struct W(crate::W<AD1CON3CLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<AD1CON3CLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<AD1CON3CLR_SPEC>> for W {
+    fn from(writer: crate::W<AD1CON3CLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `ADCS` reader - "]
+pub struct ADCS_R(crate::FieldReader<u8, u8>);
+impl ADCS_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        ADCS_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ADCS_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ADCS` writer - "]
 pub struct ADCS_W<'a> {
     w: &'a mut W,
 }
@@ -24,9 +58,21 @@ impl<'a> ADCS_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `SAMC`"]
-pub type SAMC_R = crate::R<u8, u8>;
-#[doc = "Write proxy for field `SAMC`"]
+#[doc = "Field `SAMC` reader - "]
+pub struct SAMC_R(crate::FieldReader<u8, u8>);
+impl SAMC_R {
+    pub(crate) fn new(bits: u8) -> Self {
+        SAMC_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for SAMC_R {
+    type Target = crate::FieldReader<u8, u8>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `SAMC` writer - "]
 pub struct SAMC_W<'a> {
     w: &'a mut W,
 }
@@ -38,9 +84,21 @@ impl<'a> SAMC_W<'a> {
         self.w
     }
 }
-#[doc = "Reader of field `ADRC`"]
-pub type ADRC_R = crate::R<bool, bool>;
-#[doc = "Write proxy for field `ADRC`"]
+#[doc = "Field `ADRC` reader - "]
+pub struct ADRC_R(crate::FieldReader<bool, bool>);
+impl ADRC_R {
+    pub(crate) fn new(bits: bool) -> Self {
+        ADRC_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for ADRC_R {
+    type Target = crate::FieldReader<bool, bool>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `ADRC` writer - "]
 pub struct ADRC_W<'a> {
     w: &'a mut W,
 }
@@ -94,5 +152,30 @@ impl W {
     #[inline(always)]
     pub fn adrc(&mut self) -> ADRC_W {
         ADRC_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "AD1CON3CLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [ad1con3clr](index.html) module"]
+pub struct AD1CON3CLR_SPEC;
+impl crate::RegisterSpec for AD1CON3CLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [ad1con3clr::R](R) reader structure"]
+impl crate::Readable for AD1CON3CLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [ad1con3clr::W](W) writer structure"]
+impl crate::Writable for AD1CON3CLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets AD1CON3CLR to value 0"]
+impl crate::Resettable for AD1CON3CLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

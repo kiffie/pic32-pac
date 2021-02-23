@@ -1,18 +1,52 @@
-#[doc = "Reader of register DCRCDATACLR"]
-pub type R = crate::R<u32, super::DCRCDATACLR>;
-#[doc = "Writer for register DCRCDATACLR"]
-pub type W = crate::W<u32, super::DCRCDATACLR>;
-#[doc = "Register DCRCDATACLR `reset()`'s with value 0"]
-impl crate::ResetValue for super::DCRCDATACLR {
-    type Type = u32;
+#[doc = "Register `DCRCDATACLR` reader"]
+pub struct R(crate::R<DCRCDATACLR_SPEC>);
+impl core::ops::Deref for R {
+    type Target = crate::R<DCRCDATACLR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
     }
 }
-#[doc = "Reader of field `DCRCDATA`"]
-pub type DCRCDATA_R = crate::R<u32, u32>;
-#[doc = "Write proxy for field `DCRCDATA`"]
+impl core::convert::From<crate::R<DCRCDATACLR_SPEC>> for R {
+    fn from(reader: crate::R<DCRCDATACLR_SPEC>) -> Self {
+        R(reader)
+    }
+}
+#[doc = "Register `DCRCDATACLR` writer"]
+pub struct W(crate::W<DCRCDATACLR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<DCRCDATACLR_SPEC>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<DCRCDATACLR_SPEC>> for W {
+    fn from(writer: crate::W<DCRCDATACLR_SPEC>) -> Self {
+        W(writer)
+    }
+}
+#[doc = "Field `DCRCDATA` reader - "]
+pub struct DCRCDATA_R(crate::FieldReader<u32, u32>);
+impl DCRCDATA_R {
+    pub(crate) fn new(bits: u32) -> Self {
+        DCRCDATA_R(crate::FieldReader::new(bits))
+    }
+}
+impl core::ops::Deref for DCRCDATA_R {
+    type Target = crate::FieldReader<u32, u32>;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+#[doc = "Field `DCRCDATA` writer - "]
 pub struct DCRCDATA_W<'a> {
     w: &'a mut W,
 }
@@ -36,5 +70,30 @@ impl W {
     #[inline(always)]
     pub fn dcrcdata(&mut self) -> DCRCDATA_W {
         DCRCDATA_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "DCRCDATACLR register\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [dcrcdataclr](index.html) module"]
+pub struct DCRCDATACLR_SPEC;
+impl crate::RegisterSpec for DCRCDATACLR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [dcrcdataclr::R](R) reader structure"]
+impl crate::Readable for DCRCDATACLR_SPEC {
+    type Reader = R;
+}
+#[doc = "`write(|w| ..)` method takes [dcrcdataclr::W](W) writer structure"]
+impl crate::Writable for DCRCDATACLR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets DCRCDATACLR to value 0"]
+impl crate::Resettable for DCRCDATACLR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }
