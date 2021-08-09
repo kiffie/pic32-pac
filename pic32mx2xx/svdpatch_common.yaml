@@ -1,0 +1,54 @@
+#
+# common patch specifications for PIC32 MCUs
+#
+
+_derive:
+    UART2: UART1
+    I2C2: I2C1
+    SPI2: SPI1
+    DMAC1: DMAC0
+    DMAC2: DMAC0
+    DMAC3: DMAC0
+
+"DMAC0":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^(CON)(SET|CLR|INV)?$", 'CONT\2']
+    _strip:
+        - DCH0
+
+"UART1":
+    _strip:
+        - U1
+
+"I2C1":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^(CON)(SET|CLR|INV)?$", 'CONT\2']
+    "BRG*":
+        _modify:
+            I2CBRG:
+                name: BRG
+    "TRN*":
+        _modify:
+            I2CTRN:
+                name: TRN
+    RCV:
+        _modify:
+            I2CRCV:
+                name: RCV
+    _strip:
+         - I2C1
+
+"PORT*":
+    _sub:
+        # remove port letters from register names
+        - ["([A-D])(SET|CLR|INV)?$", '\2']
+
+"SPI1":
+    _sub:
+        # rename CON to CON1 to avoid Windows reserved file names
+        - ["^(CON)(SET|CLR|INV)?$", 'CON1\2']
+    _strip:
+        - SPI1
+

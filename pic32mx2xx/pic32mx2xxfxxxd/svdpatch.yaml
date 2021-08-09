@@ -1,0 +1,5 @@
+
+_svd: "PIC32MX270F256D.svd"
+
+_include:
+    - "../svdpatch_common.yaml"
