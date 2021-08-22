@@ -1,8 +1,8 @@
 [package]
 name = "pic32mx2xx"
-version = "0.2.0"
+version = "0.3.0"
 description = "Peripheral access API for PIC32MX2xx microcontrollers"
-repository = "https://github.com/kiffie/pic32-pac"
+repository = "https://github.com/kiffie/pic32-pac/tree/master/pic32mx2xx"
 keywords = ["no-std", "mips", "pic32", "svd2rust"]
 license = "MIT OR Apache-2.0"
 authors = ["Stephan <kiffie@mailbox.org>"]
@@ -11,9 +11,16 @@ include = ["README.md", "/src", "/build.rs"]
 
 [features]
 rt = []
+pic32mx1xxfxxxb = []
+pic32mx1xxfxxxc = []
+pic32mx1xxfxxxd = []
 pic32mx2xxfxxxb = []
 pic32mx2xxfxxxc = []
 pic32mx2xxfxxxd = []
+pic32mx1x4fxxxb = []
+pic32mx1x4fxxxd = []
+pic32mx2x4fxxxb = []
+pic32mx2x4fxxxd = []
 
 [dependencies]
 vcell = "0.1.2"
