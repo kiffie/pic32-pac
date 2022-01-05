@@ -1,5 +1,8 @@
 # Peripheral Access Crate for PIC32MX1/2xx
 
+[![Crates.io](https://img.shields.io/crates/v/pic32mx2xx.svg)](https://crates.io/crates/pic32mx2xx)
+[![docs.rs](https://img.shields.io/docsrs/pic32mx2xx.svg)](https://docs.rs/pic32mx2xx)
+
 This crate contains peripheral access APIs for PIC32MX1xx/2xx devices including
 some eXtreme Low Power (XLP) devices. The files in this repository were
 generated using the tools [`edc2svd`] and [`svd2rust`].
@@ -14,7 +17,7 @@ Features are used to selected the device, e.g.
 
 ```toml
 [dependencies.pic32mx2xx]
-version = "0.2.0"
+version = "0.4.0"
 features = ["pic32mx2xxfxxxb", "rt"]
 ```
 
