@@ -686,6 +686,15 @@ class Peripheral:
             # Handle splits
             for fspec in register.get("_split", []):
                 r.split_fields(fspec)
+            # Handle field name substitutions
+            for sublist in register.get("_sub", []):
+                if len(sublist) != 2:
+                    raise SvdPatchError("invalid _sub list: {}".format(sublist))
+                for ftag in rtag.iter('field'):
+                    nametag = ftag.find('name')
+                    newname = re.sub(sublist[0], sublist[1], nametag.text)
+                    if nametag.text != newname:
+                        nametag.text = newname
             # Handle fields
             if update_fields:
                 for fspec in register:
