@@ -1388,7 +1388,7 @@
       <baseAddress>0xbf800600</baseAddress>
       <registers>
         <register>
-          <name>T1CON</name>
+          <name>CONT</name>
           <description>T1CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -1437,7 +1437,7 @@
           </fields>
         </register>
         <register>
-          <name>T1CONCLR</name>
+          <name>CONTCLR</name>
           <description>T1CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -1486,7 +1486,7 @@
           </fields>
         </register>
         <register>
-          <name>T1CONSET</name>
+          <name>CONTSET</name>
           <description>T1CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -1535,7 +1535,7 @@
           </fields>
         </register>
         <register>
-          <name>T1CONINV</name>
+          <name>CONTINV</name>
           <description>T1CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -1584,105 +1584,105 @@
           </fields>
         </register>
         <register>
-          <name>TMR1</name>
+          <name>TMR</name>
           <description>TMR1 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR1</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR1CLR</name>
+          <name>TMRCLR</name>
           <description>TMR1CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR1</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR1SET</name>
+          <name>TMRSET</name>
           <description>TMR1SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR1</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR1INV</name>
+          <name>TMRINV</name>
           <description>TMR1INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR1</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR1</name>
+          <name>PR</name>
           <description>PR1 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>65535</resetValue>
           <fields>
             <field>
-              <name>PR1</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR1CLR</name>
+          <name>PRCLR</name>
           <description>PR1CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR1</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR1SET</name>
+          <name>PRSET</name>
           <description>PR1SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR1</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR1INV</name>
+          <name>PRINV</name>
           <description>PR1INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR1</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -1695,7 +1695,7 @@
       <baseAddress>0xbf800800</baseAddress>
       <registers>
         <register>
-          <name>T2CON</name>
+          <name>CONT</name>
           <description>T2CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -1732,7 +1732,7 @@
           </fields>
         </register>
         <register>
-          <name>T2CONCLR</name>
+          <name>CONTCLR</name>
           <description>T2CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -1769,7 +1769,7 @@
           </fields>
         </register>
         <register>
-          <name>T2CONSET</name>
+          <name>CONTSET</name>
           <description>T2CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -1806,7 +1806,7 @@
           </fields>
         </register>
         <register>
-          <name>T2CONINV</name>
+          <name>CONTINV</name>
           <description>T2CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -1843,105 +1843,105 @@
           </fields>
         </register>
         <register>
-          <name>TMR2</name>
+          <name>TMR</name>
           <description>TMR2 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR2</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR2CLR</name>
+          <name>TMRCLR</name>
           <description>TMR2CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR2</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR2SET</name>
+          <name>TMRSET</name>
           <description>TMR2SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR2</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR2INV</name>
+          <name>TMRINV</name>
           <description>TMR2INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR2</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR2</name>
+          <name>PR</name>
           <description>PR2 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>65535</resetValue>
           <fields>
             <field>
-              <name>PR2</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR2CLR</name>
+          <name>PRCLR</name>
           <description>PR2CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR2</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR2SET</name>
+          <name>PRSET</name>
           <description>PR2SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR2</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR2INV</name>
+          <name>PRINV</name>
           <description>PR2INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR2</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -1954,7 +1954,7 @@
       <baseAddress>0xbf800a00</baseAddress>
       <registers>
         <register>
-          <name>T3CON</name>
+          <name>CONT</name>
           <description>T3CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -1987,7 +1987,7 @@
           </fields>
         </register>
         <register>
-          <name>T3CONCLR</name>
+          <name>CONTCLR</name>
           <description>T3CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -2020,7 +2020,7 @@
           </fields>
         </register>
         <register>
-          <name>T3CONSET</name>
+          <name>CONTSET</name>
           <description>T3CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -2053,7 +2053,7 @@
           </fields>
         </register>
         <register>
-          <name>T3CONINV</name>
+          <name>CONTINV</name>
           <description>T3CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -2086,105 +2086,105 @@
           </fields>
         </register>
         <register>
-          <name>TMR3</name>
+          <name>TMR</name>
           <description>TMR3 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR3</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR3CLR</name>
+          <name>TMRCLR</name>
           <description>TMR3CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR3</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR3SET</name>
+          <name>TMRSET</name>
           <description>TMR3SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR3</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR3INV</name>
+          <name>TMRINV</name>
           <description>TMR3INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR3</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR3</name>
+          <name>PR</name>
           <description>PR3 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>65535</resetValue>
           <fields>
             <field>
-              <name>PR3</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR3CLR</name>
+          <name>PRCLR</name>
           <description>PR3CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR3</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR3SET</name>
+          <name>PRSET</name>
           <description>PR3SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR3</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR3INV</name>
+          <name>PRINV</name>
           <description>PR3INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR3</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -2197,7 +2197,7 @@
       <baseAddress>0xbf800c00</baseAddress>
       <registers>
         <register>
-          <name>T4CON</name>
+          <name>CONT</name>
           <description>T4CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -2234,7 +2234,7 @@
           </fields>
         </register>
         <register>
-          <name>T4CONCLR</name>
+          <name>CONTCLR</name>
           <description>T4CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -2271,7 +2271,7 @@
           </fields>
         </register>
         <register>
-          <name>T4CONSET</name>
+          <name>CONTSET</name>
           <description>T4CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -2308,7 +2308,7 @@
           </fields>
         </register>
         <register>
-          <name>T4CONINV</name>
+          <name>CONTINV</name>
           <description>T4CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -2345,105 +2345,105 @@
           </fields>
         </register>
         <register>
-          <name>TMR4</name>
+          <name>TMR</name>
           <description>TMR4 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR4</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR4CLR</name>
+          <name>TMRCLR</name>
           <description>TMR4CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR4</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR4SET</name>
+          <name>TMRSET</name>
           <description>TMR4SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR4</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR4INV</name>
+          <name>TMRINV</name>
           <description>TMR4INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR4</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR4</name>
+          <name>PR</name>
           <description>PR4 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>65535</resetValue>
           <fields>
             <field>
-              <name>PR4</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR4CLR</name>
+          <name>PRCLR</name>
           <description>PR4CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR4</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR4SET</name>
+          <name>PRSET</name>
           <description>PR4SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR4</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR4INV</name>
+          <name>PRINV</name>
           <description>PR4INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR4</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -2456,7 +2456,7 @@
       <baseAddress>0xbf800e00</baseAddress>
       <registers>
         <register>
-          <name>T5CON</name>
+          <name>CONT</name>
           <description>T5CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -2489,7 +2489,7 @@
           </fields>
         </register>
         <register>
-          <name>T5CONCLR</name>
+          <name>CONTCLR</name>
           <description>T5CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -2522,7 +2522,7 @@
           </fields>
         </register>
         <register>
-          <name>T5CONSET</name>
+          <name>CONTSET</name>
           <description>T5CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -2555,7 +2555,7 @@
           </fields>
         </register>
         <register>
-          <name>T5CONINV</name>
+          <name>CONTINV</name>
           <description>T5CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -2588,105 +2588,105 @@
           </fields>
         </register>
         <register>
-          <name>TMR5</name>
+          <name>TMR</name>
           <description>TMR5 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR5</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR5CLR</name>
+          <name>TMRCLR</name>
           <description>TMR5CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR5</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR5SET</name>
+          <name>TMRSET</name>
           <description>TMR5SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR5</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>TMR5INV</name>
+          <name>TMRINV</name>
           <description>TMR5INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>TMR5</name>
+              <name>TMR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR5</name>
+          <name>PR</name>
           <description>PR5 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>65535</resetValue>
           <fields>
             <field>
-              <name>PR5</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR5CLR</name>
+          <name>PRCLR</name>
           <description>PR5CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR5</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR5SET</name>
+          <name>PRSET</name>
           <description>PR5SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR5</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>PR5INV</name>
+          <name>PRINV</name>
           <description>PR5INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>PR5</name>
+              <name>PR</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -3779,7 +3779,7 @@
       <baseAddress>0xbf803000</baseAddress>
       <registers>
         <register>
-          <name>OC1CON</name>
+          <name>CONT</name>
           <description>OC1CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -3816,7 +3816,7 @@
           </fields>
         </register>
         <register>
-          <name>OC1CONCLR</name>
+          <name>CONTCLR</name>
           <description>OC1CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -3853,7 +3853,7 @@
           </fields>
         </register>
         <register>
-          <name>OC1CONSET</name>
+          <name>CONTSET</name>
           <description>OC1CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -3890,7 +3890,7 @@
           </fields>
         </register>
         <register>
-          <name>OC1CONINV</name>
+          <name>CONTINV</name>
           <description>OC1CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -3927,105 +3927,105 @@
           </fields>
         </register>
         <register>
-          <name>OC1R</name>
+          <name>R</name>
           <description>OC1R register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RCLR</name>
+          <name>RCLR</name>
           <description>OC1RCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RSET</name>
+          <name>RSET</name>
           <description>OC1RSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RINV</name>
+          <name>RINV</name>
           <description>OC1RINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RS</name>
+          <name>RS</name>
           <description>OC1RS register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RSCLR</name>
+          <name>RSCLR</name>
           <description>OC1RSCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RSSET</name>
+          <name>RSSET</name>
           <description>OC1RSSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC1RSINV</name>
+          <name>RSINV</name>
           <description>OC1RSINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC1RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -4038,7 +4038,7 @@
       <baseAddress>0xbf803200</baseAddress>
       <registers>
         <register>
-          <name>OC2CON</name>
+          <name>CONT</name>
           <description>OC2CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -4075,7 +4075,7 @@
           </fields>
         </register>
         <register>
-          <name>OC2CONCLR</name>
+          <name>CONTCLR</name>
           <description>OC2CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -4112,7 +4112,7 @@
           </fields>
         </register>
         <register>
-          <name>OC2CONSET</name>
+          <name>CONTSET</name>
           <description>OC2CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -4149,7 +4149,7 @@
           </fields>
         </register>
         <register>
-          <name>OC2CONINV</name>
+          <name>CONTINV</name>
           <description>OC2CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -4186,105 +4186,105 @@
           </fields>
         </register>
         <register>
-          <name>OC2R</name>
+          <name>R</name>
           <description>OC2R register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RCLR</name>
+          <name>RCLR</name>
           <description>OC2RCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RSET</name>
+          <name>RSET</name>
           <description>OC2RSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RINV</name>
+          <name>RINV</name>
           <description>OC2RINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RS</name>
+          <name>RS</name>
           <description>OC2RS register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RSCLR</name>
+          <name>RSCLR</name>
           <description>OC2RSCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RSSET</name>
+          <name>RSSET</name>
           <description>OC2RSSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC2RSINV</name>
+          <name>RSINV</name>
           <description>OC2RSINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC2RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -4297,7 +4297,7 @@
       <baseAddress>0xbf803400</baseAddress>
       <registers>
         <register>
-          <name>OC3CON</name>
+          <name>CONT</name>
           <description>OC3CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -4334,7 +4334,7 @@
           </fields>
         </register>
         <register>
-          <name>OC3CONCLR</name>
+          <name>CONTCLR</name>
           <description>OC3CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -4371,7 +4371,7 @@
           </fields>
         </register>
         <register>
-          <name>OC3CONSET</name>
+          <name>CONTSET</name>
           <description>OC3CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -4408,7 +4408,7 @@
           </fields>
         </register>
         <register>
-          <name>OC3CONINV</name>
+          <name>CONTINV</name>
           <description>OC3CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -4445,105 +4445,105 @@
           </fields>
         </register>
         <register>
-          <name>OC3R</name>
+          <name>R</name>
           <description>OC3R register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RCLR</name>
+          <name>RCLR</name>
           <description>OC3RCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RSET</name>
+          <name>RSET</name>
           <description>OC3RSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RINV</name>
+          <name>RINV</name>
           <description>OC3RINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RS</name>
+          <name>RS</name>
           <description>OC3RS register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RSCLR</name>
+          <name>RSCLR</name>
           <description>OC3RSCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RSSET</name>
+          <name>RSSET</name>
           <description>OC3RSSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC3RSINV</name>
+          <name>RSINV</name>
           <description>OC3RSINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC3RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -4556,7 +4556,7 @@
       <baseAddress>0xbf803600</baseAddress>
       <registers>
         <register>
-          <name>OC4CON</name>
+          <name>CONT</name>
           <description>OC4CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -4593,7 +4593,7 @@
           </fields>
         </register>
         <register>
-          <name>OC4CONCLR</name>
+          <name>CONTCLR</name>
           <description>OC4CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -4630,7 +4630,7 @@
           </fields>
         </register>
         <register>
-          <name>OC4CONSET</name>
+          <name>CONTSET</name>
           <description>OC4CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -4667,7 +4667,7 @@
           </fields>
         </register>
         <register>
-          <name>OC4CONINV</name>
+          <name>CONTINV</name>
           <description>OC4CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -4704,105 +4704,105 @@
           </fields>
         </register>
         <register>
-          <name>OC4R</name>
+          <name>R</name>
           <description>OC4R register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RCLR</name>
+          <name>RCLR</name>
           <description>OC4RCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RSET</name>
+          <name>RSET</name>
           <description>OC4RSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RINV</name>
+          <name>RINV</name>
           <description>OC4RINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RS</name>
+          <name>RS</name>
           <description>OC4RS register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RSCLR</name>
+          <name>RSCLR</name>
           <description>OC4RSCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RSSET</name>
+          <name>RSSET</name>
           <description>OC4RSSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC4RSINV</name>
+          <name>RSINV</name>
           <description>OC4RSINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC4RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -4815,7 +4815,7 @@
       <baseAddress>0xbf803800</baseAddress>
       <registers>
         <register>
-          <name>OC5CON</name>
+          <name>CONT</name>
           <description>OC5CON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -4852,7 +4852,7 @@
           </fields>
         </register>
         <register>
-          <name>OC5CONCLR</name>
+          <name>CONTCLR</name>
           <description>OC5CONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -4889,7 +4889,7 @@
           </fields>
         </register>
         <register>
-          <name>OC5CONSET</name>
+          <name>CONTSET</name>
           <description>OC5CONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -4926,7 +4926,7 @@
           </fields>
         </register>
         <register>
-          <name>OC5CONINV</name>
+          <name>CONTINV</name>
           <description>OC5CONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -4963,105 +4963,105 @@
           </fields>
         </register>
         <register>
-          <name>OC5R</name>
+          <name>R</name>
           <description>OC5R register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RCLR</name>
+          <name>RCLR</name>
           <description>OC5RCLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RSET</name>
+          <name>RSET</name>
           <description>OC5RSET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RINV</name>
+          <name>RINV</name>
           <description>OC5RINV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5R</name>
+              <name>R</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RS</name>
+          <name>RS</name>
           <description>OC5RS register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RSCLR</name>
+          <name>RSCLR</name>
           <description>OC5RSCLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RSSET</name>
+          <name>RSSET</name>
           <description>OC5RSSET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>OC5RSINV</name>
+          <name>RSINV</name>
           <description>OC5RSINV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>OC5RS</name>
+              <name>RS</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -8437,12 +8437,12 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>ADC10</name>
-      <description>ADC10 peripheral</description>
+      <name>ADC</name>
+      <description>ADC peripheral</description>
       <baseAddress>0xbf809000</baseAddress>
       <registers>
         <register>
-          <name>AD1CON1</name>
+          <name>CON1</name>
           <description>AD1CON1 register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
@@ -8487,7 +8487,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON1CLR</name>
+          <name>CON1CLR</name>
           <description>AD1CON1CLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
@@ -8532,7 +8532,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON1SET</name>
+          <name>CON1SET</name>
           <description>AD1CON1SET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
@@ -8577,7 +8577,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON1INV</name>
+          <name>CON1INV</name>
           <description>AD1CON1INV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
@@ -8622,7 +8622,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON2</name>
+          <name>CON2</name>
           <description>AD1CON2 register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
@@ -8659,7 +8659,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON2CLR</name>
+          <name>CON2CLR</name>
           <description>AD1CON2CLR register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
@@ -8696,7 +8696,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON2SET</name>
+          <name>CON2SET</name>
           <description>AD1CON2SET register</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
@@ -8733,7 +8733,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON2INV</name>
+          <name>CON2INV</name>
           <description>AD1CON2INV register</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
@@ -8770,7 +8770,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON3</name>
+          <name>CON3</name>
           <description>AD1CON3 register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
@@ -8791,7 +8791,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON3CLR</name>
+          <name>CON3CLR</name>
           <description>AD1CON3CLR register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
@@ -8812,7 +8812,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON3SET</name>
+          <name>CON3SET</name>
           <description>AD1CON3SET register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
@@ -8833,7 +8833,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CON3INV</name>
+          <name>CON3INV</name>
           <description>AD1CON3INV register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
@@ -8861,7 +8861,7 @@
           <resetValue>0</resetValue>
         </register>
         <register>
-          <name>AD1CHS</name>
+          <name>CHS</name>
           <description>AD1CHS register</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
@@ -8886,7 +8886,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CHSCLR</name>
+          <name>CHSCLR</name>
           <description>AD1CHSCLR register</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
@@ -8911,7 +8911,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CHSSET</name>
+          <name>CHSSET</name>
           <description>AD1CHSSET register</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
@@ -8936,7 +8936,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CHSINV</name>
+          <name>CHSINV</name>
           <description>AD1CHSINV register</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
@@ -8961,7 +8961,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CSSL</name>
+          <name>CSSL</name>
           <description>AD1CSSL register</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
@@ -9038,7 +9038,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CSSLCLR</name>
+          <name>CSSLCLR</name>
           <description>AD1CSSLCLR register</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
@@ -9115,7 +9115,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CSSLSET</name>
+          <name>CSSLSET</name>
           <description>AD1CSSLSET register</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
@@ -9192,7 +9192,7 @@
           </fields>
         </register>
         <register>
-          <name>AD1CSSLINV</name>
+          <name>CSSLINV</name>
           <description>AD1CSSLINV register</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
@@ -9269,209 +9269,209 @@
           </fields>
         </register>
         <register>
-          <name>ADC1BUF0</name>
+          <name>BUF0</name>
           <description>ADC1BUF0 register</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF0</name>
+              <name>BUF0</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF1</name>
+          <name>BUF1</name>
           <description>ADC1BUF1 register</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF1</name>
+              <name>BUF1</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF2</name>
+          <name>BUF2</name>
           <description>ADC1BUF2 register</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF2</name>
+              <name>BUF2</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF3</name>
+          <name>BUF3</name>
           <description>ADC1BUF3 register</description>
           <addressOffset>0xa0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF3</name>
+              <name>BUF3</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF4</name>
+          <name>BUF4</name>
           <description>ADC1BUF4 register</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF4</name>
+              <name>BUF4</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF5</name>
+          <name>BUF5</name>
           <description>ADC1BUF5 register</description>
           <addressOffset>0xc0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF5</name>
+              <name>BUF5</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF6</name>
+          <name>BUF6</name>
           <description>ADC1BUF6 register</description>
           <addressOffset>0xd0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF6</name>
+              <name>BUF6</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF7</name>
+          <name>BUF7</name>
           <description>ADC1BUF7 register</description>
           <addressOffset>0xe0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF7</name>
+              <name>BUF7</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF8</name>
+          <name>BUF8</name>
           <description>ADC1BUF8 register</description>
           <addressOffset>0xf0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF8</name>
+              <name>BUF8</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUF9</name>
+          <name>BUF9</name>
           <description>ADC1BUF9 register</description>
           <addressOffset>0x100</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUF9</name>
+              <name>BUF9</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFA</name>
+          <name>BUFA</name>
           <description>ADC1BUFA register</description>
           <addressOffset>0x110</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFA</name>
+              <name>BUFA</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFB</name>
+          <name>BUFB</name>
           <description>ADC1BUFB register</description>
           <addressOffset>0x120</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFB</name>
+              <name>BUFB</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFC</name>
+          <name>BUFC</name>
           <description>ADC1BUFC register</description>
           <addressOffset>0x130</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFC</name>
+              <name>BUFC</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFD</name>
+          <name>BUFD</name>
           <description>ADC1BUFD register</description>
           <addressOffset>0x140</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFD</name>
+              <name>BUFD</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFE</name>
+          <name>BUFE</name>
           <description>ADC1BUFE register</description>
           <addressOffset>0x150</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFE</name>
+              <name>BUFE</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>ADC1BUFF</name>
+          <name>BUFF</name>
           <description>ADC1BUFF register</description>
           <addressOffset>0x160</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>ADC1BUFF</name>
+              <name>BUFF</name>
               <bitRange>[31:0]</bitRange>
             </field>
           </fields>
@@ -12992,14 +12992,14 @@
       <baseAddress>0xbf80f600</baseAddress>
       <registers>
         <register>
-          <name>WDTCON</name>
+          <name>CONT</name>
           <description>WDTCON register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>WDTWINEN</name>
+              <name>WINEN</name>
               <bitRange>[0:0]</bitRange>
             </field>
             <field>
@@ -13011,20 +13011,20 @@
               <bitRange>[15:15]</bitRange>
             </field>
             <field>
-              <name>WDTCLRKEY</name>
+              <name>CLRKEY</name>
               <bitRange>[31:16]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>WDTCONCLR</name>
+          <name>CONTCLR</name>
           <description>WDTCONCLR register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>WDTWINEN</name>
+              <name>WINEN</name>
               <bitRange>[0:0]</bitRange>
             </field>
             <field>
@@ -13036,20 +13036,20 @@
               <bitRange>[15:15]</bitRange>
             </field>
             <field>
-              <name>WDTCLRKEY</name>
+              <name>CLRKEY</name>
               <bitRange>[31:16]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>WDTCONSET</name>
+          <name>CONTSET</name>
           <description>WDTCONSET register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>WDTWINEN</name>
+              <name>WINEN</name>
               <bitRange>[0:0]</bitRange>
             </field>
             <field>
@@ -13061,20 +13061,20 @@
               <bitRange>[15:15]</bitRange>
             </field>
             <field>
-              <name>WDTCLRKEY</name>
+              <name>CLRKEY</name>
               <bitRange>[31:16]</bitRange>
             </field>
           </fields>
         </register>
         <register>
-          <name>WDTCONINV</name>
+          <name>CONTINV</name>
           <description>WDTCONINV register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>WDTWINEN</name>
+              <name>WINEN</name>
               <bitRange>[0:0]</bitRange>
             </field>
             <field>
@@ -13086,7 +13086,7 @@
               <bitRange>[15:15]</bitRange>
             </field>
             <field>
-              <name>WDTCLRKEY</name>
+              <name>CLRKEY</name>
               <bitRange>[31:16]</bitRange>
             </field>
           </fields>
