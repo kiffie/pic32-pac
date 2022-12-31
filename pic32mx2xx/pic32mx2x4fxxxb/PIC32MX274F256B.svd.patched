@@ -11406,7 +11406,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1CON</name>
+          <name>REFOCON</name>
           <description>REFO1CON register</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
@@ -11447,7 +11447,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1CONCLR</name>
+          <name>REFOCONCLR</name>
           <description>REFO1CONCLR register</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
@@ -11488,7 +11488,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1CONSET</name>
+          <name>REFOCONSET</name>
           <description>REFO1CONSET register</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
@@ -11529,7 +11529,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1CONINV</name>
+          <name>REFOCONINV</name>
           <description>REFO1CONINV register</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
@@ -11570,7 +11570,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1TRIM</name>
+          <name>REFOTRIM</name>
           <description>REFO1TRIM register</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
@@ -11583,7 +11583,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1TRIMCLR</name>
+          <name>REFOTRIMCLR</name>
           <description>REFO1TRIMCLR register</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
@@ -11596,7 +11596,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1TRIMSET</name>
+          <name>REFOTRIMSET</name>
           <description>REFO1TRIMSET register</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
@@ -11609,7 +11609,7 @@
           </fields>
         </register>
         <register>
-          <name>REFO1TRIMINV</name>
+          <name>REFOTRIMINV</name>
           <description>REFO1TRIMINV register</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>

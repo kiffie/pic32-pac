@@ -1,0 +1,9 @@
+# special patches for MX1x4 and MX2x4 (XLP devices)
+
+# Oscillator unit (CRU) of XLP devices (in the other devices this peripheral is named OSC)
+"CRU":
+    _sub:
+        # rename REFO1* registers of MX1x4XLP and MX2x4XLP to REFO* so that the
+        # are the same as in the OSC peripheral of non-XPL devices
+        - ["^REFO1(.*)$", 'REFO\1']
+

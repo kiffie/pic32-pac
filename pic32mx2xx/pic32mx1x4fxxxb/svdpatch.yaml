@@ -3,3 +3,4 @@ _svd: "PIC32MX174F256B.svd"
 
 _include:
     - "../svdpatch_common.yaml"
+    - "../svdpatch_xlp.yaml"

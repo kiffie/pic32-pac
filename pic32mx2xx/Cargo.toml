@@ -1,6 +1,6 @@
 [package]
 name = "pic32mx2xx"
-version = "0.5.0"
+version = "0.6.0"
 description = "Peripheral access API for PIC32MX1/2xx microcontrollers"
 repository = "https://github.com/kiffie/pic32-pac/tree/master/pic32mx2xx"
 keywords = ["no-std", "mips", "pic32", "svd2rust"]
