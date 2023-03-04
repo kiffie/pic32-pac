@@ -1,0 +1,106 @@
+#
+# common patch specifications for PIC32 MCUs
+#
+
+_derive:
+    UART2: UART1
+    UART3: UART1
+    UART4: UART1
+    UART5: UART1
+    UART6: UART1
+    I2C2: I2C1
+    I2C3: I2C1
+    I2C4: I2C1
+    I2C5: I2C1
+    SPI2: SPI1
+    SPI3: SPI1
+    SPI4: SPI1
+    DMAC1: DMAC0
+    DMAC2: DMAC0
+    DMAC3: DMAC0
+    DMAC4: DMAC0
+    DMAC5: DMAC0
+    DMAC6: DMAC0
+    DMAC7: DMAC0
+
+_modify:
+    ADC10:
+        name: ADC
+        description: ADC peripheral
+
+"DMAC0":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^CON(SET|CLR|INV)?$", 'CONT\1']
+    _strip:
+        - DCH0
+
+"UART1":
+    _strip:
+        - U1
+
+"I2C1":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^CON(SET|CLR|INV)?$", 'CONT\1']
+    "BRG*":
+        _modify:
+            I2CBRG:
+                name: BRG
+    "TRN*":
+        _modify:
+            I2CTRN:
+                name: TRN
+    RCV:
+        _modify:
+            I2CRCV:
+                name: RCV
+    _strip:
+         - I2C1
+
+"PORT*":
+    _sub:
+        # remove port letters from register names
+        - ["[A-D](SET|CLR|INV)?$", '\1']
+
+"SPI1":
+    _sub:
+        # rename CON to CON1 to avoid Windows reserved file names
+        - ["^(CON)(SET|CLR|INV)?$", 'CON1\2']
+    _strip:
+        - SPI1
+
+"ADC":
+    _strip:
+        - AD1
+        - ADC1
+
+"WDT":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^CON(SET|CLR|INV)?$", 'CONT\1']
+    _strip:
+        - WDT
+
+"TMR*":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^T[0-9]CON(SET|CLR|INV)?$", 'CONT\1']
+        - ["^(.*)[0-9](SET|CLR|INV)?$", '\1\2']
+    "PR*":
+        _sub:
+            - ["^PR[0-9](.*)$", 'PR\1']
+    "TMR*":
+        _sub:
+            - ["^TMR[0-9](.*)$", 'TMR\1']
+
+"OCMP*":
+    _sub:
+        # rename CON to CONT to avoid Windows reserved file names
+        - ["^OC[0-9]CON(SET|CLR|INV)?$", 'CONT\1']
+        - ["^OC[0-9](.*)$", '\1']
+    "R*":
+        _sub:
+            - ["^OC[0-9](.*)$", '\1']
+
+
