@@ -17,7 +17,7 @@ Features are used to selected the device, e.g.
 
 ```toml
 [dependencies.pic32mx2xx]
-version = "0.6.0"
+version = "0.7.0"
 features = ["pic32mx2xxfxxxb", "rt"]
 ```
 
