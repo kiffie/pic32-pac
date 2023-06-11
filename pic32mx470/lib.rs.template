@@ -1,0 +1,34 @@
+//! Peripheral access API for PIC32MX330/350/370/430/450/470 microcontrollers
+//! (generated using [svd2rust](https://github.com/rust-embedded/svd2rust)
+//! version $SVD2RUST_VERSION)
+//!
+//! You can find an overview of the API here:
+//! [svd2rust/#peripheral-api](https://docs.rs/svd2rust/0.19.0/svd2rust/#peripheral-api)
+//!
+
+#![deny (dead_code)]
+#![deny (improper_ctypes)]
+#![deny (missing_docs)]
+#![deny (no_mangle_generic_items)]
+#![deny (non_shorthand_field_patterns)]
+#![deny (overflowing_literals)]
+#![deny (path_statements)]
+#![deny (patterns_in_fns_without_body)]
+#![deny (private_in_public)]
+#![deny (unconditional_recursion)]
+#![deny (unused_allocation)]
+#![deny (unused_comparisons)]
+#![deny (unused_parens)]
+#![deny (while_true)]
+#![allow (non_camel_case_types)]
+#![allow (non_snake_case)]
+#![no_std]
+
+mod generic;
+pub use self::generic::*;
+
+#[cfg(feature = "pic32mx37xfxxxl")]
+pub mod pic32mx37xfxxxl;
+
+#[cfg(feature = "pic32mx47xfxxxl")]
+pub mod pic32mx47xfxxxl;

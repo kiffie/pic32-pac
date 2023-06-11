@@ -1,0 +1,23 @@
+[package]
+name = "pic32mx470"
+version = "0.1.1"
+description = "Peripheral access API for PIC32MX330/350/370/430/450/470 microcontrollers"
+repository = "https://github.com/kiffie/pic32-pac/tree/master/pic32mx470"
+keywords = ["no-std", "mips", "pic32", "svd2rust"]
+license = "MIT OR Apache-2.0"
+authors = ["Stephan <kiffie@mailbox.org>"]
+edition = "2021"
+include = ["README.md", "/src", "/build.rs"]
+
+[features]
+rt = ["mips-rt"]
+pic32mx37xfxxxl = []
+pic32mx47xfxxxl = []
+
+[dependencies]
+vcell = "0.1.3"
+mips-rt = { version = "0.3.0", optional = true }
+critical-section = { version = "1.0.0", optional = true }
+
+[package.metadata.docs.rs]
+features = ["rt", "pic32mx47xfxxxl"]
