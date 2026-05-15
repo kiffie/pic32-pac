@@ -1,0 +1,20 @@
+[package]
+name = "pic32mz2048efm144"
+version = "0.1.0"
+description = "Peripheral access API for PIC32MZ2048EFM144"
+keywords = ["no-std", "mips", "pic32", "svd2rust"]
+license = "MIT OR Apache-2.0"
+authors = ["Kyle <kc101010-dev@gmx.co.uk>"]
+edition = "2021"
+
+[features]
+rt = []
+
+[dependencies]
+critical-section = "1.2.0"
+mips-mcu = "0.3.1"
+mips-rt = "0.3.6"
+vcell = "0.1.3"
+
+[package.metadata.docs.rs]
+features = ["rt", "pic32mz2048efm144"]
